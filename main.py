@@ -42,14 +42,14 @@ async def help_cmd(interaction: discord.Interaction):
         description="Here are all AVK commands:",
         color=discord.Color.blue()
     )
-    embed.add_field(name="🧊 /ping", value="Check bot status", inline=False)
-    embed.add_field(name="🧠 /trivia", value="AVK Trivia", inline=False)
-    embed.add_field(name="🎮 /connect4", value="Play Connect4", inline=False)
-    embed.add_field(name="🧩 /tictactoe", value="Play TicTacToe", inline=False)
-    embed.add_field(name="😵 /hangman", value="Play Hangman", inline=False)
-    embed.add_field(name="⚔️ /duel", value="Duel someone", inline=False)
-    embed.add_field(name="🎤 /quiplash", value="Start Quiplash", inline=False)
-    embed.add_field(name="📆 /event", value="Event reminders (UTC)", inline=False)
+    embed.add_field(name="/ping", value="Check bot status", inline=False)
+    embed.add_field(name="/trivia", value="AVK Trivia", inline=False)
+    embed.add_field(name="/connect4", value="Play Connect4", inline=False)
+    embed.add_field(name="/tictactoe", value="Play TicTacToe", inline=False)
+    embed.add_field(name="/hangman", value="Play Hangman", inline=False)
+    embed.add_field(name="/duel", value="Duel someone", inline=False)
+    embed.add_field(name="/quiplash", value="Start Quiplash", inline=False)
+    embed.add_field(name="/event", value="Event reminders (UTC)", inline=False)
     await interaction.response.send_message(embed=embed)
 
 
@@ -147,13 +147,11 @@ async def beartrap_loop():
         today = now.date()
         days_since_start = (today - START_DATE).days
 
-        # Before April 4
         if days_since_start < 0:
             target = datetime.datetime(2026, 4, 4, 14, 0, tzinfo=datetime.timezone.utc)
             await asyncio.sleep(max(0, (target - now).total_seconds()))
             continue
 
-        # Trigger days: 0,2,4,6...
         is_bt_day = (days_since_start % 2 == 0)
 
         if not is_bt_day:
@@ -523,27 +521,20 @@ async def quiplash_cmd(interaction: discord.Interaction):
 
 
 # ============================================================
-# ✅ ON READY — avec délai pour la sync
+# ✅ SETUP_HOOK — synchronisation des commandes
 # ============================================================
 
 @bot.event
-async def on_ready():
-    print(f"✅ Bot connecté en tant que {bot.user}")
-
-    # ✅ Pause indispensable pour laisser Discord être prêt
-    await asyncio.sleep(3)
-
-    guild = discord.Object(id=GUILD_ID)
+async def setup_hook():
+    print("⏳ Sync des commandes slash en cours...")
 
     try:
-        synced = await bot.tree.sync(guild=guild)
-        print(f"✅ {len(synced)} commandes synchronisées pour AVK.")
+        synced = await bot.tree.sync()  # ✅ sync GLOBAL pour éviter les erreurs
+        print(f"✅ {len(synced)} commandes slash synchronisées.")
     except Exception as e:
-        print(f"❌ Erreur sync : {e}")
+        print(f"❌ Erreur sync slash commands : {e}")
 
     bot.loop.create_task(beartrap_loop())
-
-    print("✅ AVK BOT prêt à l'action !")
 
 
 # ============================================================
