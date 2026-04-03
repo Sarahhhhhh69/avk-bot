@@ -142,33 +142,40 @@ async def trivia(interaction: discord.Interaction):
         await interaction.followup.send(f"⌛ Time’s up! Correct answer: **{correct_answer}**.")
 
 # ============================================================
-# ✅ BEAR TRAP — Tous les 2 jours (14:00 & 20:00 UTC)
+# ✅ BEAR TRAP — Début fixe 4 avril 2026 → tous les 2 jours
 # ============================================================
 
 async def beartrap_loop():
     await bot.wait_until_ready()
 
-    channel_id = 1463165559171584033
+    channel_id = 1463165559171584033  # ✅ Ton canal BearTrap AVK
     channel = bot.get_channel(channel_id)
+
     SCHEDULE_UTC = [(14, 0), (20, 0)]
-    last_bt_day = None
+    START_DATE = datetime.date(2026, 4, 4)
 
     while True:
         now = datetime.datetime.now(datetime.timezone.utc)
+        today = now.date()
 
-        if last_bt_day is None:
-            last_bt_day = now.date()
+        days_since_start = (today - START_DATE).days
 
-        else:
-            if now.date() == last_bt_day:
-                await asyncio.sleep(3600)
-                continue
+        # Si aujourd’hui < 4 avril → attendre 4 avril 14:00
+        if days_since_start < 0:
+            target = datetime.datetime(2026, 4, 4, 14, 0, tzinfo=datetime.timezone.utc)
+            wait = (target - now).total_seconds()
+            print(f"⏳ BearTrap commencera le 4 avril à 14:00 UTC")
+            await asyncio.sleep(max(0, wait))
+            continue
 
-            delta = (now.date() - last_bt_day).days
-            if delta < 2:
-                await asyncio.sleep(3600)
-                continue
+        # BT tous les deux jours : 0,2,4,6...
+        is_beartrap_day = (days_since_start % 2 == 0)
 
+        if not is_beartrap_day:
+            await asyncio.sleep(3600)
+            continue
+
+        # Aujourd’hui est un jour BearTrap
         for hour, minute in SCHEDULE_UTC:
             target = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
 
@@ -176,7 +183,7 @@ async def beartrap_loop():
                 continue
 
             wait = (target - now).total_seconds()
-            print(f"⏳ Prochain Bear Trap : {target} UTC")
+            print(f"⏳ Prochain BearTrap : {target} UTC")
             await asyncio.sleep(wait)
 
             if bot.is_ready() and channel:
@@ -184,7 +191,6 @@ async def beartrap_loop():
                     "🐻❄️ **BEAR TRAP NOW!**\nPrepare yourselves AVK warriors — the hunt begins! 🐺"
                 )
 
-        last_bt_day = now.date()
         await asyncio.sleep(60)
 
 # ============================================================
@@ -257,7 +263,7 @@ async def handle_event_reminders(channel_id: int, name: str, event_dt):
             await channel.send(f"🚀 **{name} is starting NOW!**")
 
 # ============================================================
-# ✅ CONNECT4 — FULL (with win detection)
+# ✅ CONNECT4 — FULL
 # ============================================================
 
 CONNECT4_EMPTY = "⚪"
@@ -278,25 +284,21 @@ def render_board(board):
     return "\n".join("".join(row) for row in board)
 
 def check_win(board, piece):
-    # Horizontal →
     for r in range(6):
         for c in range(4):
             if all(board[r][c+i] == piece for i in range(4)):
                 return True
 
-    # Vertical ↓
     for r in range(3):
         for c in range(7):
             if all(board[r+i][c] == piece for i in range(4)):
                 return True
 
-    # Diagonale ↘
     for r in range(3):
         for c in range(4):
             if all(board[r+i][c+i] == piece for i in range(4)):
                 return True
 
-    # Diagonale ↗
     for r in range(3, 6):
         for c in range(4):
             if all(board[r-i][c+i] == piece for i in range(4)):
@@ -501,7 +503,7 @@ async def hangman_cmd(interaction: discord.Interaction):
             return await interaction.followup.send("⌛ Timeout — game over!")
 
 # ============================================================
-# ✅ QUIPLASH — Simple Version
+# ✅ QUIPLASH
 # ============================================================
 
 QUIPLASH_PROMPTS = [
