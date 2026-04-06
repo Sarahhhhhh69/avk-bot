@@ -115,7 +115,7 @@ async def trivia(interaction: discord.Interaction):
     )
 
     def check(msg):
-        return msg.channel == interaction.channel and not msg.author.bot
+        return msg. == interaction. and not msg.author.bot
 
     try:
         msg = await bot.wait_for("message", timeout=20, check=check)
@@ -136,7 +136,7 @@ async def trivia(interaction: discord.Interaction):
 async def beartrap_loop():
     await bot.wait_until_ready()
 
-    channel_id = 1463165559171584033
+    channel_id = 1464987172133273664
     channel = bot.get_channel(channel_id)
 
     SCHEDULE_UTC = [(14, 0), (20, 0)]
@@ -172,7 +172,46 @@ async def beartrap_loop():
 
         await asyncio.sleep(60)
 
+# ============================================================
+# ✅ ARENA DAILY REMINDER — Every day at 00:00 UTC (+ reminder at -15min)
+# ============================================================
 
+async def arena_loop():
+    await bot.wait_until_ready()
+
+    ARENA_CHANNEL_ID = 1464987172133273664  # ✅ Salon reminders AVK
+    channel = bot.get_channel(ARENA_CHANNEL_ID)
+
+    while True:
+        now = datetime.datetime.now(datetime.timezone.utc)
+
+        # Calcul de l'heure du rappel (23:45 UTC aujourd'hui)
+        reminder_time = now.replace(hour=23, minute=45, second=0, microsecond=0)
+        if reminder_time <= now:
+            reminder_time += datetime.timedelta(days=1)
+
+        # Attendre jusqu'au rappel
+        wait = (reminder_time - now).total_seconds()
+        print(f"⏳ Arena reminder will be sent at {reminder_time} UTC")
+        await asyncio.sleep(wait)
+
+        # Envoyer rappel 15 min avant
+        if bot.is_ready() and channel:
+            await channel.send("⚔️ **Arena starts in 15 minutes! Prepare yourselves AVK warriors!**")
+
+        # Calcul de l'heure du début (00:00 UTC)
+        now = datetime.datetime.now(datetime.timezone.utc)
+        start_time = reminder_time.replace(hour=0, minute=0, second=0, microsecond=0)
+        if start_time <= reminder_time:
+            start_time += datetime.timedelta(days=1)
+
+        wait2 = (start_time - datetime.datetime.now(datetime.timezone.utc)).total_seconds()
+        await asyncio.sleep(wait2)
+
+        # Envoyer message de début d'Arena
+        if bot.is_ready() and channel:
+            await channel.send("⚔️ **Arena is starting NOW!** Good luck fighters!")
+            
 # ============================================================
 # ✅ EVENT REMINDERS
 # ============================================================
@@ -535,6 +574,7 @@ async def setup_hook():
         print(f"❌ Erreur sync slash commands : {e}")
 
     bot.loop.create_task(beartrap_loop())
+    bot.loop.create_task(arena_loop())
 
 
 # ============================================================
