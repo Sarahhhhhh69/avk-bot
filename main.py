@@ -115,7 +115,7 @@ async def trivia(interaction: discord.Interaction):
     )
 
     def check(msg):
-        return msg. == interaction. and not msg.author.bot
+        return msg.channel == interaction.channel and not msg.author.bot
 
     try:
         msg = await bot.wait_for("message", timeout=20, check=check)
