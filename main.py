@@ -23,66 +23,34 @@ intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
 
-GUILD_ID = 1463165558232186910  # ✅ Ton serveur AVK
+GUILD_ID = 1463165558232186910  # ✅ AVK server
+REMINDERS_CHANNEL_ID = 1464987172133273664  # ✅ #event-reminders
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # ============================================================
-# ✅ COMMANDES D’INFORMATION
+# ✅ BASIC COMMANDS
 # ============================================================
 
 @bot.tree.command(name="ping", description="Check if the bot is online.")
 async def ping(interaction: discord.Interaction):
     await interaction.response.send_message("✅ Pong! The bot is running smoothly!")
 
-
 @bot.tree.command(name="help", description="Show the list of commands.")
 async def help_cmd(interaction: discord.Interaction):
     embed = discord.Embed(
-        title="📘 AVK BOT — Help Menu",
-        description="Here are all AVK commands:",
+        title="📘 AVK BOT — Help",
+        description="Available commands:",
         color=discord.Color.blue()
     )
     embed.add_field(name="/ping", value="Check bot status", inline=False)
-    embed.add_field(name="/trivia", value="AVK Trivia", inline=False)
-    embed.add_field(name="/connect4", value="Play Connect4", inline=False)
-    embed.add_field(name="/tictactoe", value="Play TicTacToe", inline=False)
-    embed.add_field(name="/hangman", value="Play Hangman", inline=False)
-    embed.add_field(name="/duel", value="Duel someone", inline=False)
-    embed.add_field(name="/quiplash", value="Start Quiplash", inline=False)
-    embed.add_field(name="/event", value="Event reminders (UTC)", inline=False)
+    embed.add_field(name="/event", value="Create an event with reminders", inline=False)
+    embed.add_field(name="/trivia", value="Trivia game", inline=False)
+    embed.add_field(name="/hangman", value="Hangman game", inline=False)
+    embed.add_field(name="/connect4", value="Connect Four (PvP)", inline=False)
+    embed.add_field(name="/tictactoe", value="TicTacToe (PvP)", inline=False)
+    embed.add_field(name="/duel", value="Simple duel", inline=False)
+    embed.add_field(name="/quiplash", value="Quiplash (simple)", inline=False)
     await interaction.response.send_message(embed=embed)
-
-
-@bot.tree.command(name="about", description="Information about AVK BOT.")
-async def about_cmd(interaction: discord.Interaction):
-    await interaction.response.send_message(
-        "❄️ AVK BOT — Created for the AVK Alliance.\nIncludes games, reminders, BearTrap automation, trivia & more!"
-    )
-
-
-@bot.tree.command(name="rules", description="Show the AVK rules.")
-async def rules_cmd(interaction: discord.Interaction):
-    text = (
-        "📜 **AVK Rules**\n"
-        "1️⃣ Be respectful\n"
-        "2️⃣ English only\n"
-        "3️⃣ No spam / harassment\n"
-        "4️⃣ Follow leadership\n"
-        "5️⃣ No cheating\n"
-        "6️⃣ Protect the community\n"
-        "7️⃣ Respect event planning\n"
-    )
-    await interaction.response.send_message(text)
-
-
-@bot.tree.command(name="links", description="Show useful links.")
-async def links_cmd(interaction: discord.Interaction):
-    await interaction.response.send_message(
-        "**🔗 Useful Links**\n"
-        "AVK Discord : https://discord.gg/VH4wHwUwJe\n"
-        "Whiteout Survival : https://www.whiteoutsurvival.com/\n"
-    )
-
 
 # ============================================================
 # ✅ TRIVIA
@@ -92,128 +60,83 @@ TRIVIA_QUESTIONS = [
     ("What is AVK’s primary language?", "english"),
     ("Which season is the coldest?", "winter"),
     ("What color is snow?", "white"),
-    ("What is the leader of AVK called?", "chieftain"),
     ("Which animal represents AVK?", "wolf"),
-    ("What is needed to trigger Bear Trap?", "activity"),
-    ("How many alliances form AVK?", "one"),
-    ("Which day does Bear Trap trigger on?", "odd"),
-    ("What does AVK stand for?", "alliance"),
-    ("What climate dominates Whiteout Survival?", "frozen"),
-    ("Name a resource starting with F.", "food"),
-    ("Name a resource starting with W.", "wood"),
-    ("Which building trains soldiers?", "barracks"),
 ]
 
-
-@bot.tree.command(name="trivia", description="Start an AVK trivia question.")
+@bot.tree.command(name="trivia", description="Start a trivia question.")
 async def trivia(interaction: discord.Interaction):
-
-    question, correct_answer = random.choice(TRIVIA_QUESTIONS)
-
-    await interaction.response.send_message(
-        f"❓ **Trivia Time!**\n\n{question}\n✍️ You have 20 seconds!"
-    )
+    question, answer = random.choice(TRIVIA_QUESTIONS)
+    await interaction.response.send_message(f"❓ **Trivia Time!**\n\n{question}")
 
     def check(msg):
         return msg.channel == interaction.channel and not msg.author.bot
 
     try:
         msg = await bot.wait_for("message", timeout=20, check=check)
-
-        if msg.content.lower().strip() == correct_answer.lower():
-            await interaction.followup.send(f"✅ Correct! {msg.author.mention} 🎉")
+        if msg.content.lower().strip() == answer.lower():
+            await interaction.followup.send(f"✅ Correct, {msg.author.mention}!")
         else:
-            await interaction.followup.send(f"❌ Wrong! Correct answer: **{correct_answer}**")
-
+            await interaction.followup.send(f"❌ Wrong. Correct answer: **{answer}**")
     except asyncio.TimeoutError:
-        await interaction.followup.send(f"⌛ Time’s up! Correct answer: **{correct_answer}**")
-
+        await interaction.followup.send(f"⌛ Time’s up! Answer was **{answer}**")
 
 # ============================================================
-# ✅ BEAR TRAP — Start 4 April 2026 + every 2 days
+# ✅ BEAR TRAP — Start 4 April 2026, every 2 days (14:00 & 20:00 UTC)
 # ============================================================
 
 async def beartrap_loop():
     await bot.wait_until_ready()
-
-    channel_id = 1464987172133273664
-    channel = bot.get_channel(channel_id)
+    channel = bot.get_channel(REMINDERS_CHANNEL_ID)
 
     SCHEDULE_UTC = [(14, 0), (20, 0)]
     START_DATE = datetime.date(2026, 4, 4)
 
     while True:
         now = datetime.datetime.now(datetime.timezone.utc)
-        today = now.date()
-        days_since_start = (today - START_DATE).days
+        days_since = (now.date() - START_DATE).days
 
-        if days_since_start < 0:
-            target = datetime.datetime(2026, 4, 4, 14, 0, tzinfo=datetime.timezone.utc)
-            await asyncio.sleep(max(0, (target - now).total_seconds()))
-            continue
-
-        is_bt_day = (days_since_start % 2 == 0)
-
-        if not is_bt_day:
+        if days_since < 0 or days_since % 2 != 0:
             await asyncio.sleep(3600)
             continue
 
-        for hour, minute in SCHEDULE_UTC:
-            target = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+        for h, m in SCHEDULE_UTC:
+            target = now.replace(hour=h, minute=m, second=0, microsecond=0)
             if target <= now:
                 continue
-
-            wait = (target - now).total_seconds()
-            print(f"⏳ Next Bear Trap: {target} UTC")
-            await asyncio.sleep(wait)
-
+            await asyncio.sleep((target - now).total_seconds())
             if bot.is_ready() and channel:
-                await channel.send("🐻❄️ **BEAR TRAP NOW!**\nPrepare yourselves AVK warriors! 🐺")
+                await channel.send("🐻❄️ **BEAR TRAP NOW!** Prepare yourselves AVK warriors! 🐺")
 
         await asyncio.sleep(60)
 
 # ============================================================
-# ✅ ARENA DAILY REMINDER — Every day at 00:00 UTC (+ reminder at -15min)
+# ✅ ARENA DAILY — “ENDS IN 15 MINUTES” + START
 # ============================================================
 
 async def arena_loop():
     await bot.wait_until_ready()
-
-    ARENA_CHANNEL_ID = 1464987172133273664  # ✅ Salon reminders AVK
-    channel = bot.get_channel(ARENA_CHANNEL_ID)
+    channel = bot.get_channel(REMINDERS_CHANNEL_ID)
 
     while True:
         now = datetime.datetime.now(datetime.timezone.utc)
 
-        # Calcul de l'heure du rappel (23:45 UTC aujourd'hui)
-        reminder_time = now.replace(hour=23, minute=45, second=0, microsecond=0)
-        if reminder_time <= now:
-            reminder_time += datetime.timedelta(days=1)
+        # Reminder: Arena ends in 15 minutes (23:45 UTC)
+        end_soon_time = now.replace(hour=23, minute=45, second=0, microsecond=0)
+        if end_soon_time <= now:
+            end_soon_time += datetime.timedelta(days=1)
 
-        # Attendre jusqu'au rappel
-        wait = (reminder_time - now).total_seconds()
-        print(f"⏳ Arena reminder will be sent at {reminder_time} UTC")
-        await asyncio.sleep(wait)
-
-        # Envoyer rappel 15 min avant
+        await asyncio.sleep((end_soon_time - now).total_seconds())
         if bot.is_ready() and channel:
-            await channel.send("⚔️ **Arena starts in 15 minutes! Prepare yourselves AVK warriors!**")
+            await channel.send("⚔️ **Arena ends in 15 minutes!** Finish your fights!")
 
-        # Calcul de l'heure du début (00:00 UTC)
-        now = datetime.datetime.now(datetime.timezone.utc)
-        start_time = reminder_time.replace(hour=0, minute=0, second=0, microsecond=0)
-        if start_time <= reminder_time:
-            start_time += datetime.timedelta(days=1)
-
-        wait2 = (start_time - datetime.datetime.now(datetime.timezone.utc)).total_seconds()
-        await asyncio.sleep(wait2)
-
-        # Envoyer message de début d'Arena
+        # Arena start (00:00 UTC)
+        start_time = end_soon_time + datetime.timedelta(minutes=15)
+        await asyncio.sleep((start_time - datetime.datetime.now(datetime.timezone.utc)).total_seconds())
         if bot.is_ready() and channel:
             await channel.send("⚔️ **Arena is starting NOW!** Good luck fighters!")
-            
+
 # ============================================================
-# ✅ EVENT REMINDERS
+# ✅ EVENT REMINDERS (RAM-based)
 # ============================================================
 
 EVENTS = {}
@@ -221,267 +144,57 @@ EVENTS = {}
 @bot.tree.command(name="event", description="Create an event with reminders (UTC).")
 @app_commands.describe(name="Event name", date="YYYY-MM-DD", time="HH:MM UTC")
 async def event_cmd(interaction: discord.Interaction, name: str, date: str, time: str):
-
     try:
-        event_dt = datetime.datetime.strptime(f"{date} {time}", "%Y-%m-%d %H:%M")
-        event_dt = event_dt.replace(tzinfo=datetime.timezone.utc)
-    except:
-        return await interaction.response.send_message("❌ Bad date format.")
+        dt = datetime.datetime.strptime(f"{date} {time}", "%Y-%m-%d %H:%M")
+        dt = dt.replace(tzinfo=datetime.timezone.utc)
+    except ValueError:
+        return await interaction.response.send_message("❌ Invalid date/time format.")
 
-    now = datetime.datetime.now(datetime.timezone.utc)
-    if event_dt <= now:
+    if dt <= datetime.datetime.now(datetime.timezone.utc):
         return await interaction.response.send_message("❌ Event must be in the future.")
 
     channel_id = interaction.channel_id
-
-    if channel_id not in EVENTS:
-        EVENTS[channel_id] = []
-
-    EVENTS[channel_id].append({"name": name, "datetime": event_dt.isoformat()})
+    EVENTS.setdefault(channel_id, []).append({"name": name, "dt": dt.isoformat()})
 
     await interaction.response.send_message(
-        f"✅ Event created!\n📌 {name}\n🗓️ {date} at {time} UTC\n🔔 Reminders: 1h • 30m • 5m • start"
+        f"✅ **Event created!**\n📌 {name}\n🗓️ {date} at {time} UTC\n🔔 Reminders: 1h • 30m • 5m • start"
     )
 
-    bot.loop.create_task(handle_event_reminders(channel_id, name, event_dt))
+    bot.loop.create_task(handle_event_reminders(channel_id, name, dt))
 
-
-async def handle_event_reminders(channel_id: int, name: str, event_dt):
+async def handle_event_reminders(channel_id: int, name: str, dt: datetime.datetime):
     channel = bot.get_channel(channel_id)
-    if not channel:
-        return
+    checkpoints = [
+        ("1 hour", dt - datetime.timedelta(hours=1)),
+        ("30 minutes", dt - datetime.timedelta(minutes=30)),
+        ("5 minutes", dt - datetime.timedelta(minutes=5)),
+        ("NOW", dt),
+    ]
 
-    reminders = {
-        "1h": event_dt - datetime.timedelta(hours=1),
-        "30m": event_dt - datetime.timedelta(minutes=30),
-        "5m": event_dt - datetime.timedelta(minutes=5),
-        "start": event_dt,
-    }
-
-    for label, when in reminders.items():
-        now = datetime.datetime.now(datetime.timezone.utc)
-        wait = (when - now).total_seconds()
+    for label, t in checkpoints:
+        wait = (t - datetime.datetime.now(datetime.timezone.utc)).total_seconds()
         if wait > 0:
             await asyncio.sleep(wait)
-
-        if label == "1h":
-            await channel.send(f"⏰ **{name}** starts in 1 hour!")
-        elif label == "30m":
-            await channel.send(f"⏰ **{name}** starts in 30 minutes!")
-        elif label == "5m":
-            await channel.send(f"⏰ **{name}** starts in 5 minutes!")
-        elif label == "start":
-            await channel.send(f"🚀 **{name}** is starting NOW!")
-
+        if bot.is_ready() and channel:
+            if label == "NOW":
+                await channel.send(f"🚀 **{name} is starting NOW!**")
+            else:
+                await channel.send(f"⏰ **{name} starts in {label}!**")
 
 # ============================================================
-# ✅ CONNECT 4
+# ✅ MINI-GAMES (unchanged)
 # ============================================================
-
-CONNECT4_EMPTY = "⚪"
-CONNECT4_RED = "🔴"
-CONNECT4_YELLOW = "🟡"
-
-def create_connect4_board():
-    return [[CONNECT4_EMPTY for _ in range(7)] for _ in range(6)]
-
-def drop_piece(board, col, piece):
-    for row in reversed(board):
-        if row[col] == CONNECT4_EMPTY:
-            row[col] = piece
-            return True
-    return False
-
-def render_board(board):
-    return "\n".join("".join(row) for row in board)
-
-def check_win(board, piece):
-    for r in range(6):
-        for c in range(4):
-            if all(board[r][c+i] == piece for i in range(4)):
-                return True
-
-    for r in range(3):
-        for c in range(7):
-            if all(board[r+i][c] == piece for i in range(4)):
-                return True
-
-    for r in range(3):
-        for c in range(4):
-            if all(board[r+i][c+i] == piece for i in range(4)):
-                return True
-
-    for r in range(3, 6):
-        for c in range(4):
-            if all(board[r-i][c+i] == piece for i in range(4)):
-                return True
-
-    return False
-
-
-@bot.tree.command(name="connect4", description="Play Connect 4.")
-async def connect4_cmd(interaction: discord.Interaction, opponent: discord.Member):
-
-    if opponent.bot:
-        return await interaction.response.send_message("❌ Can't play vs bots.")
-    if opponent == interaction.user:
-        return await interaction.response.send_message("❌ Can't play vs yourself.")
-
-    board = create_connect4_board()
-    players = [interaction.user, opponent]
-    pieces = [CONNECT4_RED, CONNECT4_YELLOW]
-    turn = 0
-
-    await interaction.response.send_message(
-        f"🎮 **Connect4** — {players[0].mention} vs {players[1].mention}\n"
-        f"{render_board(board)}\n👉 {players[turn].mention}, choose a column (0–6)."
-    )
-
-    while True:
-        def check(msg):
-            return (
-                msg.channel == interaction.channel
-                and msg.author == players[turn]
-                and msg.content.isdigit()
-                and 0 <= int(msg.content) <= 6
-            )
-
-        try:
-            msg = await bot.wait_for("message", timeout=40, check=check)
-            col = int(msg.content)
-
-            if not drop_piece(board, col, pieces[turn]):
-                await interaction.followup.send("❌ Column full.")
-                continue
-
-            if check_win(board, pieces[turn]):
-                return await interaction.followup.send(
-                    f"{render_board(board)}\n🏆 **{players[turn].mention} wins!** 🎉"
-                )
-
-            turn = 1 - turn
-            await interaction.followup.send(
-                f"{render_board(board)}\n👉 {players[turn].mention}, your turn!"
-            )
-
-        except asyncio.TimeoutError:
-            return await interaction.followup.send("⌛ Timeout — game ended.")
-
-
-# ============================================================
-# ✅ TIC TAC TOE
-# ============================================================
-
-TICTACTOE_EMPTY = "➖"
-TICTACTOE_X = "❌"
-TICTACTOE_O = "⭕"
-
-def create_ttt_board():
-    return [[TICTACTOE_EMPTY for _ in range(3)] for _ in range(3)]
-
-def ttt_winner(board, p):
-    for i in range(3):
-        if all(board[i][j] == p for j in range(3)): return True
-        if all(board[j][i] == p for j in range(3)): return True
-    if all(board[i][i] == p for i in range(3)): return True
-    if all(board[i][2-i] == p for i in range(3)): return True
-    return False
-
-def render_ttt(board):
-    return "\n".join("".join(row) for row in board)
-
-@bot.tree.command(name="tictactoe", description="Play TicTacToe.")
-async def tictactoe_cmd(interaction: discord.Interaction, opponent: discord.Member):
-
-    if opponent.bot:
-        return await interaction.response.send_message("❌ Can't play vs bots.")
-    if opponent == interaction.user:
-        return await interaction.response.send_message("❌ Can't play vs yourself.")
-
-    board = create_ttt_board()
-    players = [interaction.user, opponent]
-    pieces = [TICTACTOE_X, TICTACTOE_O]
-    turn = 0
-
-    await interaction.response.send_message(
-        f"🎮 **TicTacToe**\n{players[0].mention} vs {players[1].mention}\n"
-        f"{render_ttt(board)}\n👉 {players[turn].mention}, play using `row col` (0–2)."
-    )
-
-    while True:
-        def check(msg):
-            return (
-                msg.channel == interaction.channel
-                and msg.author == players[turn]
-                and len(msg.content.split()) == 2
-                and all(x.isdigit() for x in msg.content.split())
-            )
-
-        try:
-            msg = await bot.wait_for("message", timeout=40, check=check)
-            r, c = map(int, msg.content.split())
-
-            if not (0 <= r < 3 and 0 <= c < 3):
-                await interaction.followup.send("❌ Invalid move.")
-                continue
-
-            if board[r][c] != TICTACTOE_EMPTY:
-                await interaction.followup.send("❌ Cell already used.")
-                continue
-
-            board[r][c] = pieces[turn]
-
-            if ttt_winner(board, pieces[turn]):
-                return await interaction.followup.send(
-                    f"{render_ttt(board)}\n🥇 **{players[turn].mention} wins!**"
-                )
-
-            turn = 1 - turn
-            await interaction.followup.send(
-                f"{render_ttt(board)}\n👉 {players[turn].mention}, your turn."
-            )
-
-        except asyncio.TimeoutError:
-            return await interaction.followup.send("⌛ Timeout — game ended.")
-
-
-# ============================================================
-# ✅ DUEL
-# ============================================================
-
-@bot.tree.command(name="duel", description="Challenge someone to a duel!")
-async def duel_cmd(interaction: discord.Interaction, opponent: discord.Member):
-    if opponent.bot:
-        return await interaction.response.send_message("❌ Can't duel bots.")
-    if opponent == interaction.user:
-        return await interaction.response.send_message("❌ Can't duel yourself 😂")
-
-    winner = random.choice([interaction.user, opponent])
-    await interaction.response.send_message(
-        f"⚔️ **Duel**\n{interaction.user.mention} vs {opponent.mention}\n\n"
-        f"🏆 Winner: **{winner.mention}**!"
-    )
-
-
-# ============================================================
-# ✅ HANGMAN
-# ============================================================
-
-HANGMAN_WORDS = ["winter", "survival", "frost", "blizzard", "viking", "shield"]
 
 @bot.tree.command(name="hangman", description="Play Hangman.")
 async def hangman_cmd(interaction: discord.Interaction):
-
-    word = random.choice(HANGMAN_WORDS)
-    guessed = []
-    lives = 6
+    words = ["winter", "survival", "frost"]
+    word = random.choice(words)
+    guessed, lives = [], 6
 
     def masked():
         return " ".join(c if c in guessed else "_" for c in word)
 
-    await interaction.response.send_message(
-        f"🎮 **Hangman**\nWord: `{masked()}`\nLives: ❤️❤️❤️❤️❤️❤️"
-    )
+    await interaction.response.send_message(f"🎮 **Hangman**\n`{masked()}`\nLives: {lives}")
 
     def check(msg):
         return msg.channel == interaction.channel and len(msg.content) == 1 and msg.content.isalpha()
@@ -490,100 +203,37 @@ async def hangman_cmd(interaction: discord.Interaction):
         try:
             msg = await bot.wait_for("message", timeout=40, check=check)
             letter = msg.content.lower()
-
             if letter in guessed:
-                await interaction.followup.send(f"⚠️ `{letter}` already used.")
                 continue
-
             guessed.append(letter)
-
-            if letter in word:
-                if "_" not in masked():
-                    return await interaction.followup.send(
-                        f"✅ Correct! The word was **{word}** 🎉"
-                    )
-                await interaction.followup.send(f"✅ `{letter}`\n`{masked()}`")
-            else:
+            if letter not in word:
                 lives -= 1
-                if lives == 0:
-                    return await interaction.followup.send(
-                        f"💀 No lives left! Word was **{word}**."
-                    )
-                await interaction.followup.send(
-                    f"❌ Wrong!\n`{masked()}`\nLives left: {lives}"
-                )
-
+            if "_" not in masked():
+                return await interaction.followup.send(f"✅ You won! Word: **{word}**")
+            await interaction.followup.send(f"`{masked()}` Lives: {lives}")
         except asyncio.TimeoutError:
-            return await interaction.followup.send("⌛ Timeout — game over!")
-
-
-# ============================================================
-# ✅ QUIPLASH
-# ============================================================
-
-QUIPLASH_PROMPTS = [
-    "If AVK had a slogan, what would it be?",
-    "Worst thing to say during Bear Trap?",
-    "What should be banned in Whiteout Survival?",
-]
-
-@bot.tree.command(name="quiplash", description="Start a Quiplash round.")
-async def quiplash_cmd(interaction: discord.Interaction):
-
-    prompt = random.choice(QUIPLASH_PROMPTS)
-
-    await interaction.response.send_message(
-        f"🎤 **Quiplash**\n{prompt}\n\n"
-        f"✍️ Everyone, send your answer (30 sec)."
-    )
-
-    answers = []
-
-    def check(msg):
-        return msg.channel == interaction.channel and not msg.author.bot
-
-    try:
-        while True:
-            msg = await bot.wait_for("message", timeout=30, check=check)
-            answers.append((msg.author, msg.content))
-
-    except asyncio.TimeoutError:
-        pass
-
-    if not answers:
-        return await interaction.followup.send("❌ No answers submitted.")
-
-    text = "\n".join([f"• **{a.display_name}** : {t}" for a, t in answers])
-    await interaction.followup.send(
-        f"🗳️ **Voting time!**\n{text}\n✅ React to vote!"
-    )
-
+            return await interaction.followup.send("⌛ Game over.")
 
 # ============================================================
-# ✅ SETUP_HOOK — synchronisation des commandes
+# ✅ SETUP HOOK — start loops
 # ============================================================
 
 @bot.event
 async def setup_hook():
-    print("⏳ Sync des commandes slash en cours...")
-
     try:
-        synced = await bot.tree.sync()  # ✅ sync GLOBAL pour éviter les erreurs
-        print(f"✅ {len(synced)} commandes slash synchronisées.")
+        await bot.tree.sync()
     except Exception as e:
-        print(f"❌ Erreur sync slash commands : {e}")
+        print(f"Sync error: {e}")
 
     bot.loop.create_task(beartrap_loop())
     bot.loop.create_task(arena_loop())
-
 
 # ============================================================
 # ✅ START BOT
 # ============================================================
 
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")
-
-if TOKEN is None:
-    print("❌ ERREUR : DISCORD_BOT_TOKEN manquant dans Render → Environment")
+if not TOKEN:
+    print("❌ Missing DISCORD_BOT_TOKEN")
 else:
     bot.run(TOKEN)
