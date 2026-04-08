@@ -1,25 +1,23 @@
 # ============================================================
-# AVK UTILITY BOT — STABLE REMINDER VERSION
+# AVK UTILITY BOT — TRIVIA ABCD + STABLE REMINDERS
 # ============================================================
 
-import os
-import json
-import asyncio
-import datetime
+import os, json, asyncio, datetime, random
 import discord
 from discord.ext import commands
 from discord import app_commands
-
 from keep_alive import keep_alive
+
 keep_alive()
 
-# ============================================================
-# CONFIG
-# ============================================================
+# ================= CONFIG =================
 
 GUILD_ID = 1463165558232186910
 REMINDERS_CHANNEL_ID = 1464987172133273664
 EVENTS_FILE = "events.json"
+UTC = datetime.timezone.utc
+
+TODAY_BT_TIMES = [(14, 0), (19, 35)]
 
 bot = commands.Bot(
     command_prefix="!",
@@ -31,130 +29,114 @@ bot = commands.Bot(
     )
 )
 
-UTC = datetime.timezone.utc
+# ================= TRIVIA QUESTIONS =================
 
-TODAY_BT_TIMES = [(14, 0), (19, 35)]  # ✅ today only
+TRIVIA = {
 
-# ============================================================
-# LOAD / SAVE EVENTS (JSON)
-# ============================================================
+    "AVK": [
+        {"q": "Who is the most motivating person in AVK?", "a": ["Sarah", "Coffee", "The Cold", "The Furnace"], "c": 0},
+        {"q": "Who always brings chaos in a fun way?", "a": ["Ruti", "Rules", "Silence", "Order"], "c": 0},
+        {"q": "Who never sleeps during events?", "a": ["Willy Plonka", "The Snow", "NPCs", "Nobody"], "c": 0},
+        {"q": "Who is suspiciously active on Sundays?", "a": ["All Sunday", "Monday", "Tuesday", "Thursday"], "c": 0},
+        {"q": "Who gives wise advice like an ancient tree?", "a": ["Treebeard", "A Bush", "A Rock", "A Chair"], "c": 0},
+        {"q": "Who always brings good vibes?", "a": ["Miss Sunshine", "Storm Clouds", "Blizzards", "Darkness"], "c": 0},
+        {"q": "Who is known for stealth and calm?", "a": ["Nightwolf", "Sheep", "Penguin", "Goldfish"], "c": 0},
+        {"q": "Who has legendary energy?", "a": ["Brent", "Low Battery", "Idle Mode", "Sleep"], "c": 0},
+        {"q": "Who always makes people laugh?", "a": ["Tickle", "Taxes", "Cold Weather", "Lag"], "c": 0},
+        {"q": "Who represents warning but loyalty?", "a": ["RedRabbit", "Blue Turtle", "Green Sloth", "Yellow Fish"], "c": 0}
+    ],
 
-def load_events():
-    if os.path.exists(EVENTS_FILE):
-        with open(EVENTS_FILE, "r") as f:
-            return json.load(f)
-    return []
+    "Sciences": [
+        {"q": "What planet is known as the Red Planet?", "a": ["Mars", "Venus", "Jupiter", "Saturn"], "c": 0},
+        {"q": "What gas do plants breathe in?", "a": ["Carbon Dioxide", "Oxygen", "Helium", "Nitrogen"], "c": 0},
+        {"q": "What is H2O?", "a": ["Water", "Fire", "Salt", "Oxygen"], "c": 0},
+        {"q": "What force keeps us on the ground?", "a": ["Gravity", "Magic", "Wind", "Luck"], "c": 0},
+        {"q": "What star is at the center of our solar system?", "a": ["The Sun", "The Moon", "Polaris", "Alpha Centauri"], "c": 0},
+        {"q": "What organ pumps blood?", "a": ["Heart", "Brain", "Liver", "Lungs"], "c": 0},
+        {"q": "What particle has a negative charge?", "a": ["Electron", "Proton", "Neutron", "Photon"], "c": 0},
+        {"q": "What vitamin comes from sunlight?", "a": ["Vitamin D", "Vitamin C", "Vitamin A", "Vitamin B12"], "c": 0},
+        {"q": "What state of matter is air?", "a": ["Gas", "Solid", "Liquid", "Plasma"], "c": 0},
+        {"q": "What is the boiling point of water (°C)?", "a": ["100", "50", "0", "200"], "c": 0}
+    ],
 
-def save_events(events):
-    with open(EVENTS_FILE, "w") as f:
-        json.dump(events, f, indent=2)
+    "Geography": [
+        {"q": "What is the capital of France?", "a": ["Paris", "Rome", "Berlin", "Madrid"], "c": 0},
+        {"q": "Which continent is Brazil in?", "a": ["South America", "Africa", "Asia", "Europe"], "c": 0},
+        {"q": "What is the largest ocean?", "a": ["Pacific", "Atlantic", "Indian", "Arctic"], "c": 0},
+        {"q": "Which country has the most people?", "a": ["China", "USA", "France", "Brazil"], "c": 0},
+        {"q": "What desert is the largest hot desert?", "a": ["Sahara", "Gobi", "Kalahari", "Atacama"], "c": 0},
+        {"q": "Mount Everest is in which mountain range?", "a": ["Himalayas", "Alps", "Andes", "Rockies"], "c": 0},
+        {"q": "What is the longest river?", "a": ["Nile", "Amazon", "Yangtze", "Mississippi"], "c": 0},
+        {"q": "Which country is an island?", "a": ["Japan", "Germany", "Brazil", "Egypt"], "c": 0},
+        {"q": "What is the capital of Canada?", "a": ["Ottawa", "Toronto", "Vancouver", "Montreal"], "c": 0},
+        {"q": "Which pole is colder?", "a": ["South Pole", "North Pole", "Both same", "Neither"], "c": 0}
+    ],
 
-EVENTS = load_events()
+    "Cooking": [
+        {"q": "What ingredient is used to make bread rise?", "a": ["Yeast", "Salt", "Sugar", "Flour"], "c": 0},
+        {"q": "What country is pizza from?", "a": ["Italy", "France", "USA", "Spain"], "c": 0},
+        {"q": "What is sushi mainly made of?", "a": ["Rice", "Beef", "Chicken", "Cheese"], "c": 0},
+        {"q": "Which herb is common in pesto?", "a": ["Basil", "Parsley", "Mint", "Rosemary"], "c": 0},
+        {"q": "What is chocolate made from?", "a": ["Cocoa beans", "Coffee beans", "Grapes", "Wheat"], "c": 0},
+        {"q": "What kitchen tool cuts food?", "a": ["Knife", "Spoon", "Plate", "Cup"], "c": 0},
+        {"q": "Which ingredient makes food spicy?", "a": ["Chili", "Sugar", "Salt", "Milk"], "c": 0},
+        {"q": "What do you boil pasta in?", "a": ["Water", "Oil", "Milk", "Juice"], "c": 0},
+        {"q": "What food is made from milk?", "a": ["Cheese", "Bread", "Rice", "Egg"], "c": 0},
+        {"q": "What vitamin is found in oranges?", "a": ["Vitamin C", "Vitamin D", "Vitamin B", "Vitamin A"], "c": 0}
+    ],
 
-# ============================================================
-# BASIC COMMANDS
-# ============================================================
+    "WOS": [
+        {"q": "What is needed to heal troops?", "a": ["Food", "Steel", "Wood", "Gems"], "c": 0},
+        {"q": "What building trains infantry?", "a": ["Barracks", "Hospital", "Warehouse", "Market"], "c": 0},
+        {"q": "Bear Trap is a…", "a": ["Alliance event", "Solo mission", "Market trade", "Loot chest"], "c": 0},
+        {"q": "What happens if your furnace freezes?", "a": ["Troops weaken", "Nothing", "You gain power", "Instant win"], "c": 0},
+        {"q": "What increases furnace level?", "a": ["Resources", "Luck", "Pets", "Snow"], "c": 0},
+        {"q": "What event involves fighting a giant boss?", "a": ["Bear Trap", "Arena", "Exploration", "Market"], "c": 0},
+        {"q": "What is alliance territory used for?", "a": ["Bonuses", "Decoration", "Trading", "Chat only"], "c": 0},
+        {"q": "What does Arena test?", "a": ["PvP strength", "Cooking", "Trading", "Exploration"], "c": 0},
+        {"q": "How do you get stronger?", "a": ["Train troops", "Ignore game", "Sleep", "Quit"], "c": 0},
+        {"q": "What warms your city?", "a": ["Furnace", "Hospital", "Warehouse", "Scout Camp"], "c": 0}
+    ]
+}
 
-@bot.tree.command(name="ping")
-async def ping(interaction: discord.Interaction):
-    await interaction.response.send_message("✅ AVK Utility Bot is online.")
+# ================= TRIVIA COMMAND =================
 
-@bot.tree.command(name="event")
-@app_commands.describe(name="Event name", date="YYYY-MM-DD", time="HH:MM UTC")
-async def event_cmd(interaction: discord.Interaction, name: str, date: str, time: str):
+@bot.tree.command(name="trivia")
+@app_commands.describe(category="Trivia category")
+async def trivia(interaction: discord.Interaction, category: str):
+    if category not in TRIVIA:
+        return await interaction.response.send_message(f"Available categories: {', '.join(TRIVIA.keys())}")
+
+    q = random.choice(TRIVIA[category])
+    letters = ["🇦", "🇧", "🇨", "🇩"]
+
+    msg_txt = f"🧠 **{category} Trivia**\n\n{q['q']}\n"
+    for i, ans in enumerate(q["a"]):
+        msg_txt += f"{letters[i]} {ans}\n"
+
+    await interaction.response.send_message(msg_txt)
+    msg = await interaction.original_response()
+    for l in letters:
+        await msg.add_reaction(l)
+
+    def check(reaction, user):
+        return user != bot.user and reaction.message.id == msg.id and str(reaction.emoji) in letters
+
     try:
-        dt = datetime.datetime.strptime(f"{date} {time}", "%Y-%m-%d %H:%M").replace(tzinfo=UTC)
-    except ValueError:
-        return await interaction.response.send_message("❌ Invalid date/time format.")
+        reaction, user = await bot.wait_for("reaction_add", timeout=20, check=check)
+        idx = letters.index(str(reaction.emoji))
+        if idx == q["c"]:
+            await interaction.followup.send(f"✅ Correct, {user.mention}!")
+        else:
+            await interaction.followup.send(f"❌ Wrong! Correct answer was **{q['a'][q['c']]}**")
+    except asyncio.TimeoutError:
+        await interaction.followup.send("⌛ Time's up!")
 
-    EVENTS.append({
-        "name": name,
-        "datetime": dt.isoformat(),
-        "reminded": {
-            "1h": False,
-            "30m": False,
-            "5m": False,
-            "start": False
-        },
-        "channel_id": interaction.channel_id
-    })
-
-    save_events(EVENTS)
-
-    await interaction.response.send_message(
-        f"✅ **Event created**\n"
-        f"📌 {name}\n"
-        f"🕒 {time} UTC\n"
-        f"🔔 Reminders: 1h / 30m / 5m / start"
-    )
-
-# ============================================================
-# GLOBAL SCHEDULER — RUNS EVERY MINUTE
-# ============================================================
-
-async def scheduler_loop():
-    await bot.wait_until_ready()
-    channel = bot.get_channel(REMINDERS_CHANNEL_ID)
-
-    while True:
-        now = datetime.datetime.now(UTC)
-
-        # ---------- ARENA ----------
-        if now.hour == 23 and now.minute == 45:
-            today_key = now.strftime("%Y-%m-%d")
-            if not hasattr(bot, "arena_sent") or bot.arena_sent != today_key:
-                if channel:
-                    await channel.send(
-                        "⚔️ **Arena ends in 15 minutes!** Finish your fights!"
-                    )
-                bot.arena_sent = today_key
-
-        # ---------- BEAR TRAP (TODAY ONLY) ----------
-        if now.date() == datetime.date.today():
-            for h, m in TODAY_BT_TIMES:
-                if now.hour == h and now.minute == m:
-                    if channel:
-                        await channel.send(
-                            "🐻❄️ **BEAR TRAP NOW!** Prepare yourselves AVK warriors!"
-                        )
-
-        # ---------- EVENTS ----------
-        for event in EVENTS[:]:
-            event_dt = datetime.datetime.fromisoformat(event["datetime"])
-            delta = int((event_dt - now).total_seconds() / 60)
-
-            evt_channel = bot.get_channel(event["channel_id"])
-
-            if delta == 60 and not event["reminded"]["1h"]:
-                await evt_channel.send(f"⏰ **{event['name']}** starts in 1 hour!")
-                event["reminded"]["1h"] = True
-
-            if delta == 30 and not event["reminded"]["30m"]:
-                await evt_channel.send(f"⏰ **{event['name']}** starts in 30 minutes!")
-                event["reminded"]["30m"] = True
-
-            if delta == 5 and not event["reminded"]["5m"]:
-                await evt_channel.send(f"⏰ **{event['name']}** starts in 5 minutes!")
-                event["reminded"]["5m"] = True
-
-            if delta == 0 and not event["reminded"]["start"]:
-                await evt_channel.send(f"🚀 **{event['name']}** is starting NOW!")
-                event["reminded"]["start"] = True
-                save_events(EVENTS)
-
-        await asyncio.sleep(60)
-
-# ============================================================
-# STARTUP
-# ============================================================
+# ================= START =================
 
 @bot.event
 async def setup_hook():
     await bot.tree.sync()
-    bot.loop.create_task(scheduler_loop())
 
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")
-if TOKEN:
-    bot.run(TOKEN)
-else:
-    print("❌ Missing DISCORD_BOT_TOKEN")
+bot.run(TOKEN)
