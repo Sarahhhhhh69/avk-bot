@@ -16,7 +16,6 @@ keep_alive()
 
 # ===================== CONFIG =====================
 
-GUILD_ID = 1463165558232186910
 EVENT_REMINDERS_CHANNEL_ID = 1464987172133273664
 GAMES_CHANNEL_ID = 1464987164814082199
 
@@ -94,6 +93,7 @@ async def create_event(interaction: discord.Interaction, name: str, date: str, t
         "datetime": dt.isoformat(),
         "reminded": {"1h": False, "30m": False, "5m": False, "start": False}
     })
+
     save_json(EVENTS_FILE, EVENTS)
 
     await interaction.response.send_message(
@@ -101,31 +101,28 @@ async def create_event(interaction: discord.Interaction, name: str, date: str, t
         ephemeral=True
     )
 
-# ===================== TRIVIA TOURNAMENT =====================
+# ===================== TRIVIA =====================
 
 @bot.tree.command(name="trivia", description="Start a Trivia Tournament")
 @app_commands.choices(category=TRIVIA_CATEGORIES)
-async def trivia(
-    interaction: discord.Interaction,
-    category: app_commands.Choice[str]
-):
+async def trivia(interaction: discord.Interaction, category: app_commands.Choice[str]):
+
+    await interaction.response.defer(ephemeral=True)
+
     category = category.value
 
     if interaction.channel_id != GAMES_CHANNEL_ID:
-        return await interaction.response.send_message(
-            "❌ This command can only be used in the games channel.",
-            ephemeral=True
+        return await interaction.followup.send(
+            "❌ This command can only be used in the games channel."
         )
 
     if category not in TRIVIA_DB or not TRIVIA_DB[category]:
-        return await interaction.response.send_message(
-            "❌ This category has no questions.",
-            ephemeral=True
+        return await interaction.followup.send(
+            "❌ This category has no questions."
         )
 
-    await interaction.response.send_message(
-        f"🧠 **Trivia Tournament — {category}**\n{TRIVIA_QUESTION_COUNT} questions incoming…",
-        ephemeral=True
+    await interaction.followup.send(
+        f"🧠 **Trivia Tournament — {category}** starting now!"
     )
 
     questions = random.sample(
@@ -149,7 +146,7 @@ async def trivia(
             f"🧠 **Question {q_index}/{TRIVIA_QUESTION_COUNT}**\n\n"
             f"{q['question']}\n\n"
             f"{answers_text}\n\n"
-            "⏱️ 10 seconds to answer"
+            "⏱️ 10 seconds"
         )
 
         for r in REACTIONS:
@@ -185,18 +182,15 @@ async def trivia(
 
         for idx, uid in enumerate(correct_order):
             scores.setdefault(uid, 0)
-            if idx == 0:
-                scores[uid] += 5
-            elif idx == 1:
-                scores[uid] += 3
-            elif idx == 2:
-                scores[uid] += 2
-            else:
-                scores[uid] += 1
+            scores[uid] += [5, 3, 2, 1][min(idx, 3)]
 
         correct_letter = REACTIONS[q["correct"]]
         correct_text = q["answers"][q["correct"]]
-        await channel.send(f"✅ **Correct answer:** {correct_letter} {correct_text}")
+
+        await channel.send(
+            f"✅ **Correct answer:** {correct_letter} {correct_text}"
+        )
+
         await asyncio.sleep(2)
 
     leaderboard = sorted(scores.items(), key=lambda x: x[1], reverse=True)
@@ -222,6 +216,46 @@ async def scheduler():
 
     while True:
         now = datetime.datetime.now(UTC)
+
+        # ⚔️ ARENA (23:45 reminder)
+        if now.hour == 23 and now.minute == 45:
+            key = now.strftime("%Y-%m-%d")
+            if getattr(bot, "arena_sent", None) != key:
+                await channel.send("⚔️ **Arena in 15 minutes! (00:00 UTC)**")
+                bot.arena_sent = key
+
+        # 🐻 BEAR TRAP
+        if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
+            for h, m in BEAR_TRAP_TIMES:
+                event_time = now.replace(hour=h, minute=m, second=0)
+                delta = int((event_time - now).total_seconds() / 60)
+
+                if delta in (60, 30, 5):
+                    await channel.send(f"🐻 **Bear Trap in {delta} minutes**")
+                if delta == 0:
+                    await channel.send("🚨 **BEAR TRAP IS LIVE!**")
+
+        # 📅 CUSTOM EVENTS
+        for e in EVENTS:
+            dt = datetime.datetime.fromisoformat(e["datetime"])
+            delta = int((dt - now).total_seconds() / 60)
+
+            if delta == 60 and not e["reminded"]["1h"]:
+                await channel.send(f"⏰ **{e['name']} in 1 hour**")
+                e["reminded"]["1h"] = True
+
+            if delta == 30 and not e["reminded"]["30m"]:
+                await channel.send(f"⏰ **{e['name']} in 30 minutes**")
+                e["reminded"]["30m"] = True
+
+            if delta == 5 and not e["reminded"]["5m"]:
+                await channel.send(f"⏰ **{e['name']} in 5 minutes**")
+                e["reminded"]["5m"] = True
+
+            if delta == 0 and not e["reminded"]["start"]:
+                await channel.send(f"🚀 **{e['name']} STARTING NOW!**")
+                e["reminded"]["start"] = True
+
         save_json(EVENTS_FILE, EVENTS)
         await asyncio.sleep(60)
 
@@ -233,3 +267,4 @@ async def setup_hook():
     bot.loop.create_task(scheduler())
 
 bot.run(os.getenv("DISCORD_BOT_TOKEN"))
+``
