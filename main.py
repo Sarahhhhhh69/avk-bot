@@ -108,7 +108,6 @@ async def create_event(interaction: discord.Interaction, name: str, date: str, t
 async def trivia(interaction: discord.Interaction, category: app_commands.Choice[str]):
 
     await interaction.response.defer(ephemeral=True)
-
     category = category.value
 
     if interaction.channel_id != GAMES_CHANNEL_ID:
