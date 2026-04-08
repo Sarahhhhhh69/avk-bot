@@ -184,13 +184,9 @@ async def trivia(interaction: discord.Interaction, category: app_commands.Choice
             scores.setdefault(uid, 0)
             scores[uid] += [5, 3, 2, 1][min(idx, 3)]
 
-        correct_letter = REACTIONS[q["correct"]]
-        correct_text = q["answers"][q["correct"]]
-
         await channel.send(
-            f"✅ **Correct answer:** {correct_letter} {correct_text}"
+            f"✅ **Correct answer:** {REACTIONS[q['correct']]} {q['answers'][q['correct']]}"
         )
-
         await asyncio.sleep(2)
 
     leaderboard = sorted(scores.items(), key=lambda x: x[1], reverse=True)
@@ -202,9 +198,7 @@ async def trivia(interaction: discord.Interaction, category: app_commands.Choice
     medals = ["🥇", "🥈", "🥉"]
 
     for i, (uid, pts) in enumerate(leaderboard[:3]):
-        member = channel.guild.get_member(uid)
-        name = member.display_name if member else "Unknown"
-        result += f"{medals[i]} **{name}** — {pts} pts\n"
+        result += f"{medals[i]} <@{uid}> — {pts} pts\n"
 
     await channel.send(result)
 
@@ -217,7 +211,7 @@ async def scheduler():
     while True:
         now = datetime.datetime.now(UTC)
 
-        # ⚔️ ARENA (23:45 reminder)
+        # ⚔️ ARENA
         if now.hour == 23 and now.minute == 45:
             key = now.strftime("%Y-%m-%d")
             if getattr(bot, "arena_sent", None) != key:
@@ -267,4 +261,3 @@ async def setup_hook():
     bot.loop.create_task(scheduler())
 
 bot.run(os.getenv("DISCORD_BOT_TOKEN"))
-``
