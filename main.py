@@ -34,7 +34,7 @@ REACTIONS = ["🇦", "🇧", "🇨", "🇩"]
 # ===================== TRIVIA CATEGORIES (DROPDOWN) =====================
 
 TRIVIA_CATEGORIES = [
-    app_commands.Choice(name="AVK", value="AVK"),
+    app_commands.Choice(name="Fun / Memes", value="Fun/Memes"),
     app_commands.Choice(name="Cinema", value="Cinema"),
     app_commands.Choice(name="Music", value="Music"),
     app_commands.Choice(name="Sciences", value="Sciences"),
