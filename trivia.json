@@ -1,291 +1,451 @@
 {
   "AVK": [
     {
-      "question": "Who would still forget Bear Trap even with 5 reminders?",
+      "question": "Who looks gorgeous with a ponytail?",
       "answers": [
-        "Miss Sunshine",
-        "Kest As",
-        "All Sunday",
-        "Brent"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who claims 'I was sure it was tomorrow' the most?",
-      "answers": [
-        "Willy Plonka",
-        "Tickle",
-        "Citri",
-        "ZWG"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who has the ugliest socks in AVK?",
-      "answers": [
-        "Brent",
-        "Willy Plonka",
-        "Sarah",
-        "Dark"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who checks Discord alerts after the event is over?",
-      "answers": [
-        "Willy Plonka",
-        "Kest As",
-        "All Sunday",
-        "Ruti"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who upgrades the furnace instead of listening to instructions?",
-      "answers": [
-        "Miss Sunshine",
-        "Rodina",
         "Dark",
-        "Sarah"
+        "Bad Boy",
+        "Tickle",
+        "Missy"
       ],
       "correct": 0
     },
     {
-      "question": "Who says 'trust me' right before chaos?",
-      "answers": [
-        "Rodina",
-        "Treebeard",
-        "Citri",
-        "Dark"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who reacts last second and still succeeds?",
+      "question": "Who has poo-poo troops?",
       "answers": [
         "Ruti",
+        "Dark",
+        "ZWG",
+        "Bad Boy"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who is never bullied by All Sunday, Mikki and Sarah?",
+      "answers": [
+        "Dark",
         "Brent",
-        "Citri",
-        "Treebeard"
+        "Kest As",
+        "Missy"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who has the best temper and never gets mad?",
+      "answers": [
+        "Sarah",
+        "Missy",
+        "Mikki",
+        "Nightwolf"
       ],
       "correct": 2
     },
     {
-      "question": "Who logs in at the weirdest hours?",
+      "question": "Who forgets Bear Trap despite five reminders?",
       "answers": [
-        "RedRabbit",
-        "Treebeard",
-        "All Sunday",
-        "Citri"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who would survive a snow apocalypse with no plan?",
-      "answers": [
-        "RedRabbit",
-        "Citri",
-        "Brent",
-        "Ruti"
+        "Dark",
+        "Mikki",
+        "Tickle",
+        "All Sunday"
       ],
       "correct": 0
     },
     {
       "question": "Who turns every mistake into a joke?",
       "answers": [
-        "Mikki",
         "Tickle",
+        "Mikki",
+        "Ruti",
+        "Sarah"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who never reads patch notes?",
+      "answers": [
+        "Willy Plonka",
+        "Nightwolf",
+        "ZWG",
+        "Dark"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who always says 'I was sure it was tomorrow'?",
+      "answers": [
+        "Willy Plonka",
+        "All Sunday",
+        "Bad Boy",
+        "Treebeard"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who laughs while everything burns?",
+      "answers": [
+        "Dark",
+        "Treebeard",
+        "All Sunday",
+        "Mikki"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who never reads patch notes?",
+      "answers": [
+        "Kest As",
+        "All Sunday",
         "Brent",
+        "Nightwolf"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who logs in at the weirdest hours?",
+      "answers": [
+        "Dark",
+        "Miss Sunshine",
+        "Bad Boy",
+        "Willy Plonka"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who believes upgrading the furnace fixes everything?",
+      "answers": [
+        "Sarah",
+        "Tickle",
+        "Willy Plonka",
+        "All Sunday"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who panics first during Bear Trap?",
+      "answers": [
+        "All Sunday",
+        "Ruti",
+        "ZWG",
+        "Bad Boy"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who panics first during Bear Trap?",
+      "answers": [
+        "Mikki",
+        "Nightwolf",
+        "Tickle",
+        "Miss Sunshine"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who always says 'I was sure it was tomorrow'?",
+      "answers": [
+        "Bad Boy",
+        "Treebeard",
+        "Ruti",
+        "ZWG"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who forgets Bear Trap despite five reminders?",
+      "answers": [
+        "Nightwolf",
+        "Kest As",
+        "Sarah",
+        "Missy"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who panics first during Bear Trap?",
+      "answers": [
+        "ZWG",
+        "Mikki",
+        "Ruti",
+        "Dark"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who turns every mistake into a joke?",
+      "answers": [
+        "Nightwolf",
+        "Ruti",
+        "Kest As",
         "All Sunday"
       ],
       "correct": 1
     },
     {
-      "question": "Who would still forget Bear Trap even with 5 reminders?",
+      "question": "Who forgets Bear Trap despite five reminders?",
       "answers": [
-        "Nightwolf",
-        "Ruti",
-        "Rodina",
-        "Treebeard"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who claims 'I was sure it was tomorrow' the most?",
-      "answers": [
-        "Ruti",
-        "All Sunday",
-        "Kest As",
-        "RedRabbit"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who has the ugliest socks in AVK?",
-      "answers": [
-        "Mikki",
-        "All Sunday",
-        "Kest As",
-        "ZWG"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who checks Discord alerts after the event is over?",
-      "answers": [
-        "Rodina",
-        "Citri",
-        "Ruti",
+        "Miss Sunshine",
+        "Tickle",
+        "Brent",
         "Sarah"
       ],
-      "correct": 1
-    },
-    {
-      "question": "Who upgrades the furnace instead of listening to instructions?",
-      "answers": [
-        "Rodina",
-        "Tickle",
-        "Ruti",
-        "ZWG"
-      ],
       "correct": 2
     },
     {
-      "question": "Who says 'trust me' right before chaos?",
+      "question": "Who panics first during Bear Trap?",
       "answers": [
-        "ZWG",
-        "Kest As",
-        "Rodina",
-        "Ruti"
+        "Citri",
+        "Missy",
+        "Bad Boy",
+        "All Sunday"
       ],
       "correct": 3
-    },
-    {
-      "question": "Who reacts last second and still succeeds?",
-      "answers": [
-        "Mikki",
-        "Treebeard",
-        "Nightwolf",
-        "Miss Sunshine"
-      ],
-      "correct": 0
     },
     {
       "question": "Who logs in at the weirdest hours?",
       "answers": [
+        "Willy Plonka",
         "Nightwolf",
-        "Rodina",
         "Sarah",
-        "Miss Sunshine"
+        "Missy"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who never reads patch notes?",
+      "answers": [
+        "Brent",
+        "Willy Plonka",
+        "Missy",
+        "ZWG"
       ],
       "correct": 1
     },
     {
-      "question": "Who would survive a snow apocalypse with no plan?",
+      "question": "Who logs in at the weirdest hours?",
+      "answers": [
+        "Brent",
+        "Sarah",
+        "Citri",
+        "Miss Sunshine"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who always says 'I was sure it was tomorrow'?",
+      "answers": [
+        "Brent",
+        "Kest As",
+        "Dark",
+        "Miss Sunshine"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who panics first during Bear Trap?",
+      "answers": [
+        "Miss Sunshine",
+        "Tickle",
+        "Ruti",
+        "All Sunday"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who laughs while everything burns?",
       "answers": [
         "Sarah",
+        "All Sunday",
+        "Missy",
+        "Brent"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who believes upgrading the furnace fixes everything?",
+      "answers": [
+        "Bad Boy",
         "Willy Plonka",
-        "RedRabbit",
-        "Miss Sunshine"
+        "Tickle",
+        "Missy"
       ],
       "correct": 2
     },
     {
       "question": "Who turns every mistake into a joke?",
       "answers": [
+        "Treebeard",
+        "Mikki",
         "Nightwolf",
-        "All Sunday",
-        "Kest As",
-        "Tickle"
+        "ZWG"
       ],
       "correct": 3
     },
     {
-      "question": "Who would still forget Bear Trap even with 5 reminders?",
+      "question": "Who laughs while everything burns?",
       "answers": [
-        "Citri",
         "Miss Sunshine",
-        "RedRabbit",
-        "Rodina"
+        "Citri",
+        "All Sunday",
+        "Willy Plonka"
       ],
       "correct": 0
     },
     {
-      "question": "Who claims 'I was sure it was tomorrow' the most?",
+      "question": "Who never reads patch notes?",
       "answers": [
+        "Missy",
         "Ruti",
-        "Dark",
-        "ZWG",
-        "Willy Plonka"
+        "Miss Sunshine",
+        "Dark"
       ],
       "correct": 1
     },
     {
-      "question": "Who has the ugliest socks in AVK?",
+      "question": "Who forgets Bear Trap despite five reminders?",
       "answers": [
-        "Treebeard",
-        "Ruti",
-        "ZWG",
-        "Dark"
+        "Tickle",
+        "Sarah",
+        "Willy Plonka",
+        "Miss Sunshine"
       ],
       "correct": 2
     },
     {
-      "question": "Who checks Discord alerts after the event is over?",
+      "question": "Who believes upgrading the furnace fixes everything?",
       "answers": [
-        "Rodina",
-        "Sarah",
-        "Miss Sunshine",
-        "Treebeard"
+        "Willy Plonka",
+        "ZWG",
+        "Bad Boy",
+        "Nightwolf"
       ],
       "correct": 3
     },
     {
-      "question": "Who upgrades the furnace instead of listening to instructions?",
+      "question": "Who says 'trust me' right before chaos?",
       "answers": [
-        "Ruti",
-        "Citri",
-        "All Sunday",
-        "Treebeard"
+        "Treebeard",
+        "Missy",
+        "Kest As",
+        "Dark"
       ],
       "correct": 0
     },
     {
-      "question": "Who says 'trust me' right before chaos?",
+      "question": "Who forgets Bear Trap despite five reminders?",
       "answers": [
-        "Brent",
-        "Kest As",
+        "Treebeard",
+        "Miss Sunshine",
         "Sarah",
-        "Dark"
+        "Citri"
       ],
       "correct": 1
     },
     {
-      "question": "Who reacts last second and still succeeds?",
+      "question": "Who forgets Bear Trap despite five reminders?",
       "answers": [
-        "Treebeard",
-        "Dark",
-        "Rodina",
+        "Nightwolf",
+        "ZWG",
+        "Willy Plonka",
         "Brent"
       ],
       "correct": 2
     },
     {
-      "question": "Who logs in at the weirdest hours?",
+      "question": "Who always says 'I was sure it was tomorrow'?",
       "answers": [
-        "RedRabbit",
-        "Sarah",
         "Treebeard",
-        "Mikki"
+        "Missy",
+        "Miss Sunshine",
+        "Willy Plonka"
       ],
       "correct": 3
     },
     {
-      "question": "Who would survive a snow apocalypse with no plan?",
+      "question": "Who never reads patch notes?",
       "answers": [
         "All Sunday",
+        "Kest As",
         "Sarah",
+        "Tickle"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who never reads patch notes?",
+      "answers": [
+        "ZWG",
+        "Willy Plonka",
+        "Citri",
+        "Miss Sunshine"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who clicks the wrong button once per event?",
+      "answers": [
+        "Dark",
+        "Nightwolf",
+        "Citri",
+        "Brent"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who always says 'I was sure it was tomorrow'?",
+      "answers": [
+        "All Sunday",
+        "Bad Boy",
+        "Citri",
+        "Miss Sunshine"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who logs in at the weirdest hours?",
+      "answers": [
+        "Brent",
+        "Dark",
+        "All Sunday",
+        "Nightwolf"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who forgets Bear Trap despite five reminders?",
+      "answers": [
+        "Willy Plonka",
         "Mikki",
+        "Brent",
+        "Ruti"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who never reads patch notes?",
+      "answers": [
+        "Tickle",
+        "Willy Plonka",
+        "Sarah",
+        "Brent"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who never reads patch notes?",
+      "answers": [
+        "Citri",
+        "Tickle",
+        "Treebeard",
+        "Nightwolf"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who believes upgrading the furnace fixes everything?",
+      "answers": [
+        "ZWG",
+        "Bad Boy",
+        "Treebeard",
         "Miss Sunshine"
       ],
       "correct": 0
@@ -293,210 +453,50 @@
     {
       "question": "Who turns every mistake into a joke?",
       "answers": [
-        "Willy Plonka",
-        "ZWG",
-        "Citri",
-        "RedRabbit"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who would still forget Bear Trap even with 5 reminders?",
-      "answers": [
-        "Dark",
-        "RedRabbit",
-        "Miss Sunshine",
-        "Mikki"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who claims 'I was sure it was tomorrow' the most?",
-      "answers": [
-        "Tickle",
-        "Citri",
-        "RedRabbit",
-        "Sarah"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who has the ugliest socks in AVK?",
-      "answers": [
-        "Willy Plonka",
-        "Dark",
-        "Brent",
-        "Mikki"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who checks Discord alerts after the event is over?",
-      "answers": [
-        "Treebeard",
-        "Sarah",
-        "Rodina",
-        "Citri"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who upgrades the furnace instead of listening to instructions?",
-      "answers": [
-        "All Sunday",
-        "Miss Sunshine",
-        "Willy Plonka",
-        "Sarah"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who says 'trust me' right before chaos?",
-      "answers": [
-        "Dark",
-        "All Sunday",
-        "Citri",
-        "Nightwolf"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who reacts last second and still succeeds?",
-      "answers": [
         "Nightwolf",
-        "Dark",
-        "All Sunday",
-        "Mikki"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who logs in at the weirdest hours?",
-      "answers": [
-        "RedRabbit",
-        "Miss Sunshine",
+        "ZWG",
         "Sarah",
-        "Mikki"
+        "Kest As"
       ],
       "correct": 1
     },
     {
-      "question": "Who would survive a snow apocalypse with no plan?",
+      "question": "Who panics first during Bear Trap?",
       "answers": [
-        "Mikki",
-        "ZWG",
-        "All Sunday",
-        "Nightwolf"
+        "Bad Boy",
+        "Missy",
+        "Treebeard",
+        "Brent"
       ],
       "correct": 2
     },
     {
-      "question": "Who turns every mistake into a joke?",
+      "question": "Who forgets Bear Trap despite five reminders?",
       "answers": [
-        "Rodina",
+        "Brent",
         "All Sunday",
-        "Treebeard",
-        "ZWG"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who would still forget Bear Trap even with 5 reminders?",
-      "answers": [
-        "Citri",
-        "Willy Plonka",
-        "All Sunday",
-        "Mikki"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who claims 'I was sure it was tomorrow' the most?",
-      "answers": [
-        "Dark",
-        "Citri",
-        "Tickle",
-        "Willy Plonka"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who has the ugliest socks in AVK?",
-      "answers": [
-        "All Sunday",
-        "Mikki",
-        "Rodina",
-        "Kest As"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who checks Discord alerts after the event is over?",
-      "answers": [
-        "Treebeard",
-        "Willy Plonka",
-        "ZWG",
-        "Tickle"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who upgrades the furnace instead of listening to instructions?",
-      "answers": [
-        "RedRabbit",
-        "Willy Plonka",
-        "All Sunday",
-        "Kest As"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who says 'trust me' right before chaos?",
-      "answers": [
-        "Tickle",
-        "ZWG",
-        "Citri",
-        "Kest As"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who reacts last second and still succeeds?",
-      "answers": [
-        "Sarah",
-        "Mikki",
-        "Treebeard",
+        "Ruti",
         "Citri"
       ],
-      "correct": 2
+      "correct": 3
     },
     {
-      "question": "Who logs in at the weirdest hours?",
+      "question": "Who always says 'I was sure it was tomorrow'?",
+      "answers": [
+        "Brent",
+        "Nightwolf",
+        "All Sunday",
+        "Dark"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who forgets Bear Trap despite five reminders?",
       "answers": [
         "Ruti",
-        "Kest As",
-        "RedRabbit",
-        "Treebeard"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who would survive a snow apocalypse with no plan?",
-      "answers": [
-        "Nightwolf",
-        "Miss Sunshine",
-        "Dark",
-        "Ruti"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who turns every mistake into a joke?",
-      "answers": [
-        "Mikki",
-        "RedRabbit",
-        "ZWG",
-        "Nightwolf"
+        "All Sunday",
+        "Missy",
+        "Dark"
       ],
       "correct": 1
     }
@@ -515,10 +515,90 @@
     {
       "question": "Which movie features a powerful ring?",
       "answers": [
-        "Star Wars",
+        "Lord of the Rings",
         "Avatar",
-        "Matrix",
-        "Lord of the Rings"
+        "The Matrix",
+        "Star Wars"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who directed Inception?",
+      "answers": [
+        "Christopher Nolan",
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which movie is set on Pandora?",
+      "answers": [
+        "Avatar",
+        "Alien",
+        "Interstellar",
+        "Gravity"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who played Iron Man?",
+      "answers": [
+        "Robert Downey Jr",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who played Jack in Titanic?",
+      "answers": [
+        "Leonardo DiCaprio",
+        "Brad Pitt",
+        "Tom Cruise",
+        "Johnny Depp"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which movie features a powerful ring?",
+      "answers": [
+        "Lord of the Rings",
+        "Avatar",
+        "The Matrix",
+        "Star Wars"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who directed Inception?",
+      "answers": [
+        "Christopher Nolan",
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which movie is set on Pandora?",
+      "answers": [
+        "Avatar",
+        "Alien",
+        "Interstellar",
+        "Gravity"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who played Iron Man?",
+      "answers": [
+        "Robert Downey Jr",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
       ],
       "correct": 1
     },
@@ -535,10 +615,90 @@
     {
       "question": "Which movie features a powerful ring?",
       "answers": [
-        "Star Wars",
+        "Lord of the Rings",
         "Avatar",
-        "Matrix",
-        "Lord of the Rings"
+        "The Matrix",
+        "Star Wars"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who directed Inception?",
+      "answers": [
+        "Christopher Nolan",
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which movie is set on Pandora?",
+      "answers": [
+        "Avatar",
+        "Alien",
+        "Interstellar",
+        "Gravity"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who played Iron Man?",
+      "answers": [
+        "Robert Downey Jr",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who played Jack in Titanic?",
+      "answers": [
+        "Leonardo DiCaprio",
+        "Brad Pitt",
+        "Tom Cruise",
+        "Johnny Depp"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which movie features a powerful ring?",
+      "answers": [
+        "Lord of the Rings",
+        "Avatar",
+        "The Matrix",
+        "Star Wars"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who directed Inception?",
+      "answers": [
+        "Christopher Nolan",
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which movie is set on Pandora?",
+      "answers": [
+        "Avatar",
+        "Alien",
+        "Interstellar",
+        "Gravity"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who played Iron Man?",
+      "answers": [
+        "Robert Downey Jr",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
       ],
       "correct": 3
     },
@@ -555,10 +715,90 @@
     {
       "question": "Which movie features a powerful ring?",
       "answers": [
-        "Star Wars",
+        "Lord of the Rings",
         "Avatar",
-        "Matrix",
-        "Lord of the Rings"
+        "The Matrix",
+        "Star Wars"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who directed Inception?",
+      "answers": [
+        "Christopher Nolan",
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which movie is set on Pandora?",
+      "answers": [
+        "Avatar",
+        "Alien",
+        "Interstellar",
+        "Gravity"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who played Iron Man?",
+      "answers": [
+        "Robert Downey Jr",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who played Jack in Titanic?",
+      "answers": [
+        "Leonardo DiCaprio",
+        "Brad Pitt",
+        "Tom Cruise",
+        "Johnny Depp"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which movie features a powerful ring?",
+      "answers": [
+        "Lord of the Rings",
+        "Avatar",
+        "The Matrix",
+        "Star Wars"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who directed Inception?",
+      "answers": [
+        "Christopher Nolan",
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which movie is set on Pandora?",
+      "answers": [
+        "Avatar",
+        "Alien",
+        "Interstellar",
+        "Gravity"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who played Iron Man?",
+      "answers": [
+        "Robert Downey Jr",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
       ],
       "correct": 1
     },
@@ -575,54 +815,44 @@
     {
       "question": "Which movie features a powerful ring?",
       "answers": [
-        "Star Wars",
+        "Lord of the Rings",
         "Avatar",
-        "Matrix",
-        "Lord of the Rings"
+        "The Matrix",
+        "Star Wars"
       ],
       "correct": 3
     },
     {
-      "question": "Who played Jack in Titanic?",
+      "question": "Who directed Inception?",
       "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
+        "Christopher Nolan",
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott"
       ],
       "correct": 0
     },
     {
-      "question": "Which movie features a powerful ring?",
+      "question": "Which movie is set on Pandora?",
       "answers": [
-        "Star Wars",
         "Avatar",
-        "Matrix",
-        "Lord of the Rings"
+        "Alien",
+        "Interstellar",
+        "Gravity"
       ],
       "correct": 1
     },
     {
-      "question": "Who played Jack in Titanic?",
+      "question": "Who played Iron Man?",
       "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
+        "Robert Downey Jr",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
       ],
       "correct": 2
     },
     {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 3
-    },
-    {
       "question": "Who played Jack in Titanic?",
       "answers": [
         "Leonardo DiCaprio",
@@ -630,35 +860,45 @@
         "Tom Cruise",
         "Johnny Depp"
       ],
-      "correct": 0
+      "correct": 3
     },
     {
       "question": "Which movie features a powerful ring?",
       "answers": [
-        "Star Wars",
+        "Lord of the Rings",
         "Avatar",
-        "Matrix",
-        "Lord of the Rings"
+        "The Matrix",
+        "Star Wars"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who directed Inception?",
+      "answers": [
+        "Christopher Nolan",
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott"
       ],
       "correct": 1
     },
     {
-      "question": "Who played Jack in Titanic?",
+      "question": "Which movie is set on Pandora?",
       "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
+        "Avatar",
+        "Alien",
+        "Interstellar",
+        "Gravity"
       ],
       "correct": 2
     },
     {
-      "question": "Which movie features a powerful ring?",
+      "question": "Who played Iron Man?",
       "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
+        "Robert Downey Jr",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
       ],
       "correct": 3
     },
@@ -675,32 +915,42 @@
     {
       "question": "Which movie features a powerful ring?",
       "answers": [
-        "Star Wars",
+        "Lord of the Rings",
         "Avatar",
-        "Matrix",
-        "Lord of the Rings"
+        "The Matrix",
+        "Star Wars"
       ],
       "correct": 1
     },
     {
-      "question": "Who played Jack in Titanic?",
+      "question": "Who directed Inception?",
       "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
+        "Christopher Nolan",
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott"
       ],
       "correct": 2
     },
     {
-      "question": "Which movie features a powerful ring?",
+      "question": "Which movie is set on Pandora?",
       "answers": [
-        "Star Wars",
         "Avatar",
-        "Matrix",
-        "Lord of the Rings"
+        "Alien",
+        "Interstellar",
+        "Gravity"
       ],
       "correct": 3
+    },
+    {
+      "question": "Who played Iron Man?",
+      "answers": [
+        "Robert Downey Jr",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
+      ],
+      "correct": 0
     },
     {
       "question": "Who played Jack in Titanic?",
@@ -709,296 +959,46 @@
         "Brad Pitt",
         "Tom Cruise",
         "Johnny Depp"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
       ],
       "correct": 1
     },
     {
-      "question": "Who played Jack in Titanic?",
+      "question": "Which movie features a powerful ring?",
       "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
+        "Lord of the Rings",
+        "Avatar",
+        "The Matrix",
+        "Star Wars"
       ],
       "correct": 2
     },
     {
-      "question": "Which movie features a powerful ring?",
+      "question": "Who directed Inception?",
       "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
+        "Christopher Nolan",
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott"
       ],
       "correct": 3
     },
     {
-      "question": "Who played Jack in Titanic?",
+      "question": "Which movie is set on Pandora?",
       "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
+        "Avatar",
+        "Alien",
+        "Interstellar",
+        "Gravity"
       ],
       "correct": 0
     },
     {
-      "question": "Which movie features a powerful ring?",
+      "question": "Who played Iron Man?",
       "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who played Jack in Titanic?",
-      "answers": [
-        "Leonardo DiCaprio",
-        "Brad Pitt",
-        "Tom Cruise",
-        "Johnny Depp"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which movie features a powerful ring?",
-      "answers": [
-        "Star Wars",
-        "Avatar",
-        "Matrix",
-        "Lord of the Rings"
+        "Robert Downey Jr",
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
       ],
       "correct": 1
     }
@@ -1007,10 +1007,10 @@
     {
       "question": "Which series features dragons?",
       "answers": [
+        "Game of Thrones",
         "Friends",
         "Dexter",
-        "Lost",
-        "Game of Thrones"
+        "Lost"
       ],
       "correct": 0
     },
@@ -1025,12 +1025,92 @@
       "correct": 1
     },
     {
+      "question": "Which show is set in Hawkins?",
+      "answers": [
+        "Stranger Things",
+        "Dark",
+        "The Boys",
+        "Lost"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which series has zombies?",
+      "answers": [
+        "The Walking Dead",
+        "Vikings",
+        "Lost",
+        "Dexter"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which series is about Vikings?",
+      "answers": [
+        "Vikings",
+        "Rome",
+        "Spartacus",
+        "The Last Kingdom"
+      ],
+      "correct": 0
+    },
+    {
       "question": "Which series features dragons?",
       "answers": [
+        "Game of Thrones",
         "Friends",
         "Dexter",
+        "Lost"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who is the main character in Breaking Bad?",
+      "answers": [
+        "Walter White",
+        "Jesse Pinkman",
+        "Saul Goodman",
+        "Hank Schrader"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which show is set in Hawkins?",
+      "answers": [
+        "Stranger Things",
+        "Dark",
+        "The Boys",
+        "Lost"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which series has zombies?",
+      "answers": [
+        "The Walking Dead",
+        "Vikings",
         "Lost",
-        "Game of Thrones"
+        "Dexter"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which series is about Vikings?",
+      "answers": [
+        "Vikings",
+        "Rome",
+        "Spartacus",
+        "The Last Kingdom"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which series features dragons?",
+      "answers": [
+        "Game of Thrones",
+        "Friends",
+        "Dexter",
+        "Lost"
       ],
       "correct": 2
     },
@@ -1045,12 +1125,92 @@
       "correct": 3
     },
     {
+      "question": "Which show is set in Hawkins?",
+      "answers": [
+        "Stranger Things",
+        "Dark",
+        "The Boys",
+        "Lost"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which series has zombies?",
+      "answers": [
+        "The Walking Dead",
+        "Vikings",
+        "Lost",
+        "Dexter"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which series is about Vikings?",
+      "answers": [
+        "Vikings",
+        "Rome",
+        "Spartacus",
+        "The Last Kingdom"
+      ],
+      "correct": 2
+    },
+    {
       "question": "Which series features dragons?",
       "answers": [
+        "Game of Thrones",
         "Friends",
         "Dexter",
+        "Lost"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who is the main character in Breaking Bad?",
+      "answers": [
+        "Walter White",
+        "Jesse Pinkman",
+        "Saul Goodman",
+        "Hank Schrader"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which show is set in Hawkins?",
+      "answers": [
+        "Stranger Things",
+        "Dark",
+        "The Boys",
+        "Lost"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which series has zombies?",
+      "answers": [
+        "The Walking Dead",
+        "Vikings",
         "Lost",
-        "Game of Thrones"
+        "Dexter"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which series is about Vikings?",
+      "answers": [
+        "Vikings",
+        "Rome",
+        "Spartacus",
+        "The Last Kingdom"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which series features dragons?",
+      "answers": [
+        "Game of Thrones",
+        "Friends",
+        "Dexter",
+        "Lost"
       ],
       "correct": 0
     },
@@ -1065,12 +1225,92 @@
       "correct": 1
     },
     {
+      "question": "Which show is set in Hawkins?",
+      "answers": [
+        "Stranger Things",
+        "Dark",
+        "The Boys",
+        "Lost"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which series has zombies?",
+      "answers": [
+        "The Walking Dead",
+        "Vikings",
+        "Lost",
+        "Dexter"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which series is about Vikings?",
+      "answers": [
+        "Vikings",
+        "Rome",
+        "Spartacus",
+        "The Last Kingdom"
+      ],
+      "correct": 0
+    },
+    {
       "question": "Which series features dragons?",
       "answers": [
+        "Game of Thrones",
         "Friends",
         "Dexter",
+        "Lost"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who is the main character in Breaking Bad?",
+      "answers": [
+        "Walter White",
+        "Jesse Pinkman",
+        "Saul Goodman",
+        "Hank Schrader"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which show is set in Hawkins?",
+      "answers": [
+        "Stranger Things",
+        "Dark",
+        "The Boys",
+        "Lost"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which series has zombies?",
+      "answers": [
+        "The Walking Dead",
+        "Vikings",
         "Lost",
-        "Game of Thrones"
+        "Dexter"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which series is about Vikings?",
+      "answers": [
+        "Vikings",
+        "Rome",
+        "Spartacus",
+        "The Last Kingdom"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which series features dragons?",
+      "answers": [
+        "Game of Thrones",
+        "Friends",
+        "Dexter",
+        "Lost"
       ],
       "correct": 2
     },
@@ -1085,12 +1325,92 @@
       "correct": 3
     },
     {
+      "question": "Which show is set in Hawkins?",
+      "answers": [
+        "Stranger Things",
+        "Dark",
+        "The Boys",
+        "Lost"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which series has zombies?",
+      "answers": [
+        "The Walking Dead",
+        "Vikings",
+        "Lost",
+        "Dexter"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which series is about Vikings?",
+      "answers": [
+        "Vikings",
+        "Rome",
+        "Spartacus",
+        "The Last Kingdom"
+      ],
+      "correct": 2
+    },
+    {
       "question": "Which series features dragons?",
       "answers": [
+        "Game of Thrones",
         "Friends",
         "Dexter",
+        "Lost"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who is the main character in Breaking Bad?",
+      "answers": [
+        "Walter White",
+        "Jesse Pinkman",
+        "Saul Goodman",
+        "Hank Schrader"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which show is set in Hawkins?",
+      "answers": [
+        "Stranger Things",
+        "Dark",
+        "The Boys",
+        "Lost"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which series has zombies?",
+      "answers": [
+        "The Walking Dead",
+        "Vikings",
         "Lost",
-        "Game of Thrones"
+        "Dexter"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which series is about Vikings?",
+      "answers": [
+        "Vikings",
+        "Rome",
+        "Spartacus",
+        "The Last Kingdom"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which series features dragons?",
+      "answers": [
+        "Game of Thrones",
+        "Friends",
+        "Dexter",
+        "Lost"
       ],
       "correct": 0
     },
@@ -1105,402 +1425,82 @@
       "correct": 1
     },
     {
-      "question": "Which series features dragons?",
+      "question": "Which show is set in Hawkins?",
       "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
+        "Stranger Things",
+        "Dark",
+        "The Boys",
+        "Lost"
       ],
       "correct": 2
     },
     {
-      "question": "Who is the main character in Breaking Bad?",
+      "question": "Which series has zombies?",
       "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
+        "The Walking Dead",
+        "Vikings",
+        "Lost",
+        "Dexter"
       ],
       "correct": 3
     },
     {
-      "question": "Which series features dragons?",
+      "question": "Which series is about Vikings?",
       "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
+        "Vikings",
+        "Rome",
+        "Spartacus",
+        "The Last Kingdom"
       ],
       "correct": 0
     },
     {
-      "question": "Who is the main character in Breaking Bad?",
+      "question": "Which series features dragons?",
       "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
+        "Game of Thrones",
+        "Friends",
+        "Dexter",
+        "Lost"
       ],
       "correct": 1
     },
     {
-      "question": "Which series features dragons?",
+      "question": "Who is the main character in Breaking Bad?",
       "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
+        "Walter White",
+        "Jesse Pinkman",
+        "Saul Goodman",
+        "Hank Schrader"
       ],
       "correct": 2
     },
     {
-      "question": "Who is the main character in Breaking Bad?",
+      "question": "Which show is set in Hawkins?",
       "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
+        "Stranger Things",
+        "Dark",
+        "The Boys",
+        "Lost"
       ],
       "correct": 3
     },
     {
-      "question": "Which series features dragons?",
+      "question": "Which series has zombies?",
       "answers": [
-        "Friends",
-        "Dexter",
+        "The Walking Dead",
+        "Vikings",
         "Lost",
-        "Game of Thrones"
+        "Dexter"
       ],
       "correct": 0
     },
     {
-      "question": "Who is the main character in Breaking Bad?",
+      "question": "Which series is about Vikings?",
       "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which series features dragons?",
-      "answers": [
-        "Friends",
-        "Dexter",
-        "Lost",
-        "Game of Thrones"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who is the main character in Breaking Bad?",
-      "answers": [
-        "Walter White",
-        "Jesse Pinkman",
-        "Saul Goodman",
-        "Hank Schrader"
+        "Vikings",
+        "Rome",
+        "Spartacus",
+        "The Last Kingdom"
       ],
       "correct": 1
     }
@@ -1509,500 +1509,500 @@
     {
       "question": "Who is known as the King of Pop?",
       "answers": [
-        "Elvis Presley",
+        "Michael Jackson",
         "Prince",
         "Madonna",
-        "Michael Jackson"
+        "Elvis Presley"
       ],
       "correct": 0
     },
     {
       "question": "Which band sang Bohemian Rhapsody?",
       "answers": [
+        "Queen",
+        "The Beatles",
         "U2",
+        "Oasis"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who sang 'Like a Virgin'?",
+      "answers": [
+        "Madonna",
+        "Beyoncé",
+        "Rihanna",
+        "Adele"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which artist released 'Hello'?",
+      "answers": [
+        "Adele",
+        "Taylor Swift",
+        "Rihanna",
+        "Shakira"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which band is from Liverpool?",
+      "answers": [
+        "The Beatles",
+        "Queen",
         "Oasis",
-        "Beatles",
-        "Queen"
+        "Blur"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who is known as the King of Pop?",
+      "answers": [
+        "Michael Jackson",
+        "Prince",
+        "Madonna",
+        "Elvis Presley"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which band sang Bohemian Rhapsody?",
+      "answers": [
+        "Queen",
+        "The Beatles",
+        "U2",
+        "Oasis"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who sang 'Like a Virgin'?",
+      "answers": [
+        "Madonna",
+        "Beyoncé",
+        "Rihanna",
+        "Adele"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which artist released 'Hello'?",
+      "answers": [
+        "Adele",
+        "Taylor Swift",
+        "Rihanna",
+        "Shakira"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which band is from Liverpool?",
+      "answers": [
+        "The Beatles",
+        "Queen",
+        "Oasis",
+        "Blur"
       ],
       "correct": 1
     },
     {
       "question": "Who is known as the King of Pop?",
       "answers": [
-        "Elvis Presley",
+        "Michael Jackson",
         "Prince",
         "Madonna",
-        "Michael Jackson"
+        "Elvis Presley"
       ],
       "correct": 2
     },
     {
       "question": "Which band sang Bohemian Rhapsody?",
       "answers": [
+        "Queen",
+        "The Beatles",
         "U2",
+        "Oasis"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who sang 'Like a Virgin'?",
+      "answers": [
+        "Madonna",
+        "Beyoncé",
+        "Rihanna",
+        "Adele"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which artist released 'Hello'?",
+      "answers": [
+        "Adele",
+        "Taylor Swift",
+        "Rihanna",
+        "Shakira"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which band is from Liverpool?",
+      "answers": [
+        "The Beatles",
+        "Queen",
         "Oasis",
-        "Beatles",
-        "Queen"
+        "Blur"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who is known as the King of Pop?",
+      "answers": [
+        "Michael Jackson",
+        "Prince",
+        "Madonna",
+        "Elvis Presley"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which band sang Bohemian Rhapsody?",
+      "answers": [
+        "Queen",
+        "The Beatles",
+        "U2",
+        "Oasis"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who sang 'Like a Virgin'?",
+      "answers": [
+        "Madonna",
+        "Beyoncé",
+        "Rihanna",
+        "Adele"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which artist released 'Hello'?",
+      "answers": [
+        "Adele",
+        "Taylor Swift",
+        "Rihanna",
+        "Shakira"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which band is from Liverpool?",
+      "answers": [
+        "The Beatles",
+        "Queen",
+        "Oasis",
+        "Blur"
       ],
       "correct": 3
     },
     {
       "question": "Who is known as the King of Pop?",
       "answers": [
-        "Elvis Presley",
+        "Michael Jackson",
         "Prince",
         "Madonna",
-        "Michael Jackson"
+        "Elvis Presley"
       ],
       "correct": 0
     },
     {
       "question": "Which band sang Bohemian Rhapsody?",
       "answers": [
+        "Queen",
+        "The Beatles",
         "U2",
+        "Oasis"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who sang 'Like a Virgin'?",
+      "answers": [
+        "Madonna",
+        "Beyoncé",
+        "Rihanna",
+        "Adele"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which artist released 'Hello'?",
+      "answers": [
+        "Adele",
+        "Taylor Swift",
+        "Rihanna",
+        "Shakira"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which band is from Liverpool?",
+      "answers": [
+        "The Beatles",
+        "Queen",
         "Oasis",
-        "Beatles",
-        "Queen"
+        "Blur"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who is known as the King of Pop?",
+      "answers": [
+        "Michael Jackson",
+        "Prince",
+        "Madonna",
+        "Elvis Presley"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which band sang Bohemian Rhapsody?",
+      "answers": [
+        "Queen",
+        "The Beatles",
+        "U2",
+        "Oasis"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who sang 'Like a Virgin'?",
+      "answers": [
+        "Madonna",
+        "Beyoncé",
+        "Rihanna",
+        "Adele"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which artist released 'Hello'?",
+      "answers": [
+        "Adele",
+        "Taylor Swift",
+        "Rihanna",
+        "Shakira"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which band is from Liverpool?",
+      "answers": [
+        "The Beatles",
+        "Queen",
+        "Oasis",
+        "Blur"
       ],
       "correct": 1
     },
     {
       "question": "Who is known as the King of Pop?",
       "answers": [
-        "Elvis Presley",
+        "Michael Jackson",
         "Prince",
         "Madonna",
-        "Michael Jackson"
+        "Elvis Presley"
       ],
       "correct": 2
     },
     {
       "question": "Which band sang Bohemian Rhapsody?",
       "answers": [
+        "Queen",
+        "The Beatles",
         "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
+        "Oasis"
       ],
       "correct": 3
     },
     {
-      "question": "Who is known as the King of Pop?",
+      "question": "Who sang 'Like a Virgin'?",
       "answers": [
-        "Elvis Presley",
-        "Prince",
         "Madonna",
-        "Michael Jackson"
+        "Beyoncé",
+        "Rihanna",
+        "Adele"
       ],
       "correct": 0
     },
     {
-      "question": "Which band sang Bohemian Rhapsody?",
+      "question": "Which artist released 'Hello'?",
       "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
+        "Adele",
+        "Taylor Swift",
+        "Rihanna",
+        "Shakira"
       ],
       "correct": 1
     },
     {
-      "question": "Who is known as the King of Pop?",
+      "question": "Which band is from Liverpool?",
       "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
+        "The Beatles",
+        "Queen",
+        "Oasis",
+        "Blur"
       ],
       "correct": 2
     },
     {
-      "question": "Which band sang Bohemian Rhapsody?",
+      "question": "Who is known as the King of Pop?",
       "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
+        "Michael Jackson",
+        "Prince",
+        "Madonna",
+        "Elvis Presley"
       ],
       "correct": 3
     },
     {
-      "question": "Who is known as the King of Pop?",
+      "question": "Which band sang Bohemian Rhapsody?",
       "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
+        "Queen",
+        "The Beatles",
+        "U2",
+        "Oasis"
       ],
       "correct": 0
     },
     {
-      "question": "Which band sang Bohemian Rhapsody?",
+      "question": "Who sang 'Like a Virgin'?",
       "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
+        "Madonna",
+        "Beyoncé",
+        "Rihanna",
+        "Adele"
       ],
       "correct": 1
     },
     {
-      "question": "Who is known as the King of Pop?",
+      "question": "Which artist released 'Hello'?",
       "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
+        "Adele",
+        "Taylor Swift",
+        "Rihanna",
+        "Shakira"
       ],
       "correct": 2
     },
     {
-      "question": "Which band sang Bohemian Rhapsody?",
+      "question": "Which band is from Liverpool?",
       "answers": [
-        "U2",
+        "The Beatles",
+        "Queen",
         "Oasis",
-        "Beatles",
-        "Queen"
+        "Blur"
       ],
       "correct": 3
     },
     {
       "question": "Who is known as the King of Pop?",
       "answers": [
-        "Elvis Presley",
+        "Michael Jackson",
         "Prince",
         "Madonna",
-        "Michael Jackson"
+        "Elvis Presley"
       ],
       "correct": 0
     },
     {
       "question": "Which band sang Bohemian Rhapsody?",
       "answers": [
+        "Queen",
+        "The Beatles",
         "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
+        "Oasis"
       ],
       "correct": 1
     },
     {
-      "question": "Who is known as the King of Pop?",
+      "question": "Who sang 'Like a Virgin'?",
       "answers": [
-        "Elvis Presley",
-        "Prince",
         "Madonna",
-        "Michael Jackson"
+        "Beyoncé",
+        "Rihanna",
+        "Adele"
       ],
       "correct": 2
     },
     {
-      "question": "Which band sang Bohemian Rhapsody?",
+      "question": "Which artist released 'Hello'?",
       "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
+        "Adele",
+        "Taylor Swift",
+        "Rihanna",
+        "Shakira"
       ],
       "correct": 3
     },
     {
-      "question": "Who is known as the King of Pop?",
+      "question": "Which band is from Liverpool?",
       "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
+        "The Beatles",
+        "Queen",
+        "Oasis",
+        "Blur"
       ],
       "correct": 0
     },
     {
-      "question": "Which band sang Bohemian Rhapsody?",
+      "question": "Who is known as the King of Pop?",
       "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
+        "Michael Jackson",
+        "Prince",
+        "Madonna",
+        "Elvis Presley"
       ],
       "correct": 1
     },
     {
-      "question": "Who is known as the King of Pop?",
+      "question": "Which band sang Bohemian Rhapsody?",
       "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
+        "Queen",
+        "The Beatles",
+        "U2",
+        "Oasis"
       ],
       "correct": 2
     },
     {
-      "question": "Which band sang Bohemian Rhapsody?",
+      "question": "Who sang 'Like a Virgin'?",
       "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
+        "Madonna",
+        "Beyoncé",
+        "Rihanna",
+        "Adele"
       ],
       "correct": 3
     },
     {
-      "question": "Who is known as the King of Pop?",
+      "question": "Which artist released 'Hello'?",
       "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
+        "Adele",
+        "Taylor Swift",
+        "Rihanna",
+        "Shakira"
       ],
       "correct": 0
     },
     {
-      "question": "Which band sang Bohemian Rhapsody?",
+      "question": "Which band is from Liverpool?",
       "answers": [
-        "U2",
+        "The Beatles",
+        "Queen",
         "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who is known as the King of Pop?",
-      "answers": [
-        "Elvis Presley",
-        "Prince",
-        "Madonna",
-        "Michael Jackson"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which band sang Bohemian Rhapsody?",
-      "answers": [
-        "U2",
-        "Oasis",
-        "Beatles",
-        "Queen"
+        "Blur"
       ],
       "correct": 1
     }
@@ -2011,500 +2011,500 @@
     {
       "question": "What planet is known as the Red Planet?",
       "answers": [
+        "Mars",
         "Venus",
         "Jupiter",
-        "Saturn",
-        "Mars"
+        "Saturn"
       ],
       "correct": 0
     },
     {
       "question": "What gas do humans breathe?",
       "answers": [
+        "Oxygen",
+        "Hydrogen",
         "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Helium"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What force keeps us on Earth?",
+      "answers": [
+        "Gravity",
+        "Magnetism",
+        "Friction",
+        "Energy"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What organ pumps blood?",
+      "answers": [
+        "Heart",
+        "Brain",
+        "Lungs",
+        "Liver"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is H2O?",
+      "answers": [
+        "Water",
+        "Hydrogen",
+        "Oxygen",
+        "Salt"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What planet is known as the Red Planet?",
+      "answers": [
+        "Mars",
+        "Venus",
+        "Jupiter",
+        "Saturn"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What gas do humans breathe?",
+      "answers": [
+        "Oxygen",
+        "Hydrogen",
+        "Carbon Dioxide",
+        "Helium"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What force keeps us on Earth?",
+      "answers": [
+        "Gravity",
+        "Magnetism",
+        "Friction",
+        "Energy"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What organ pumps blood?",
+      "answers": [
+        "Heart",
+        "Brain",
+        "Lungs",
+        "Liver"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is H2O?",
+      "answers": [
+        "Water",
+        "Hydrogen",
+        "Oxygen",
+        "Salt"
       ],
       "correct": 1
     },
     {
       "question": "What planet is known as the Red Planet?",
       "answers": [
+        "Mars",
         "Venus",
         "Jupiter",
-        "Saturn",
-        "Mars"
+        "Saturn"
       ],
       "correct": 2
     },
     {
       "question": "What gas do humans breathe?",
       "answers": [
+        "Oxygen",
+        "Hydrogen",
         "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Helium"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What force keeps us on Earth?",
+      "answers": [
+        "Gravity",
+        "Magnetism",
+        "Friction",
+        "Energy"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What organ pumps blood?",
+      "answers": [
+        "Heart",
+        "Brain",
+        "Lungs",
+        "Liver"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is H2O?",
+      "answers": [
+        "Water",
+        "Hydrogen",
+        "Oxygen",
+        "Salt"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What planet is known as the Red Planet?",
+      "answers": [
+        "Mars",
+        "Venus",
+        "Jupiter",
+        "Saturn"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What gas do humans breathe?",
+      "answers": [
+        "Oxygen",
+        "Hydrogen",
+        "Carbon Dioxide",
+        "Helium"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What force keeps us on Earth?",
+      "answers": [
+        "Gravity",
+        "Magnetism",
+        "Friction",
+        "Energy"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What organ pumps blood?",
+      "answers": [
+        "Heart",
+        "Brain",
+        "Lungs",
+        "Liver"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is H2O?",
+      "answers": [
+        "Water",
+        "Hydrogen",
+        "Oxygen",
+        "Salt"
       ],
       "correct": 3
     },
     {
       "question": "What planet is known as the Red Planet?",
       "answers": [
+        "Mars",
         "Venus",
         "Jupiter",
-        "Saturn",
-        "Mars"
+        "Saturn"
       ],
       "correct": 0
     },
     {
       "question": "What gas do humans breathe?",
       "answers": [
+        "Oxygen",
+        "Hydrogen",
         "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Helium"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What force keeps us on Earth?",
+      "answers": [
+        "Gravity",
+        "Magnetism",
+        "Friction",
+        "Energy"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What organ pumps blood?",
+      "answers": [
+        "Heart",
+        "Brain",
+        "Lungs",
+        "Liver"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is H2O?",
+      "answers": [
+        "Water",
+        "Hydrogen",
+        "Oxygen",
+        "Salt"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What planet is known as the Red Planet?",
+      "answers": [
+        "Mars",
+        "Venus",
+        "Jupiter",
+        "Saturn"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What gas do humans breathe?",
+      "answers": [
+        "Oxygen",
+        "Hydrogen",
+        "Carbon Dioxide",
+        "Helium"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What force keeps us on Earth?",
+      "answers": [
+        "Gravity",
+        "Magnetism",
+        "Friction",
+        "Energy"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What organ pumps blood?",
+      "answers": [
+        "Heart",
+        "Brain",
+        "Lungs",
+        "Liver"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is H2O?",
+      "answers": [
+        "Water",
+        "Hydrogen",
+        "Oxygen",
+        "Salt"
       ],
       "correct": 1
     },
     {
       "question": "What planet is known as the Red Planet?",
       "answers": [
+        "Mars",
         "Venus",
         "Jupiter",
-        "Saturn",
-        "Mars"
+        "Saturn"
       ],
       "correct": 2
     },
     {
       "question": "What gas do humans breathe?",
       "answers": [
+        "Oxygen",
+        "Hydrogen",
         "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Helium"
       ],
       "correct": 3
     },
     {
-      "question": "What planet is known as the Red Planet?",
+      "question": "What force keeps us on Earth?",
       "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
+        "Gravity",
+        "Magnetism",
+        "Friction",
+        "Energy"
       ],
       "correct": 0
     },
     {
-      "question": "What gas do humans breathe?",
+      "question": "What organ pumps blood?",
       "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Heart",
+        "Brain",
+        "Lungs",
+        "Liver"
       ],
       "correct": 1
     },
     {
-      "question": "What planet is known as the Red Planet?",
+      "question": "What is H2O?",
       "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
+        "Water",
+        "Hydrogen",
+        "Oxygen",
+        "Salt"
       ],
       "correct": 2
     },
     {
-      "question": "What gas do humans breathe?",
+      "question": "What planet is known as the Red Planet?",
       "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Mars",
+        "Venus",
+        "Jupiter",
+        "Saturn"
       ],
       "correct": 3
     },
     {
-      "question": "What planet is known as the Red Planet?",
+      "question": "What gas do humans breathe?",
       "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
+        "Oxygen",
+        "Hydrogen",
+        "Carbon Dioxide",
+        "Helium"
       ],
       "correct": 0
     },
     {
-      "question": "What gas do humans breathe?",
+      "question": "What force keeps us on Earth?",
       "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Gravity",
+        "Magnetism",
+        "Friction",
+        "Energy"
       ],
       "correct": 1
     },
     {
-      "question": "What planet is known as the Red Planet?",
+      "question": "What organ pumps blood?",
       "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
+        "Heart",
+        "Brain",
+        "Lungs",
+        "Liver"
       ],
       "correct": 2
     },
     {
-      "question": "What gas do humans breathe?",
+      "question": "What is H2O?",
       "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Water",
+        "Hydrogen",
+        "Oxygen",
+        "Salt"
       ],
       "correct": 3
     },
     {
       "question": "What planet is known as the Red Planet?",
       "answers": [
+        "Mars",
         "Venus",
         "Jupiter",
-        "Saturn",
-        "Mars"
+        "Saturn"
       ],
       "correct": 0
     },
     {
       "question": "What gas do humans breathe?",
       "answers": [
+        "Oxygen",
+        "Hydrogen",
         "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Helium"
       ],
       "correct": 1
     },
     {
-      "question": "What planet is known as the Red Planet?",
+      "question": "What force keeps us on Earth?",
       "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
+        "Gravity",
+        "Magnetism",
+        "Friction",
+        "Energy"
       ],
       "correct": 2
     },
     {
-      "question": "What gas do humans breathe?",
+      "question": "What organ pumps blood?",
       "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Heart",
+        "Brain",
+        "Lungs",
+        "Liver"
       ],
       "correct": 3
     },
     {
-      "question": "What planet is known as the Red Planet?",
+      "question": "What is H2O?",
       "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
+        "Water",
+        "Hydrogen",
+        "Oxygen",
+        "Salt"
       ],
       "correct": 0
     },
     {
-      "question": "What gas do humans breathe?",
+      "question": "What planet is known as the Red Planet?",
       "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Mars",
+        "Venus",
+        "Jupiter",
+        "Saturn"
       ],
       "correct": 1
     },
     {
-      "question": "What planet is known as the Red Planet?",
+      "question": "What gas do humans breathe?",
       "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
+        "Oxygen",
+        "Hydrogen",
+        "Carbon Dioxide",
+        "Helium"
       ],
       "correct": 2
     },
     {
-      "question": "What gas do humans breathe?",
+      "question": "What force keeps us on Earth?",
       "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Gravity",
+        "Magnetism",
+        "Friction",
+        "Energy"
       ],
       "correct": 3
     },
     {
-      "question": "What planet is known as the Red Planet?",
+      "question": "What organ pumps blood?",
       "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
+        "Heart",
+        "Brain",
+        "Lungs",
+        "Liver"
       ],
       "correct": 0
     },
     {
-      "question": "What gas do humans breathe?",
+      "question": "What is H2O?",
       "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What planet is known as the Red Planet?",
-      "answers": [
-        "Venus",
-        "Jupiter",
-        "Saturn",
-        "Mars"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What gas do humans breathe?",
-      "answers": [
-        "Carbon Dioxide",
-        "Helium",
-        "Nitrogen",
-        "Oxygen"
+        "Water",
+        "Hydrogen",
+        "Oxygen",
+        "Salt"
       ],
       "correct": 1
     }
@@ -2513,500 +2513,500 @@
     {
       "question": "What is the capital of France?",
       "answers": [
+        "Paris",
         "Rome",
         "Berlin",
-        "Madrid",
-        "Paris"
+        "Madrid"
       ],
       "correct": 0
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "Which continent is Brazil in?",
       "answers": [
+        "South America",
+        "Africa",
+        "Europe",
+        "Asia"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the largest ocean?",
+      "answers": [
+        "Pacific",
         "Atlantic",
         "Indian",
-        "Arctic",
-        "Pacific"
+        "Arctic"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Where is Mount Everest?",
+      "answers": [
+        "Nepal",
+        "India",
+        "China",
+        "Bhutan"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which country has the most people?",
+      "answers": [
+        "China",
+        "India",
+        "USA",
+        "Brazil"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the capital of France?",
+      "answers": [
+        "Paris",
+        "Rome",
+        "Berlin",
+        "Madrid"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which continent is Brazil in?",
+      "answers": [
+        "South America",
+        "Africa",
+        "Europe",
+        "Asia"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the largest ocean?",
+      "answers": [
+        "Pacific",
+        "Atlantic",
+        "Indian",
+        "Arctic"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Where is Mount Everest?",
+      "answers": [
+        "Nepal",
+        "India",
+        "China",
+        "Bhutan"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which country has the most people?",
+      "answers": [
+        "China",
+        "India",
+        "USA",
+        "Brazil"
       ],
       "correct": 1
     },
     {
       "question": "What is the capital of France?",
       "answers": [
+        "Paris",
         "Rome",
         "Berlin",
-        "Madrid",
-        "Paris"
+        "Madrid"
       ],
       "correct": 2
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "Which continent is Brazil in?",
       "answers": [
+        "South America",
+        "Africa",
+        "Europe",
+        "Asia"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the largest ocean?",
+      "answers": [
+        "Pacific",
         "Atlantic",
         "Indian",
-        "Arctic",
-        "Pacific"
+        "Arctic"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Where is Mount Everest?",
+      "answers": [
+        "Nepal",
+        "India",
+        "China",
+        "Bhutan"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which country has the most people?",
+      "answers": [
+        "China",
+        "India",
+        "USA",
+        "Brazil"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the capital of France?",
+      "answers": [
+        "Paris",
+        "Rome",
+        "Berlin",
+        "Madrid"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which continent is Brazil in?",
+      "answers": [
+        "South America",
+        "Africa",
+        "Europe",
+        "Asia"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the largest ocean?",
+      "answers": [
+        "Pacific",
+        "Atlantic",
+        "Indian",
+        "Arctic"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Where is Mount Everest?",
+      "answers": [
+        "Nepal",
+        "India",
+        "China",
+        "Bhutan"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which country has the most people?",
+      "answers": [
+        "China",
+        "India",
+        "USA",
+        "Brazil"
       ],
       "correct": 3
     },
     {
       "question": "What is the capital of France?",
       "answers": [
+        "Paris",
         "Rome",
         "Berlin",
-        "Madrid",
-        "Paris"
+        "Madrid"
       ],
       "correct": 0
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "Which continent is Brazil in?",
       "answers": [
+        "South America",
+        "Africa",
+        "Europe",
+        "Asia"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the largest ocean?",
+      "answers": [
+        "Pacific",
         "Atlantic",
         "Indian",
-        "Arctic",
-        "Pacific"
+        "Arctic"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Where is Mount Everest?",
+      "answers": [
+        "Nepal",
+        "India",
+        "China",
+        "Bhutan"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which country has the most people?",
+      "answers": [
+        "China",
+        "India",
+        "USA",
+        "Brazil"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the capital of France?",
+      "answers": [
+        "Paris",
+        "Rome",
+        "Berlin",
+        "Madrid"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which continent is Brazil in?",
+      "answers": [
+        "South America",
+        "Africa",
+        "Europe",
+        "Asia"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the largest ocean?",
+      "answers": [
+        "Pacific",
+        "Atlantic",
+        "Indian",
+        "Arctic"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Where is Mount Everest?",
+      "answers": [
+        "Nepal",
+        "India",
+        "China",
+        "Bhutan"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which country has the most people?",
+      "answers": [
+        "China",
+        "India",
+        "USA",
+        "Brazil"
       ],
       "correct": 1
     },
     {
       "question": "What is the capital of France?",
       "answers": [
+        "Paris",
         "Rome",
         "Berlin",
-        "Madrid",
-        "Paris"
+        "Madrid"
       ],
       "correct": 2
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "Which continent is Brazil in?",
       "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
+        "South America",
+        "Africa",
+        "Europe",
+        "Asia"
       ],
       "correct": 3
     },
     {
-      "question": "What is the capital of France?",
+      "question": "What is the largest ocean?",
       "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
+        "Pacific",
+        "Atlantic",
+        "Indian",
+        "Arctic"
       ],
       "correct": 0
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "Where is Mount Everest?",
       "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
+        "Nepal",
+        "India",
+        "China",
+        "Bhutan"
       ],
       "correct": 1
     },
     {
-      "question": "What is the capital of France?",
+      "question": "Which country has the most people?",
       "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
+        "China",
+        "India",
+        "USA",
+        "Brazil"
       ],
       "correct": 2
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "What is the capital of France?",
       "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
+        "Paris",
+        "Rome",
+        "Berlin",
+        "Madrid"
       ],
       "correct": 3
     },
     {
-      "question": "What is the capital of France?",
+      "question": "Which continent is Brazil in?",
       "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
+        "South America",
+        "Africa",
+        "Europe",
+        "Asia"
       ],
       "correct": 0
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "What is the largest ocean?",
       "answers": [
+        "Pacific",
         "Atlantic",
         "Indian",
-        "Arctic",
-        "Pacific"
+        "Arctic"
       ],
       "correct": 1
     },
     {
-      "question": "What is the capital of France?",
+      "question": "Where is Mount Everest?",
       "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
+        "Nepal",
+        "India",
+        "China",
+        "Bhutan"
       ],
       "correct": 2
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "Which country has the most people?",
       "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
+        "China",
+        "India",
+        "USA",
+        "Brazil"
       ],
       "correct": 3
     },
     {
       "question": "What is the capital of France?",
       "answers": [
+        "Paris",
         "Rome",
         "Berlin",
-        "Madrid",
-        "Paris"
+        "Madrid"
       ],
       "correct": 0
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "Which continent is Brazil in?",
       "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
+        "South America",
+        "Africa",
+        "Europe",
+        "Asia"
       ],
       "correct": 1
     },
     {
-      "question": "What is the capital of France?",
+      "question": "What is the largest ocean?",
       "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
+        "Pacific",
+        "Atlantic",
+        "Indian",
+        "Arctic"
       ],
       "correct": 2
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "Where is Mount Everest?",
       "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
+        "Nepal",
+        "India",
+        "China",
+        "Bhutan"
       ],
       "correct": 3
     },
     {
-      "question": "What is the capital of France?",
+      "question": "Which country has the most people?",
       "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
+        "China",
+        "India",
+        "USA",
+        "Brazil"
       ],
       "correct": 0
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "What is the capital of France?",
       "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
+        "Paris",
+        "Rome",
+        "Berlin",
+        "Madrid"
       ],
       "correct": 1
     },
     {
-      "question": "What is the capital of France?",
+      "question": "Which continent is Brazil in?",
       "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
+        "South America",
+        "Africa",
+        "Europe",
+        "Asia"
       ],
       "correct": 2
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "What is the largest ocean?",
       "answers": [
+        "Pacific",
         "Atlantic",
         "Indian",
-        "Arctic",
-        "Pacific"
+        "Arctic"
       ],
       "correct": 3
     },
     {
-      "question": "What is the capital of France?",
+      "question": "Where is Mount Everest?",
       "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
+        "Nepal",
+        "India",
+        "China",
+        "Bhutan"
       ],
       "correct": 0
     },
     {
-      "question": "Which ocean is the largest?",
+      "question": "Which country has the most people?",
       "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "What is the capital of France?",
-      "answers": [
-        "Rome",
-        "Berlin",
-        "Madrid",
-        "Paris"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which ocean is the largest?",
-      "answers": [
-        "Atlantic",
-        "Indian",
-        "Arctic",
-        "Pacific"
+        "China",
+        "India",
+        "USA",
+        "Brazil"
       ],
       "correct": 1
     }
@@ -3015,1002 +3015,1002 @@
     {
       "question": "Which country does pizza come from?",
       "answers": [
+        "Italy",
         "France",
         "USA",
-        "Spain",
-        "Italy"
+        "Spain"
       ],
       "correct": 0
     },
     {
-      "question": "What makes bread rise?",
+      "question": "What ingredient makes bread rise?",
       "answers": [
-        "Salt",
+        "Yeast",
         "Sugar",
-        "Flour",
-        "Yeast"
+        "Salt",
+        "Butter"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is sushi mainly made of?",
+      "answers": [
+        "Rice",
+        "Fish",
+        "Seaweed",
+        "Noodles"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which herb is used in pesto?",
+      "answers": [
+        "Basil",
+        "Parsley",
+        "Coriander",
+        "Mint"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is chocolate made from?",
+      "answers": [
+        "Cocoa beans",
+        "Coffee",
+        "Milk",
+        "Sugar"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which country does pizza come from?",
+      "answers": [
+        "Italy",
+        "France",
+        "USA",
+        "Spain"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What ingredient makes bread rise?",
+      "answers": [
+        "Yeast",
+        "Sugar",
+        "Salt",
+        "Butter"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is sushi mainly made of?",
+      "answers": [
+        "Rice",
+        "Fish",
+        "Seaweed",
+        "Noodles"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which herb is used in pesto?",
+      "answers": [
+        "Basil",
+        "Parsley",
+        "Coriander",
+        "Mint"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is chocolate made from?",
+      "answers": [
+        "Cocoa beans",
+        "Coffee",
+        "Milk",
+        "Sugar"
       ],
       "correct": 1
     },
     {
       "question": "Which country does pizza come from?",
       "answers": [
+        "Italy",
         "France",
         "USA",
-        "Spain",
-        "Italy"
+        "Spain"
       ],
       "correct": 2
     },
     {
-      "question": "What makes bread rise?",
+      "question": "What ingredient makes bread rise?",
       "answers": [
-        "Salt",
+        "Yeast",
         "Sugar",
-        "Flour",
-        "Yeast"
+        "Salt",
+        "Butter"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is sushi mainly made of?",
+      "answers": [
+        "Rice",
+        "Fish",
+        "Seaweed",
+        "Noodles"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which herb is used in pesto?",
+      "answers": [
+        "Basil",
+        "Parsley",
+        "Coriander",
+        "Mint"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is chocolate made from?",
+      "answers": [
+        "Cocoa beans",
+        "Coffee",
+        "Milk",
+        "Sugar"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which country does pizza come from?",
+      "answers": [
+        "Italy",
+        "France",
+        "USA",
+        "Spain"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What ingredient makes bread rise?",
+      "answers": [
+        "Yeast",
+        "Sugar",
+        "Salt",
+        "Butter"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is sushi mainly made of?",
+      "answers": [
+        "Rice",
+        "Fish",
+        "Seaweed",
+        "Noodles"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which herb is used in pesto?",
+      "answers": [
+        "Basil",
+        "Parsley",
+        "Coriander",
+        "Mint"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is chocolate made from?",
+      "answers": [
+        "Cocoa beans",
+        "Coffee",
+        "Milk",
+        "Sugar"
       ],
       "correct": 3
     },
     {
       "question": "Which country does pizza come from?",
       "answers": [
+        "Italy",
         "France",
         "USA",
-        "Spain",
-        "Italy"
+        "Spain"
       ],
       "correct": 0
     },
     {
-      "question": "What makes bread rise?",
+      "question": "What ingredient makes bread rise?",
       "answers": [
-        "Salt",
+        "Yeast",
         "Sugar",
-        "Flour",
-        "Yeast"
+        "Salt",
+        "Butter"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is sushi mainly made of?",
+      "answers": [
+        "Rice",
+        "Fish",
+        "Seaweed",
+        "Noodles"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which herb is used in pesto?",
+      "answers": [
+        "Basil",
+        "Parsley",
+        "Coriander",
+        "Mint"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is chocolate made from?",
+      "answers": [
+        "Cocoa beans",
+        "Coffee",
+        "Milk",
+        "Sugar"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which country does pizza come from?",
+      "answers": [
+        "Italy",
+        "France",
+        "USA",
+        "Spain"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What ingredient makes bread rise?",
+      "answers": [
+        "Yeast",
+        "Sugar",
+        "Salt",
+        "Butter"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is sushi mainly made of?",
+      "answers": [
+        "Rice",
+        "Fish",
+        "Seaweed",
+        "Noodles"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which herb is used in pesto?",
+      "answers": [
+        "Basil",
+        "Parsley",
+        "Coriander",
+        "Mint"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is chocolate made from?",
+      "answers": [
+        "Cocoa beans",
+        "Coffee",
+        "Milk",
+        "Sugar"
       ],
       "correct": 1
     },
     {
       "question": "Which country does pizza come from?",
       "answers": [
+        "Italy",
         "France",
         "USA",
-        "Spain",
-        "Italy"
+        "Spain"
       ],
       "correct": 2
     },
     {
-      "question": "What makes bread rise?",
+      "question": "What ingredient makes bread rise?",
       "answers": [
-        "Salt",
+        "Yeast",
         "Sugar",
-        "Flour",
-        "Yeast"
+        "Salt",
+        "Butter"
       ],
       "correct": 3
     },
     {
-      "question": "Which country does pizza come from?",
+      "question": "What is sushi mainly made of?",
       "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
+        "Rice",
+        "Fish",
+        "Seaweed",
+        "Noodles"
       ],
       "correct": 0
     },
     {
-      "question": "What makes bread rise?",
+      "question": "Which herb is used in pesto?",
       "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
+        "Basil",
+        "Parsley",
+        "Coriander",
+        "Mint"
       ],
       "correct": 1
     },
     {
-      "question": "Which country does pizza come from?",
+      "question": "What is chocolate made from?",
       "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
+        "Cocoa beans",
+        "Coffee",
+        "Milk",
+        "Sugar"
       ],
       "correct": 2
     },
     {
-      "question": "What makes bread rise?",
+      "question": "Which country does pizza come from?",
       "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
+        "Italy",
+        "France",
+        "USA",
+        "Spain"
       ],
       "correct": 3
     },
     {
-      "question": "Which country does pizza come from?",
+      "question": "What ingredient makes bread rise?",
       "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
+        "Yeast",
+        "Sugar",
+        "Salt",
+        "Butter"
       ],
       "correct": 0
     },
     {
-      "question": "What makes bread rise?",
+      "question": "What is sushi mainly made of?",
       "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
+        "Rice",
+        "Fish",
+        "Seaweed",
+        "Noodles"
       ],
       "correct": 1
     },
     {
-      "question": "Which country does pizza come from?",
+      "question": "Which herb is used in pesto?",
       "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
+        "Basil",
+        "Parsley",
+        "Coriander",
+        "Mint"
       ],
       "correct": 2
     },
     {
-      "question": "What makes bread rise?",
+      "question": "What is chocolate made from?",
       "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
+        "Cocoa beans",
+        "Coffee",
+        "Milk",
+        "Sugar"
       ],
       "correct": 3
     },
     {
       "question": "Which country does pizza come from?",
       "answers": [
+        "Italy",
         "France",
         "USA",
-        "Spain",
-        "Italy"
+        "Spain"
       ],
       "correct": 0
     },
     {
-      "question": "What makes bread rise?",
+      "question": "What ingredient makes bread rise?",
       "answers": [
-        "Salt",
+        "Yeast",
         "Sugar",
-        "Flour",
-        "Yeast"
+        "Salt",
+        "Butter"
       ],
       "correct": 1
     },
     {
-      "question": "Which country does pizza come from?",
+      "question": "What is sushi mainly made of?",
       "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
+        "Rice",
+        "Fish",
+        "Seaweed",
+        "Noodles"
       ],
       "correct": 2
     },
     {
-      "question": "What makes bread rise?",
+      "question": "Which herb is used in pesto?",
       "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
+        "Basil",
+        "Parsley",
+        "Coriander",
+        "Mint"
       ],
       "correct": 3
     },
     {
-      "question": "Which country does pizza come from?",
+      "question": "What is chocolate made from?",
       "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
+        "Cocoa beans",
+        "Coffee",
+        "Milk",
+        "Sugar"
       ],
       "correct": 0
     },
     {
-      "question": "What makes bread rise?",
+      "question": "Which country does pizza come from?",
       "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
+        "Italy",
+        "France",
+        "USA",
+        "Spain"
       ],
       "correct": 1
     },
     {
-      "question": "Which country does pizza come from?",
+      "question": "What ingredient makes bread rise?",
       "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
+        "Yeast",
+        "Sugar",
+        "Salt",
+        "Butter"
       ],
       "correct": 2
     },
     {
-      "question": "What makes bread rise?",
+      "question": "What is sushi mainly made of?",
       "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
+        "Rice",
+        "Fish",
+        "Seaweed",
+        "Noodles"
       ],
       "correct": 3
     },
     {
-      "question": "Which country does pizza come from?",
+      "question": "Which herb is used in pesto?",
       "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
+        "Basil",
+        "Parsley",
+        "Coriander",
+        "Mint"
       ],
       "correct": 0
     },
     {
-      "question": "What makes bread rise?",
+      "question": "What is chocolate made from?",
       "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which country does pizza come from?",
-      "answers": [
-        "France",
-        "USA",
-        "Spain",
-        "Italy"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What makes bread rise?",
-      "answers": [
-        "Salt",
-        "Sugar",
-        "Flour",
-        "Yeast"
+        "Cocoa beans",
+        "Coffee",
+        "Milk",
+        "Sugar"
       ],
       "correct": 1
     }
   ],
   "WOS": [
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "Bear Trap is a…",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Alliance event",
+        "Solo quest",
+        "Market",
+        "Chest"
       ],
       "correct": 0
     },
     {
       "question": "What resource heals troops?",
       "answers": [
+        "Food",
         "Steel",
         "Wood",
-        "Gems",
-        "Food"
+        "Gems"
       ],
       "correct": 1
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "What building trains infantry?",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Barracks",
+        "Hospital",
+        "Warehouse",
+        "Market"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What keeps your city warm?",
+      "answers": [
+        "Furnace",
+        "Hospital",
+        "Market",
+        "Garage"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What event focuses on PvP?",
+      "answers": [
+        "Arena",
+        "Bear Trap",
+        "Exploration",
+        "Market"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Bear Trap is a…",
+      "answers": [
+        "Alliance event",
+        "Solo quest",
+        "Market",
+        "Chest"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What resource heals troops?",
+      "answers": [
+        "Food",
+        "Steel",
+        "Wood",
+        "Gems"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What building trains infantry?",
+      "answers": [
+        "Barracks",
+        "Hospital",
+        "Warehouse",
+        "Market"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What keeps your city warm?",
+      "answers": [
+        "Furnace",
+        "Hospital",
+        "Market",
+        "Garage"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What event focuses on PvP?",
+      "answers": [
+        "Arena",
+        "Bear Trap",
+        "Exploration",
+        "Market"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Bear Trap is a…",
+      "answers": [
+        "Alliance event",
+        "Solo quest",
+        "Market",
+        "Chest"
       ],
       "correct": 2
     },
     {
       "question": "What resource heals troops?",
       "answers": [
+        "Food",
         "Steel",
         "Wood",
-        "Gems",
-        "Food"
+        "Gems"
       ],
       "correct": 3
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "What building trains infantry?",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Barracks",
+        "Hospital",
+        "Warehouse",
+        "Market"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What keeps your city warm?",
+      "answers": [
+        "Furnace",
+        "Hospital",
+        "Market",
+        "Garage"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What event focuses on PvP?",
+      "answers": [
+        "Arena",
+        "Bear Trap",
+        "Exploration",
+        "Market"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Bear Trap is a…",
+      "answers": [
+        "Alliance event",
+        "Solo quest",
+        "Market",
+        "Chest"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What resource heals troops?",
+      "answers": [
+        "Food",
+        "Steel",
+        "Wood",
+        "Gems"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What building trains infantry?",
+      "answers": [
+        "Barracks",
+        "Hospital",
+        "Warehouse",
+        "Market"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What keeps your city warm?",
+      "answers": [
+        "Furnace",
+        "Hospital",
+        "Market",
+        "Garage"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What event focuses on PvP?",
+      "answers": [
+        "Arena",
+        "Bear Trap",
+        "Exploration",
+        "Market"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Bear Trap is a…",
+      "answers": [
+        "Alliance event",
+        "Solo quest",
+        "Market",
+        "Chest"
       ],
       "correct": 0
     },
     {
       "question": "What resource heals troops?",
       "answers": [
+        "Food",
         "Steel",
         "Wood",
-        "Gems",
-        "Food"
+        "Gems"
       ],
       "correct": 1
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "What building trains infantry?",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Barracks",
+        "Hospital",
+        "Warehouse",
+        "Market"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What keeps your city warm?",
+      "answers": [
+        "Furnace",
+        "Hospital",
+        "Market",
+        "Garage"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What event focuses on PvP?",
+      "answers": [
+        "Arena",
+        "Bear Trap",
+        "Exploration",
+        "Market"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Bear Trap is a…",
+      "answers": [
+        "Alliance event",
+        "Solo quest",
+        "Market",
+        "Chest"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What resource heals troops?",
+      "answers": [
+        "Food",
+        "Steel",
+        "Wood",
+        "Gems"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What building trains infantry?",
+      "answers": [
+        "Barracks",
+        "Hospital",
+        "Warehouse",
+        "Market"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What keeps your city warm?",
+      "answers": [
+        "Furnace",
+        "Hospital",
+        "Market",
+        "Garage"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What event focuses on PvP?",
+      "answers": [
+        "Arena",
+        "Bear Trap",
+        "Exploration",
+        "Market"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Bear Trap is a…",
+      "answers": [
+        "Alliance event",
+        "Solo quest",
+        "Market",
+        "Chest"
       ],
       "correct": 2
     },
     {
       "question": "What resource heals troops?",
       "answers": [
+        "Food",
         "Steel",
         "Wood",
-        "Gems",
-        "Food"
+        "Gems"
       ],
       "correct": 3
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "What building trains infantry?",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Barracks",
+        "Hospital",
+        "Warehouse",
+        "Market"
       ],
       "correct": 0
     },
     {
-      "question": "What resource heals troops?",
+      "question": "What keeps your city warm?",
       "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
+        "Furnace",
+        "Hospital",
+        "Market",
+        "Garage"
       ],
       "correct": 1
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "What event focuses on PvP?",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Arena",
+        "Bear Trap",
+        "Exploration",
+        "Market"
       ],
       "correct": 2
     },
     {
-      "question": "What resource heals troops?",
+      "question": "Bear Trap is a…",
       "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
+        "Alliance event",
+        "Solo quest",
+        "Market",
+        "Chest"
       ],
       "correct": 3
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "What resource heals troops?",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Food",
+        "Steel",
+        "Wood",
+        "Gems"
       ],
       "correct": 0
     },
     {
-      "question": "What resource heals troops?",
+      "question": "What building trains infantry?",
       "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
+        "Barracks",
+        "Hospital",
+        "Warehouse",
+        "Market"
       ],
       "correct": 1
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "What keeps your city warm?",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Furnace",
+        "Hospital",
+        "Market",
+        "Garage"
       ],
       "correct": 2
     },
     {
-      "question": "What resource heals troops?",
+      "question": "What event focuses on PvP?",
       "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
+        "Arena",
+        "Bear Trap",
+        "Exploration",
+        "Market"
       ],
       "correct": 3
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "Bear Trap is a…",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Alliance event",
+        "Solo quest",
+        "Market",
+        "Chest"
       ],
       "correct": 0
     },
     {
       "question": "What resource heals troops?",
       "answers": [
+        "Food",
         "Steel",
         "Wood",
-        "Gems",
-        "Food"
+        "Gems"
       ],
       "correct": 1
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "What building trains infantry?",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Barracks",
+        "Hospital",
+        "Warehouse",
+        "Market"
       ],
       "correct": 2
     },
     {
-      "question": "What resource heals troops?",
+      "question": "What keeps your city warm?",
       "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
+        "Furnace",
+        "Hospital",
+        "Market",
+        "Garage"
       ],
       "correct": 3
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "What event focuses on PvP?",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Arena",
+        "Bear Trap",
+        "Exploration",
+        "Market"
       ],
       "correct": 0
     },
     {
-      "question": "What resource heals troops?",
+      "question": "Bear Trap is a…",
       "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
+        "Alliance event",
+        "Solo quest",
+        "Market",
+        "Chest"
       ],
       "correct": 1
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "What resource heals troops?",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Food",
+        "Steel",
+        "Wood",
+        "Gems"
       ],
       "correct": 2
     },
     {
-      "question": "What resource heals troops?",
+      "question": "What building trains infantry?",
       "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
+        "Barracks",
+        "Hospital",
+        "Warehouse",
+        "Market"
       ],
       "correct": 3
     },
     {
-      "question": "Bear Trap is a\u2026",
+      "question": "What keeps your city warm?",
       "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
+        "Furnace",
+        "Hospital",
+        "Market",
+        "Garage"
       ],
       "correct": 0
     },
     {
-      "question": "What resource heals troops?",
+      "question": "What event focuses on PvP?",
       "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Bear Trap is a\u2026",
-      "answers": [
-        "Solo mission",
-        "Market event",
-        "Loot chest",
-        "Alliance event"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What resource heals troops?",
-      "answers": [
-        "Steel",
-        "Wood",
-        "Gems",
-        "Food"
+        "Arena",
+        "Bear Trap",
+        "Exploration",
+        "Market"
       ],
       "correct": 1
     }
