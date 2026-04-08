@@ -255,4 +255,3 @@ async def setup_hook():
 
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 bot.run(TOKEN)
-``
