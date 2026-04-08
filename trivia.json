@@ -1,472 +1,1712 @@
 {
-  "Ref": [
+  "Music": [
     {
-      "question": "What do gamers usually say before doing something reckless?",
+      "question": "Which band released the song 'Bohemian Rhapsody'?",
       "answers": [
-        "I need a guide",
-        "Watch this",
-        "This is impossible",
-        "Let's be careful"
+        "Oasis",
+        "The Beatles",
+        "Queen",
+        "U2"
       ],
-      "correct": 1
+      "correct": 2
     },
     {
-      "question": "What is the classic gamer excuse after losing a match?",
+      "question": "Who is known as the King of Pop?",
       "answers": [
-        "Glitched mouse",
-        "Bad graphics",
-        "Wrong soundtrack",
-        "Lag"
+        "Michael Jackson",
+        "Madonna",
+        "Prince",
+        "Elvis Presley"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which singer released the album '1989'?",
+      "answers": [
+        "Adele",
+        "Katy Perry",
+        "Rihanna",
+        "Taylor Swift"
       ],
       "correct": 3
     },
     {
-      "question": "What usually happens if you skip the tutorial?",
+      "question": "Which band recorded 'Hotel California'?",
       "answers": [
-        "You get lost immediately",
-        "The game adapts",
-        "You master everything",
-        "Nothing changes"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What do gamers expect a red barrel to do?",
-      "answers": [
-        "Open doors",
-        "Give XP",
-        "Heal players",
-        "Explode"
+        "Fleetwood Mac",
+        "Foreigner",
+        "Journey",
+        "Eagles"
       ],
       "correct": 3
     },
     {
-      "question": "What is the universal response to a hard boss online?",
+      "question": "Who sang 'Like a Virgin'?",
       "answers": [
-        "Restart PC",
-        "Lower the music",
-        "Git gud",
-        "Blame teammates"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What usually happens right before a surprise boss fight?",
-      "answers": [
-        "The game autosaves",
-        "The menu freezes",
-        "The map opens",
-        "The HUD disappears"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What happens when an NPC says 'Follow me'?",
-      "answers": [
-        "They walk painfully slow",
-        "They sprint",
-        "They disappear",
-        "They teleport"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What is the most feared screen in gaming?",
-      "answers": [
-        "Game Over",
-        "Options",
-        "Credits",
-        "Brightness settings"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What is the most common RPG inventory problem?",
-      "answers": [
-        "It's empty",
-        "It's always full",
-        "It's sorted",
-        "It's shared"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What is the most common gamer lie?",
-      "answers": [
-        "Just one more game",
-        "I'll log off",
-        "I'm tired",
-        "I need a break"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What happens when you chase a fleeing enemy?",
-      "answers": [
-        "You fall into a trap",
-        "You lose aggro",
-        "You gain XP",
-        "They despawn"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What sound makes every gamer panic instantly?",
-      "answers": [
-        "Achievement unlocked",
-        "Low health warning",
-        "Menu click",
-        "Level up"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What does 'AFK' actually mean in practice?",
-      "answers": [
-        "Gone longer than expected",
-        "Instant return",
-        "One minute",
-        "Disconnected"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What usually hides behind a suspiciously quiet area?",
-      "answers": [
-        "Free loot",
-        "An ambush",
-        "A save point",
-        "Nothing"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What happens when you press 'Hard Mode' for the first time?",
-      "answers": [
-        "Immediate mastery",
-        "Regret",
-        "No change",
-        "Free rewards"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What does every gamer instantly recognize?",
-      "answers": [
-        "Menu theme",
-        "Victory fanfare",
-        "Startup music",
-        "The Windows error sound"
+        "Diana Ross",
+        "Cher",
+        "Cyndi Lauper",
+        "Madonna"
       ],
       "correct": 3
     },
     {
-      "question": "What is the first mistake in stealth missions?",
+      "question": "Which artist released 'Purple Rain'?",
       "answers": [
-        "Checking inventory",
-        "Saving too often",
-        "Running instead of crouching",
-        "Looking at the map"
+        "Prince",
+        "George Michael",
+        "Elton John",
+        "Michael Jackson"
       ],
-      "correct": 2
+      "correct": 0
     },
     {
-      "question": "What happens after clicking 'Are you sure?'",
+      "question": "Which band released 'Back in Black'?",
       "answers": [
-        "Autosave",
-        "Something important is deleted",
-        "Bonus unlocked",
-        "Nothing happens"
+        "Guns N' Roses",
+        "AC/DC",
+        "Led Zeppelin",
+        "Metallica"
       ],
       "correct": 1
     },
     {
-      "question": "What happens when someone says 'I'll solo it'?",
+      "question": "Who sang 'Rolling in the Deep'?",
       "answers": [
-        "They hide",
-        "They win instantly",
-        "They die first",
-        "They disconnect"
+        "Sia",
+        "Lorde",
+        "Adele",
+        "Beyonc\u00e9"
       ],
       "correct": 2
     },
     {
-      "question": "What happens when you ignore side quests?",
+      "question": "Which group recorded 'Smells Like Teen Spirit'?",
       "answers": [
-        "Story adapts",
-        "Nothing changes",
-        "You're underleveled later",
-        "You finish faster"
+        "Alice in Chains",
+        "Nirvana",
+        "Soundgarden",
+        "Pearl Jam"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which artist released the album 'Thriller'?",
+      "answers": [
+        "Stevie Wonder",
+        "Prince",
+        "Michael Jackson",
+        "Lionel Richie"
       ],
       "correct": 2
     },
     {
-      "question": "What does every gamer do when seeing loot?",
+      "question": "Which band sang 'Wonderwall'?",
       "answers": [
-        "Leave it",
-        "Mark it",
-        "Ask teammates",
-        "Pick everything up"
+        "Oasis",
+        "Radiohead",
+        "Blur",
+        "Pulp"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who sang 'Bad Guy'?",
+      "answers": [
+        "Lorde",
+        "Billie Eilish",
+        "Olivia Rodrigo",
+        "Halsey"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which band recorded 'Enter Sandman'?",
+      "answers": [
+        "Anthrax",
+        "Metallica",
+        "Slayer",
+        "Megadeth"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who released 'Shape of You'?",
+      "answers": [
+        "Shawn Mendes",
+        "Justin Bieber",
+        "Sam Smith",
+        "Ed Sheeran"
       ],
       "correct": 3
     },
     {
-      "question": "What is the classic pre-failure sentence?",
+      "question": "Which singer is known for 'Poker Face'?",
       "answers": [
-        "I got this",
-        "Final attempt",
-        "Let's think",
-        "I need help"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What happens to stealth missions most of the time?",
-      "answers": [
-        "They stay silent",
-        "They turn into action",
-        "They auto-complete",
-        "They end early"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What usually goes wrong first in a boss fight?",
-      "answers": [
-        "Controller battery",
-        "Positioning",
-        "Camera zoom",
-        "Music"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What does a glowing object usually mean?",
-      "answers": [
-        "Interact with it",
-        "Ignore it",
-        "It's decoration",
-        "Avoid it"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What is the most classic tech fix meme?",
-      "answers": [
-        "Reinstall OS",
-        "Buy new hardware",
-        "Turn it off and on",
-        "Call support"
+        "Britney Spears",
+        "Rihanna",
+        "Lady Gaga",
+        "Kesha"
       ],
       "correct": 2
     },
     {
-      "question": "What usually happens when you underestimate the first enemy?",
+      "question": "Which band sang 'Take On Me'?",
       "answers": [
-        "You get punished",
-        "Nothing",
-        "They flee",
-        "You win easily"
+        "Depeche Mode",
+        "Tears for Fears",
+        "A-ha",
+        "Duran Duran"
       ],
-      "correct": 0
+      "correct": 2
     },
     {
-      "question": "What is the universal gamer sign of confidence?",
+      "question": "Who released 'Firework'?",
       "answers": [
-        "Dodging",
-        "Learning patterns",
-        "Waiting",
-        "Spamming attacks"
+        "Taylor Swift",
+        "Selena Gomez",
+        "Pink",
+        "Katy Perry"
       ],
       "correct": 3
     },
     {
-      "question": "What does every gamer do after a loss?",
+      "question": "Which band recorded 'Californication'?",
       "answers": [
-        "Celebrate",
-        "Switch genre",
-        "Blame something",
-        "Uninstall"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What usually happens if a door looks important?",
-      "answers": [
-        "It's decorative",
-        "You need a key later",
-        "It opens freely",
-        "It's a shortcut"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What emotion unites all gamers?",
-      "answers": [
-        "Rage",
-        "Acceptance",
-        "Calm",
-        "Patience"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What is the classic reason games crash?",
-      "answers": [
-        "Unexpected bugs",
-        "Good optimization",
-        "Too much fun",
-        "Perfect timing"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What happens when FPS drops?",
-      "answers": [
-        "Better aim",
-        "Instant frustration",
-        "Smooth gameplay",
-        "Lower volume"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What do gamers expect after a loading screen hint?",
-      "answers": [
-        "Still loading",
-        "Cutscene",
-        "Instant gameplay",
-        "Bonus level"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What is the most common reaction to patch notes?",
-      "answers": [
-        "Discussing changes",
-        "Skipping them",
-        "Reading carefully",
-        "Taking notes"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What meme phrase fits any impossible challenge?",
-      "answers": [
-        "Easy mode",
-        "First try",
-        "This is fine",
-        "Perfect balance"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What happens when a game says 'Choices matter'?",
-      "answers": [
-        "Nothing changes",
-        "Story locks",
-        "You overthink everything",
-        "You ignore it"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What is the real endgame activity?",
-      "answers": [
-        "Story missions",
-        "Tutorial",
-        "Fashion",
-        "Settings"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What does every gamer fear losing?",
-      "answers": [
-        "Sound settings",
-        "Unsaved progress",
-        "Cosmetics",
-        "Achievements"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What is the most common post-game thought?",
-      "answers": [
-        "Never again",
-        "Perfect run",
-        "I can do better",
-        "That was easy"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What happens after saying 'last match'?",
-      "answers": [
-        "Sleep",
-        "Immediate logout",
-        "Several more matches",
-        "Victory"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What is the universal gamer snack?",
-      "answers": [
-        "Soup",
-        "Fruit bowl",
-        "Something unhealthy",
-        "Salad"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "What does every gamer check first?",
-      "answers": [
-        "Help menu",
-        "Story recap",
-        "Credits",
-        "Settings"
+        "Green Day",
+        "Blink-182",
+        "Foo Fighters",
+        "Red Hot Chili Peppers"
       ],
       "correct": 3
     },
     {
-      "question": "What usually happens when servers go down?",
+      "question": "Who sang 'Umbrella'?",
       "answers": [
-        "Instant fix",
-        "Games improve",
-        "Everyone waits calmly",
-        "Memes appear"
+        "Rihanna",
+        "Nicki Minaj",
+        "Beyonc\u00e9",
+        "Alicia Keys"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which band released 'The Final Countdown'?",
+      "answers": [
+        "Europe",
+        "Scorpions",
+        "Bon Jovi",
+        "Journey"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which band recorded 'Enter Sandman'?",
+      "answers": [
+        "Slayer",
+        "Anthrax",
+        "Metallica",
+        "Megadeth"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which artist released the album 'Thriller'?",
+      "answers": [
+        "Lionel Richie",
+        "Michael Jackson",
+        "Stevie Wonder",
+        "Prince"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which band sang 'Take On Me'?",
+      "answers": [
+        "Depeche Mode",
+        "Duran Duran",
+        "A-ha",
+        "Tears for Fears"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which singer released the album '1989'?",
+      "answers": [
+        "Taylor Swift",
+        "Katy Perry",
+        "Adele",
+        "Rihanna"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which band recorded 'Enter Sandman'?",
+      "answers": [
+        "Metallica",
+        "Slayer",
+        "Megadeth",
+        "Anthrax"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which singer released the album '1989'?",
+      "answers": [
+        "Taylor Swift",
+        "Rihanna",
+        "Katy Perry",
+        "Adele"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who released 'Firework'?",
+      "answers": [
+        "Katy Perry",
+        "Selena Gomez",
+        "Taylor Swift",
+        "Pink"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which band released 'The Final Countdown'?",
+      "answers": [
+        "Bon Jovi",
+        "Scorpions",
+        "Europe",
+        "Journey"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which artist released the album 'Thriller'?",
+      "answers": [
+        "Michael Jackson",
+        "Prince",
+        "Stevie Wonder",
+        "Lionel Richie"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who sang 'Rolling in the Deep'?",
+      "answers": [
+        "Sia",
+        "Beyonc\u00e9",
+        "Lorde",
+        "Adele"
       ],
       "correct": 3
     },
     {
-      "question": "What do gamers do when Wi\u2011Fi lags?",
+      "question": "Which singer is known for 'Poker Face'?",
       "answers": [
-        "Restart mouse",
-        "Stay calm",
-        "Blame everything",
-        "Lower brightness"
+        "Lady Gaga",
+        "Britney Spears",
+        "Kesha",
+        "Rihanna"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who released 'Firework'?",
+      "answers": [
+        "Katy Perry",
+        "Selena Gomez",
+        "Pink",
+        "Taylor Swift"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which band recorded 'Enter Sandman'?",
+      "answers": [
+        "Metallica",
+        "Megadeth",
+        "Anthrax",
+        "Slayer"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which singer released the album '1989'?",
+      "answers": [
+        "Taylor Swift",
+        "Rihanna",
+        "Katy Perry",
+        "Adele"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who sang 'Rolling in the Deep'?",
+      "answers": [
+        "Beyonc\u00e9",
+        "Adele",
+        "Sia",
+        "Lorde"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who released 'Shape of You'?",
+      "answers": [
+        "Justin Bieber",
+        "Sam Smith",
+        "Ed Sheeran",
+        "Shawn Mendes"
       ],
       "correct": 2
+    },
+    {
+      "question": "Which artist released 'Purple Rain'?",
+      "answers": [
+        "Michael Jackson",
+        "George Michael",
+        "Prince",
+        "Elton John"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which band recorded 'Californication'?",
+      "answers": [
+        "Green Day",
+        "Red Hot Chili Peppers",
+        "Blink-182",
+        "Foo Fighters"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who released 'Shape of You'?",
+      "answers": [
+        "Shawn Mendes",
+        "Ed Sheeran",
+        "Sam Smith",
+        "Justin Bieber"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which band released 'The Final Countdown'?",
+      "answers": [
+        "Scorpions",
+        "Journey",
+        "Europe",
+        "Bon Jovi"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which singer released the album '1989'?",
+      "answers": [
+        "Rihanna",
+        "Adele",
+        "Katy Perry",
+        "Taylor Swift"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who sang 'Umbrella'?",
+      "answers": [
+        "Rihanna",
+        "Alicia Keys",
+        "Beyonc\u00e9",
+        "Nicki Minaj"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who sang 'Umbrella'?",
+      "answers": [
+        "Alicia Keys",
+        "Beyonc\u00e9",
+        "Rihanna",
+        "Nicki Minaj"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which artist released 'Purple Rain'?",
+      "answers": [
+        "George Michael",
+        "Michael Jackson",
+        "Elton John",
+        "Prince"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which band recorded 'Enter Sandman'?",
+      "answers": [
+        "Slayer",
+        "Anthrax",
+        "Metallica",
+        "Megadeth"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who released 'Shape of You'?",
+      "answers": [
+        "Justin Bieber",
+        "Ed Sheeran",
+        "Shawn Mendes",
+        "Sam Smith"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who released 'Firework'?",
+      "answers": [
+        "Taylor Swift",
+        "Selena Gomez",
+        "Katy Perry",
+        "Pink"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which band recorded 'Enter Sandman'?",
+      "answers": [
+        "Slayer",
+        "Megadeth",
+        "Metallica",
+        "Anthrax"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which artist released 'Purple Rain'?",
+      "answers": [
+        "Elton John",
+        "George Michael",
+        "Michael Jackson",
+        "Prince"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which band released 'The Final Countdown'?",
+      "answers": [
+        "Europe",
+        "Bon Jovi",
+        "Journey",
+        "Scorpions"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which artist released the album 'Thriller'?",
+      "answers": [
+        "Stevie Wonder",
+        "Lionel Richie",
+        "Michael Jackson",
+        "Prince"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which band sang 'Take On Me'?",
+      "answers": [
+        "Duran Duran",
+        "Tears for Fears",
+        "Depeche Mode",
+        "A-ha"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which singer released the album '1989'?",
+      "answers": [
+        "Taylor Swift",
+        "Adele",
+        "Katy Perry",
+        "Rihanna"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which band released 'The Final Countdown'?",
+      "answers": [
+        "Bon Jovi",
+        "Europe",
+        "Journey",
+        "Scorpions"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which artist released 'Purple Rain'?",
+      "answers": [
+        "George Michael",
+        "Prince",
+        "Elton John",
+        "Michael Jackson"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which artist released 'Purple Rain'?",
+      "answers": [
+        "Michael Jackson",
+        "George Michael",
+        "Prince",
+        "Elton John"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which singer released the album '1989'?",
+      "answers": [
+        "Taylor Swift",
+        "Adele",
+        "Katy Perry",
+        "Rihanna"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which band recorded 'Enter Sandman'?",
+      "answers": [
+        "Megadeth",
+        "Anthrax",
+        "Slayer",
+        "Metallica"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which band sang 'Take On Me'?",
+      "answers": [
+        "Depeche Mode",
+        "Tears for Fears",
+        "Duran Duran",
+        "A-ha"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which band released 'The Final Countdown'?",
+      "answers": [
+        "Journey",
+        "Europe",
+        "Scorpions",
+        "Bon Jovi"
+      ],
+      "correct": 1
     }
-  ],
+  ]
+}
+{
+  "Cinema": [
+    {
+      "question": "Who directed the movie 'Inception'?",
+      "answers": [
+        "Ridley Scott",
+        "Steven Spielberg",
+        "Christopher Nolan",
+        "James Cameron"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which film won the Oscar for Best Picture in 1994?",
+      "answers": [
+        "Four Weddings and a Funeral",
+        "Pulp Fiction",
+        "The Shawshank Redemption",
+        "Forrest Gump"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+      "answers": [
+        "Mark Ruffalo",
+        "Robert Downey Jr.",
+        "Chris Hemsworth",
+        "Chris Evans"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who directed 'Pulp Fiction'?",
+      "answers": [
+        "Paul Thomas Anderson",
+        "Guy Ritchie",
+        "Martin Scorsese",
+        "Quentin Tarantino"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which movie features the quote 'I'll be back'?",
+      "answers": [
+        "RoboCop",
+        "Predator",
+        "Die Hard",
+        "The Terminator"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which film is set almost entirely on the planet Pandora?",
+      "answers": [
+        "Dune",
+        "Avatar",
+        "Star Wars",
+        "Interstellar"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who played Jack Dawson in 'Titanic'?",
+      "answers": [
+        "Brad Pitt",
+        "Matt Damon",
+        "Tom Cruise",
+        "Leonardo DiCaprio"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which movie introduced the character Darth Vader?",
+      "answers": [
+        "Rogue One",
+        "Star Wars: A New Hope",
+        "The Empire Strikes Back",
+        "Return of the Jedi"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who directed 'The Godfather'?",
+      "answers": [
+        "Brian De Palma",
+        "Martin Scorsese",
+        "Francis Ford Coppola",
+        "Stanley Kubrick"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which movie features a hotel caretaker descending into madness?",
+      "answers": [
+        "Se7en",
+        "The Shining",
+        "Misery",
+        "Psycho"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who directed the movie 'Inception'?",
+      "answers": [
+        "Christopher Nolan",
+        "Steven Spielberg",
+        "Ridley Scott",
+        "James Cameron"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which film won the Oscar for Best Picture in 1994?",
+      "answers": [
+        "Pulp Fiction",
+        "Forrest Gump",
+        "The Shawshank Redemption",
+        "Four Weddings and a Funeral"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+      "answers": [
+        "Chris Evans",
+        "Robert Downey Jr.",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who directed 'Pulp Fiction'?",
+      "answers": [
+        "Paul Thomas Anderson",
+        "Guy Ritchie",
+        "Martin Scorsese",
+        "Quentin Tarantino"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which movie features the quote 'I'll be back'?",
+      "answers": [
+        "The Terminator",
+        "Predator",
+        "Die Hard",
+        "RoboCop"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which film is set almost entirely on the planet Pandora?",
+      "answers": [
+        "Interstellar",
+        "Dune",
+        "Star Wars",
+        "Avatar"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who played Jack Dawson in 'Titanic'?",
+      "answers": [
+        "Matt Damon",
+        "Leonardo DiCaprio",
+        "Tom Cruise",
+        "Brad Pitt"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which movie introduced the character Darth Vader?",
+      "answers": [
+        "Rogue One",
+        "The Empire Strikes Back",
+        "Star Wars: A New Hope",
+        "Return of the Jedi"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who directed 'The Godfather'?",
+      "answers": [
+        "Martin Scorsese",
+        "Francis Ford Coppola",
+        "Stanley Kubrick",
+        "Brian De Palma"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which movie features a hotel caretaker descending into madness?",
+      "answers": [
+        "Se7en",
+        "Misery",
+        "Psycho",
+        "The Shining"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who directed the movie 'Inception'?",
+      "answers": [
+        "Ridley Scott",
+        "Christopher Nolan",
+        "James Cameron",
+        "Steven Spielberg"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which film won the Oscar for Best Picture in 1994?",
+      "answers": [
+        "The Shawshank Redemption",
+        "Pulp Fiction",
+        "Forrest Gump",
+        "Four Weddings and a Funeral"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+      "answers": [
+        "Chris Hemsworth",
+        "Chris Evans",
+        "Robert Downey Jr.",
+        "Mark Ruffalo"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who directed 'Pulp Fiction'?",
+      "answers": [
+        "Quentin Tarantino",
+        "Martin Scorsese",
+        "Paul Thomas Anderson",
+        "Guy Ritchie"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which movie features the quote 'I'll be back'?",
+      "answers": [
+        "Predator",
+        "Die Hard",
+        "RoboCop",
+        "The Terminator"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which film is set almost entirely on the planet Pandora?",
+      "answers": [
+        "Star Wars",
+        "Interstellar",
+        "Avatar",
+        "Dune"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who played Jack Dawson in 'Titanic'?",
+      "answers": [
+        "Matt Damon",
+        "Leonardo DiCaprio",
+        "Brad Pitt",
+        "Tom Cruise"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which movie introduced the character Darth Vader?",
+      "answers": [
+        "Star Wars: A New Hope",
+        "Return of the Jedi",
+        "Rogue One",
+        "The Empire Strikes Back"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who directed 'The Godfather'?",
+      "answers": [
+        "Brian De Palma",
+        "Martin Scorsese",
+        "Francis Ford Coppola",
+        "Stanley Kubrick"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which movie features a hotel caretaker descending into madness?",
+      "answers": [
+        "Se7en",
+        "Psycho",
+        "The Shining",
+        "Misery"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who directed the movie 'Inception'?",
+      "answers": [
+        "Christopher Nolan",
+        "Ridley Scott",
+        "Steven Spielberg",
+        "James Cameron"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which film won the Oscar for Best Picture in 1994?",
+      "answers": [
+        "Four Weddings and a Funeral",
+        "Forrest Gump",
+        "The Shawshank Redemption",
+        "Pulp Fiction"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+      "answers": [
+        "Chris Evans",
+        "Mark Ruffalo",
+        "Robert Downey Jr.",
+        "Chris Hemsworth"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who directed 'Pulp Fiction'?",
+      "answers": [
+        "Paul Thomas Anderson",
+        "Martin Scorsese",
+        "Guy Ritchie",
+        "Quentin Tarantino"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which movie features the quote 'I'll be back'?",
+      "answers": [
+        "Predator",
+        "Die Hard",
+        "The Terminator",
+        "RoboCop"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which film is set almost entirely on the planet Pandora?",
+      "answers": [
+        "Interstellar",
+        "Star Wars",
+        "Dune",
+        "Avatar"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who played Jack Dawson in 'Titanic'?",
+      "answers": [
+        "Matt Damon",
+        "Tom Cruise",
+        "Brad Pitt",
+        "Leonardo DiCaprio"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which movie introduced the character Darth Vader?",
+      "answers": [
+        "Rogue One",
+        "Star Wars: A New Hope",
+        "The Empire Strikes Back",
+        "Return of the Jedi"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who directed 'The Godfather'?",
+      "answers": [
+        "Martin Scorsese",
+        "Stanley Kubrick",
+        "Francis Ford Coppola",
+        "Brian De Palma"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which movie features a hotel caretaker descending into madness?",
+      "answers": [
+        "The Shining",
+        "Se7en",
+        "Psycho",
+        "Misery"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who directed the movie 'Inception'?",
+      "answers": [
+        "Christopher Nolan",
+        "Steven Spielberg",
+        "James Cameron",
+        "Ridley Scott"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which film won the Oscar for Best Picture in 1994?",
+      "answers": [
+        "The Shawshank Redemption",
+        "Pulp Fiction",
+        "Forrest Gump",
+        "Four Weddings and a Funeral"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+      "answers": [
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Robert Downey Jr.",
+        "Mark Ruffalo"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who directed 'Pulp Fiction'?",
+      "answers": [
+        "Guy Ritchie",
+        "Paul Thomas Anderson",
+        "Quentin Tarantino",
+        "Martin Scorsese"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which movie features the quote 'I'll be back'?",
+      "answers": [
+        "Die Hard",
+        "RoboCop",
+        "The Terminator",
+        "Predator"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which film is set almost entirely on the planet Pandora?",
+      "answers": [
+        "Star Wars",
+        "Interstellar",
+        "Avatar",
+        "Dune"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who played Jack Dawson in 'Titanic'?",
+      "answers": [
+        "Tom Cruise",
+        "Brad Pitt",
+        "Matt Damon",
+        "Leonardo DiCaprio"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which movie introduced the character Darth Vader?",
+      "answers": [
+        "Rogue One",
+        "Return of the Jedi",
+        "The Empire Strikes Back",
+        "Star Wars: A New Hope"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who directed 'The Godfather'?",
+      "answers": [
+        "Stanley Kubrick",
+        "Brian De Palma",
+        "Francis Ford Coppola",
+        "Martin Scorsese"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which movie features a hotel caretaker descending into madness?",
+      "answers": [
+        "Se7en",
+        "The Shining",
+        "Psycho",
+        "Misery"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who directed the movie 'Inception'?",
+      "answers": [
+        "Steven Spielberg",
+        "Christopher Nolan",
+        "James Cameron",
+        "Ridley Scott"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which film won the Oscar for Best Picture in 1994?",
+      "answers": [
+        "The Shawshank Redemption",
+        "Four Weddings and a Funeral",
+        "Forrest Gump",
+        "Pulp Fiction"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+      "answers": [
+        "Mark Ruffalo",
+        "Chris Evans",
+        "Robert Downey Jr.",
+        "Chris Hemsworth"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who directed 'Pulp Fiction'?",
+      "answers": [
+        "Guy Ritchie",
+        "Martin Scorsese",
+        "Quentin Tarantino",
+        "Paul Thomas Anderson"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which movie features the quote 'I'll be back'?",
+      "answers": [
+        "Predator",
+        "The Terminator",
+        "RoboCop",
+        "Die Hard"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which film is set almost entirely on the planet Pandora?",
+      "answers": [
+        "Avatar",
+        "Star Wars",
+        "Dune",
+        "Interstellar"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who played Jack Dawson in 'Titanic'?",
+      "answers": [
+        "Brad Pitt",
+        "Leonardo DiCaprio",
+        "Tom Cruise",
+        "Matt Damon"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which movie introduced the character Darth Vader?",
+      "answers": [
+        "Star Wars: A New Hope",
+        "The Empire Strikes Back",
+        "Return of the Jedi",
+        "Rogue One"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who directed 'The Godfather'?",
+      "answers": [
+        "Martin Scorsese",
+        "Francis Ford Coppola",
+        "Brian De Palma",
+        "Stanley Kubrick"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which movie features a hotel caretaker descending into madness?",
+      "answers": [
+        "The Shining",
+        "Psycho",
+        "Misery",
+        "Se7en"
+      ],
+      "correct": 0
+    }
+  ]
+}
+{
+  "Geography": [
+    {
+      "question": "What is the capital of Canada?",
+      "answers": [
+        "Ottawa",
+        "Montreal",
+        "Toronto",
+        "Vancouver"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which river flows through Paris?",
+      "answers": [
+        "Rhine",
+        "Danube",
+        "Seine",
+        "Thames"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "answers": [
+        "Melbourne",
+        "Sydney",
+        "Perth",
+        "Canberra"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which is the largest desert in the world?",
+      "answers": [
+        "Antarctica",
+        "Arabian",
+        "Gobi",
+        "Sahara"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which country has the longest coastline?",
+      "answers": [
+        "Canada",
+        "Indonesia",
+        "Australia",
+        "Russia"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the capital of Brazil?",
+      "answers": [
+        "Bras\u00edlia",
+        "Salvador",
+        "Rio de Janeiro",
+        "S\u00e3o Paulo"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which mountain is the highest in Africa?",
+      "answers": [
+        "Atlas",
+        "Mount Kenya",
+        "Mount Kilimanjaro",
+        "Mount Elgon"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which ocean is the largest?",
+      "answers": [
+        "Atlantic",
+        "Arctic",
+        "Indian",
+        "Pacific Ocean"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "answers": [
+        "Kyoto",
+        "Tokyo",
+        "Osaka",
+        "Nagoya"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which continent has the most countries?",
+      "answers": [
+        "Africa",
+        "Asia",
+        "South America",
+        "Europe"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which river is the longest in the world?",
+      "answers": [
+        "Yangtze",
+        "Nile",
+        "Amazon",
+        "Mississippi"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which country is known as the Land of the Rising Sun?",
+      "answers": [
+        "South Korea",
+        "China",
+        "Thailand",
+        "Japan"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the capital of Argentina?",
+      "answers": [
+        "Santiago",
+        "Buenos Aires",
+        "Montevideo",
+        "Lima"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which sea separates Europe and Africa?",
+      "answers": [
+        "Red Sea",
+        "Mediterranean Sea",
+        "Black Sea",
+        "Caspian Sea"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which country has the city of Marrakech?",
+      "answers": [
+        "Algeria",
+        "Egypt",
+        "Tunisia",
+        "Morocco"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the smallest country in the world?",
+      "answers": [
+        "Monaco",
+        "Vatican City",
+        "Liechtenstein",
+        "San Marino"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which mountain range separates Europe and Asia?",
+      "answers": [
+        "Himalayas",
+        "Alps",
+        "Caucasus",
+        "Ural Mountains"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which country uses the yen?",
+      "answers": [
+        "Japan",
+        "South Korea",
+        "China",
+        "Vietnam"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the capital of New Zealand?",
+      "answers": [
+        "Auckland",
+        "Christchurch",
+        "Wellington",
+        "Hamilton"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which European country is shaped like a boot?",
+      "answers": [
+        "Greece",
+        "Portugal",
+        "Italy",
+        "Spain"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which U.S. state is the largest by area?",
+      "answers": [
+        "Alaska",
+        "Texas",
+        "California",
+        "Montana"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the capital of South Africa (administrative)?",
+      "answers": [
+        "Pretoria",
+        "Johannesburg",
+        "Durban",
+        "Cape Town"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which country has the most volcanoes?",
+      "answers": [
+        "Iceland",
+        "Philippines",
+        "Japan",
+        "Indonesia"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which lake is the largest freshwater lake by surface area?",
+      "answers": [
+        "Lake Baikal",
+        "Lake Superior",
+        "Lake Michigan",
+        "Lake Victoria"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which country borders both Spain and Germany?",
+      "answers": [
+        "France",
+        "Switzerland",
+        "Austria",
+        "Belgium"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which river runs through Egypt?",
+      "answers": [
+        "Jordan",
+        "Tigris",
+        "Euphrates",
+        "Nile"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the capital of Norway?",
+      "answers": [
+        "Stockholm",
+        "Helsinki",
+        "Oslo",
+        "Copenhagen"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which island is the largest in the Mediterranean Sea?",
+      "answers": [
+        "Sicily",
+        "Corsica",
+        "Sardinia",
+        "Crete"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which country has the city of Timbuktu?",
+      "answers": [
+        "Mali",
+        "Niger",
+        "Sudan",
+        "Chad"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which continent contains the Amazon rainforest?",
+      "answers": [
+        "Africa",
+        "South America",
+        "North America",
+        "Asia"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the capital of Thailand?",
+      "answers": [
+        "Pattaya",
+        "Phuket",
+        "Chiang Mai",
+        "Bangkok"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which country is both in Europe and Asia?",
+      "answers": [
+        "Turkey",
+        "Russia",
+        "Georgia",
+        "Greece"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which river flows through London?",
+      "answers": [
+        "Rhine",
+        "Elbe",
+        "Thames",
+        "Seine"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the capital of Iceland?",
+      "answers": [
+        "Reykjav\u00edk",
+        "Oslo",
+        "Helsinki",
+        "Stockholm"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which country has the Great Barrier Reef?",
+      "answers": [
+        "Malaysia",
+        "Philippines",
+        "Australia",
+        "Indonesia"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which desert covers much of northern Africa?",
+      "answers": [
+        "Sahara",
+        "Gobi",
+        "Arabian",
+        "Kalahari"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which European capital is known as the City of Light?",
+      "answers": [
+        "Brussels",
+        "Rome",
+        "Vienna",
+        "Paris"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the capital of Egypt?",
+      "answers": [
+        "Cairo",
+        "Luxor",
+        "Alexandria",
+        "Giza"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which country has the city of Dubrovnik?",
+      "answers": [
+        "Montenegro",
+        "Serbia",
+        "Slovenia",
+        "Croatia"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which mountain range runs along South America's west coast?",
+      "answers": [
+        "Himalayas",
+        "Rockies",
+        "Atlas",
+        "Andes"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which country has the most people?",
+      "answers": [
+        "India",
+        "Indonesia",
+        "USA",
+        "China"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which ocean is the coldest?",
+      "answers": [
+        "Indian",
+        "Southern",
+        "Arctic Ocean",
+        "Atlantic"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the capital of Portugal?",
+      "answers": [
+        "Lisbon",
+        "Seville",
+        "Porto",
+        "Madrid"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which country is known for fjords?",
+      "answers": [
+        "Norway",
+        "Iceland",
+        "Sweden",
+        "Finland"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which river flows through Vienna?",
+      "answers": [
+        "Rhine",
+        "Oder",
+        "Elbe",
+        "Danube"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which country has the city of Petra?",
+      "answers": [
+        "Jordan",
+        "Egypt",
+        "Israel",
+        "Lebanon"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the capital of Finland?",
+      "answers": [
+        "Tallinn",
+        "Oslo",
+        "Helsinki",
+        "Stockholm"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which sea is between Saudi Arabia and Africa?",
+      "answers": [
+        "Mediterranean",
+        "Black Sea",
+        "Arabian Sea",
+        "Red Sea"
+      ],
+      "correct": 3
+    }
+  ]
+}
+{
   "Sciences": [
     {
       "question": "What planet is known as the Red Planet?",
       "answers": [
         "Venus",
-        "Jupiter",
         "Mars",
-        "Mercury"
+        "Mercury",
+        "Jupiter"
       ],
-      "correct": 2
+      "correct": 1
     },
     {
       "question": "What gas do plants absorb from the atmosphere?",
       "answers": [
-        "Nitrogen",
         "Hydrogen",
+        "Nitrogen",
         "Carbon dioxide",
         "Oxygen"
       ],
@@ -485,39 +1725,29 @@
     {
       "question": "Which particle has a negative electric charge?",
       "answers": [
-        "Proton",
-        "Neutron",
+        "Photon",
         "Electron",
-        "Photon"
+        "Proton",
+        "Neutron"
       ],
-      "correct": 2
+      "correct": 1
     },
     {
       "question": "What force keeps planets in orbit around the Sun?",
       "answers": [
+        "Gravity",
         "Inertia",
         "Friction",
-        "Gravity",
         "Magnetism"
       ],
-      "correct": 2
-    },
-    {
-      "question": "What part of the cell contains genetic material?",
-      "answers": [
-        "Membrane",
-        "Cytoplasm",
-        "Ribosome",
-        "Nucleus"
-      ],
-      "correct": 3
+      "correct": 0
     },
     {
       "question": "What is the chemical symbol for gold?",
       "answers": [
-        "Go",
-        "Gd",
         "Ag",
+        "Gd",
+        "Fe",
         "Au"
       ],
       "correct": 3
@@ -525,19 +1755,19 @@
     {
       "question": "Which organ pumps blood through the human body?",
       "answers": [
-        "Heart",
-        "Kidneys",
         "Lungs",
-        "Liver"
+        "Liver",
+        "Kidneys",
+        "Heart"
       ],
-      "correct": 0
+      "correct": 3
     },
     {
       "question": "What phenomenon causes the sky to appear blue?",
       "answers": [
-        "Reflection",
-        "Light scattering",
         "Diffraction",
+        "Light scattering",
+        "Reflection",
         "Refraction"
       ],
       "correct": 1
@@ -545,49 +1775,39 @@
     {
       "question": "What is the hardest naturally occurring substance?",
       "answers": [
+        "Steel",
         "Diamond",
         "Granite",
-        "Steel",
         "Quartz"
       ],
-      "correct": 0
-    },
-    {
-      "question": "What type of energy comes from the Sun?",
-      "answers": [
-        "Solar energy",
-        "Chemical energy",
-        "Thermal conduction",
-        "Nuclear fusion"
-      ],
-      "correct": 0
+      "correct": 1
     },
     {
       "question": "What is H2O commonly known as?",
       "answers": [
         "Oxygen",
+        "Water",
         "Salt",
-        "Hydrogen",
-        "Water"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which blood cells help fight infections?",
-      "answers": [
-        "Red blood cells",
-        "White blood cells",
-        "Platelets",
-        "Plasma"
+        "Hydrogen"
       ],
       "correct": 1
     },
     {
+      "question": "Which blood cells help fight infections?",
+      "answers": [
+        "Plasma",
+        "Platelets",
+        "Red blood cells",
+        "White blood cells"
+      ],
+      "correct": 3
+    },
+    {
       "question": "What force opposes motion between two surfaces?",
       "answers": [
-        "Gravity",
         "Acceleration",
         "Momentum",
+        "Gravity",
         "Friction"
       ],
       "correct": 3
@@ -595,19 +1815,19 @@
     {
       "question": "What part of the eye controls the amount of light entering?",
       "answers": [
-        "Lens",
+        "Pupil",
         "Cornea",
         "Retina",
-        "Pupil"
+        "Lens"
       ],
-      "correct": 3
+      "correct": 0
     },
     {
       "question": "What gas do humans exhale?",
       "answers": [
         "Carbon dioxide",
-        "Nitrogen",
         "Helium",
+        "Nitrogen",
         "Oxygen"
       ],
       "correct": 0
@@ -615,39 +1835,39 @@
     {
       "question": "What is the center of an atom called?",
       "answers": [
-        "Electron cloud",
+        "Orbit",
         "Core",
         "Nucleus",
-        "Orbit"
+        "Electron cloud"
       ],
       "correct": 2
     },
     {
       "question": "Which planet has the most moons?",
       "answers": [
-        "Neptune",
         "Uranus",
-        "Saturn",
-        "Jupiter"
+        "Neptune",
+        "Jupiter",
+        "Saturn"
       ],
-      "correct": 3
+      "correct": 2
     },
     {
       "question": "What type of scientist studies earthquakes?",
       "answers": [
-        "Meteorologist",
-        "Geologist",
         "Volcanologist",
-        "Seismologist"
+        "Seismologist",
+        "Geologist",
+        "Meteorologist"
       ],
-      "correct": 3
+      "correct": 1
     },
     {
       "question": "What organ is responsible for filtering blood?",
       "answers": [
-        "Lungs",
-        "Heart",
         "Liver",
+        "Heart",
+        "Lungs",
         "Kidneys"
       ],
       "correct": 3
@@ -655,60 +1875,40 @@
     {
       "question": "What form of energy is stored in food?",
       "answers": [
-        "Electrical energy",
-        "Thermal energy",
         "Chemical energy",
-        "Kinetic energy"
+        "Kinetic energy",
+        "Electrical energy",
+        "Thermal energy"
       ],
-      "correct": 2
-    },
-    {
-      "question": "What is the speed of light used to measure distances in space?",
-      "answers": [
-        "Astronomical units",
-        "Parsecs",
-        "Light-years",
-        "Kilometers"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which part of the brain controls balance?",
-      "answers": [
-        "Hypothalamus",
-        "Cerebrum",
-        "Cerebellum",
-        "Brainstem"
-      ],
-      "correct": 2
+      "correct": 0
     },
     {
       "question": "What is the boiling point of water at sea level (\u00b0C)?",
       "answers": [
         "80",
-        "120",
+        "100",
         "90",
-        "100"
+        "120"
       ],
-      "correct": 3
+      "correct": 1
     },
     {
       "question": "What planet is famous for its rings?",
       "answers": [
         "Neptune",
         "Uranus",
-        "Jupiter",
-        "Saturn"
+        "Saturn",
+        "Jupiter"
       ],
-      "correct": 3
+      "correct": 2
     },
     {
       "question": "What gas is essential for human respiration?",
       "answers": [
-        "Carbon dioxide",
         "Argon",
+        "Nitrogen",
         "Oxygen",
-        "Nitrogen"
+        "Carbon dioxide"
       ],
       "correct": 2
     },
@@ -725,60 +1925,60 @@
     {
       "question": "What is the study of weather called?",
       "answers": [
-        "Meteorology",
         "Climatology",
-        "Geology",
-        "Astronomy"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What part of the plant conducts photosynthesis?",
-      "answers": [
-        "Flowers",
-        "Stem",
-        "Leaves",
-        "Roots"
+        "Astronomy",
+        "Meteorology",
+        "Geology"
       ],
       "correct": 2
     },
     {
+      "question": "What part of a plant carries out photosynthesis?",
+      "answers": [
+        "Roots",
+        "Leaves",
+        "Stem",
+        "Flowers"
+      ],
+      "correct": 1
+    },
+    {
       "question": "What type of wave is sound?",
       "answers": [
-        "Gamma wave",
         "Light wave",
+        "Electromagnetic wave",
         "Mechanical wave",
-        "Electromagnetic wave"
+        "Gamma wave"
       ],
       "correct": 2
     },
     {
       "question": "What is the main component of the Sun?",
       "answers": [
-        "Hydrogen",
-        "Helium",
         "Carbon",
-        "Oxygen"
+        "Hydrogen",
+        "Oxygen",
+        "Helium"
       ],
-      "correct": 0
+      "correct": 1
     },
     {
       "question": "What organ enables breathing in humans?",
       "answers": [
-        "Lungs",
-        "Diaphragm",
         "Trachea",
+        "Diaphragm",
+        "Lungs",
         "Heart"
       ],
-      "correct": 0
+      "correct": 2
     },
     {
       "question": "What unit measures electrical current?",
       "answers": [
         "Ampere",
+        "Watt",
         "Volt",
-        "Ohm",
-        "Watt"
+        "Ohm"
       ],
       "correct": 0
     },
@@ -786,28 +1986,28 @@
       "question": "What process turns liquid water into vapor?",
       "answers": [
         "Melting",
-        "Evaporation",
+        "Condensation",
         "Freezing",
-        "Condensation"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "What type of animal has a backbone?",
-      "answers": [
-        "Invertebrate",
-        "Mollusk",
-        "Arthropod",
-        "Vertebrate"
+        "Evaporation"
       ],
       "correct": 3
     },
     {
+      "question": "What type of animal has a backbone?",
+      "answers": [
+        "Mollusk",
+        "Invertebrate",
+        "Vertebrate",
+        "Arthropod"
+      ],
+      "correct": 2
+    },
+    {
       "question": "What gas makes up most of Earth's atmosphere?",
       "answers": [
+        "Oxygen",
         "Argon",
         "Carbon dioxide",
-        "Oxygen",
         "Nitrogen"
       ],
       "correct": 3
@@ -815,49 +2015,29 @@
     {
       "question": "What is the smallest unit of matter?",
       "answers": [
-        "Molecule",
-        "Electron",
         "Atom",
-        "Cell"
+        "Molecule",
+        "Cell",
+        "Electron"
       ],
-      "correct": 2
+      "correct": 0
     },
     {
       "question": "What part of the digestive system absorbs nutrients?",
       "answers": [
         "Esophagus",
-        "Small intestine",
         "Colon",
+        "Small intestine",
         "Stomach"
       ],
-      "correct": 1
-    },
-    {
-      "question": "What force pulls objects toward Earth?",
-      "answers": [
-        "Gravity",
-        "Tension",
-        "Inertia",
-        "Magnetism"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "What type of lens converges light rays?",
-      "answers": [
-        "Convex lens",
-        "Diffuse lens",
-        "Concave lens",
-        "Flat lens"
-      ],
-      "correct": 0
+      "correct": 2
     },
     {
       "question": "What phenomenon causes tides on Earth?",
       "answers": [
         "Wind",
-        "Earth's rotation",
         "Ocean currents",
+        "Earth's rotation",
         "Moon's gravity"
       ],
       "correct": 3
@@ -865,12 +2045,12 @@
     {
       "question": "What mineral is essential for strong bones and teeth?",
       "answers": [
+        "Iron",
         "Potassium",
         "Calcium",
-        "Sodium",
-        "Iron"
+        "Sodium"
       ],
-      "correct": 1
+      "correct": 2
     },
     {
       "question": "What tool is used to observe very small objects?",
@@ -885,44 +2065,116 @@
     {
       "question": "What planet is closest to the Sun?",
       "answers": [
-        "Venus",
         "Mars",
         "Earth",
-        "Mercury"
+        "Mercury",
+        "Venus"
       ],
-      "correct": 3
+      "correct": 2
     },
     {
       "question": "What part of the human body produces insulin?",
       "answers": [
-        "Pancreas",
-        "Stomach",
         "Kidney",
-        "Liver"
+        "Pancreas",
+        "Liver",
+        "Stomach"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What type of lens converges light rays?",
+      "answers": [
+        "Diffuse lens",
+        "Concave lens",
+        "Flat lens",
+        "Convex lens"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What unit is used to measure force?",
+      "answers": [
+        "Watt",
+        "Joule",
+        "Newton",
+        "Pascal"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What blood type is known as the universal donor?",
+      "answers": [
+        "AB positive",
+        "O negative",
+        "A negative",
+        "B positive"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the process by which plants make food?",
+      "answers": [
+        "Respiration",
+        "Fermentation",
+        "Photosynthesis",
+        "Transpiration"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What part of the brain controls balance?",
+      "answers": [
+        "Brainstem",
+        "Cerebellum",
+        "Thalamus",
+        "Cerebrum"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the main gas responsible for the greenhouse effect?",
+      "answers": [
+        "Carbon dioxide",
+        "Helium",
+        "Oxygen",
+        "Nitrogen"
       ],
       "correct": 0
+    },
+    {
+      "question": "What does DNA stand for?",
+      "answers": [
+        "Dynamic nuclear acid",
+        "Double nucleotide axis",
+        "Directed nitrogen atom",
+        "Deoxyribonucleic acid"
+      ],
+      "correct": 3
     }
-  ],
+  ]
+}
+{
   "History": [
     {
       "question": "In which year did World War II end?",
       "answers": [
         "1939",
-        "1945",
+        "1943",
         "1950",
-        "1943"
+        "1945"
       ],
-      "correct": 1
+      "correct": 3
     },
     {
       "question": "Who was the first President of the United States?",
       "answers": [
+        "Thomas Jefferson",
         "Abraham Lincoln",
         "George Washington",
-        "John Adams",
-        "Thomas Jefferson"
+        "John Adams"
       ],
-      "correct": 1
+      "correct": 2
     },
     {
       "question": "Which ancient civilization built the pyramids of Giza?",
@@ -938,8 +2190,8 @@
       "question": "Which wall divided Berlin from 1961 to 1989?",
       "answers": [
         "Berlin Wall",
-        "Atlantic Wall",
         "Iron Curtain",
+        "Atlantic Wall",
         "Great Wall"
       ],
       "correct": 0
@@ -948,8 +2200,8 @@
       "question": "Who was the first Roman emperor?",
       "answers": [
         "Augustus",
-        "Caligula",
         "Nero",
+        "Caligula",
         "Julius Caesar"
       ],
       "correct": 0
@@ -957,20 +2209,450 @@
     {
       "question": "Which year did the French Revolution begin?",
       "answers": [
-        "1815",
         "1789",
-        "1804",
-        "1776"
+        "1776",
+        "1815",
+        "1804"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who led the Indian independence movement through nonviolence?",
+      "answers": [
+        "Jawaharlal Nehru",
+        "Subhas Bose",
+        "Mahatma Gandhi",
+        "Indira Gandhi"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which empire was ruled by Genghis Khan?",
+      "answers": [
+        "Mongol Empire",
+        "Roman Empire",
+        "Ottoman Empire",
+        "Persian Empire"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which event triggered World War I?",
+      "answers": [
+        "Battle of Verdun",
+        "Assassination of Archduke Franz Ferdinand",
+        "Treaty of Versailles",
+        "Invasion of Poland"
       ],
       "correct": 1
     },
     {
-      "question": "Who led the Indian independence movement through nonviolent resistance?",
+      "question": "Who was British Prime Minister during most of WWII?",
       "answers": [
-        "Jawaharlal Nehru",
-        "Mahatma Gandhi",
-        "Indira Gandhi",
-        "Subhas Chandra Bose"
+        "Clement Attlee",
+        "Neville Chamberlain",
+        "Winston Churchill",
+        "Margaret Thatcher"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which civilization invented cuneiform writing?",
+      "answers": [
+        "Phoenicians",
+        "Sumerians",
+        "Egyptians",
+        "Babylonians"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which country gifted the Statue of Liberty to the USA?",
+      "answers": [
+        "France",
+        "Germany",
+        "Italy",
+        "United Kingdom"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who was the first woman to win a Nobel Prize?",
+      "answers": [
+        "Jane Goodall",
+        "Ada Lovelace",
+        "Rosalind Franklin",
+        "Marie Curie"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which ancient city was destroyed by Mount Vesuvius in 79 AD?",
+      "answers": [
+        "Pompeii",
+        "Athens",
+        "Carthage",
+        "Rome"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which treaty ended World War I?",
+      "answers": [
+        "Treaty of Versailles",
+        "Treaty of Vienna",
+        "Treaty of Utrecht",
+        "Treaty of Paris"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who was the first Emperor of China?",
+      "answers": [
+        "Kublai Khan",
+        "Sun Tzu",
+        "Qin Shi Huang",
+        "Han Wudi"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which civilization built Machu Picchu?",
+      "answers": [
+        "Aztec",
+        "Maya",
+        "Inca",
+        "Olmec"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which year did humans first land on the Moon?",
+      "answers": [
+        "1972",
+        "1965",
+        "1969",
+        "1959"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who painted the ceiling of the Sistine Chapel?",
+      "answers": [
+        "Donatello",
+        "Michelangelo",
+        "Leonardo da Vinci",
+        "Raphael"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which empire fell in 476 AD?",
+      "answers": [
+        "Ottoman Empire",
+        "Holy Roman Empire",
+        "Western Roman Empire",
+        "Byzantine Empire"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who led the Soviet Union during WWII?",
+      "answers": [
+        "Joseph Stalin",
+        "Leon Trotsky",
+        "Vladimir Lenin",
+        "Nikita Khrushchev"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which Greek city-state emphasized military training?",
+      "answers": [
+        "Athens",
+        "Sparta",
+        "Corinth",
+        "Thebes"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which revolution led to US independence?",
+      "answers": [
+        "Industrial Revolution",
+        "American Revolution",
+        "Russian Revolution",
+        "French Revolution"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Who wrote the Declaration of Independence?",
+      "answers": [
+        "James Madison",
+        "Benjamin Franklin",
+        "Thomas Jefferson",
+        "George Washington"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which ship sank in 1912?",
+      "answers": [
+        "Lusitania",
+        "Queen Mary",
+        "Titanic",
+        "Britannic"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which empire was called 'the empire on which the sun never sets'?",
+      "answers": [
+        "British Empire",
+        "French Empire",
+        "Roman Empire",
+        "Spanish Empire"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who was the first woman Prime Minister of the UK?",
+      "answers": [
+        "Margaret Thatcher",
+        "Angela Merkel",
+        "Theresa May",
+        "Indira Gandhi"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which war occurred between North and South Korea?",
+      "answers": [
+        "Cold War",
+        "Korean War",
+        "Pacific War",
+        "Vietnam War"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which civilization invented paper?",
+      "answers": [
+        "Chinese",
+        "Egyptians",
+        "Romans",
+        "Greeks"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which Egyptian queen allied with Julius Caesar?",
+      "answers": [
+        "Cleopatra",
+        "Nefertiti",
+        "Hatshepsut",
+        "Isis"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "In which year did the Soviet Union collapse?",
+      "answers": [
+        "1995",
+        "1989",
+        "1991",
+        "1993"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Who was leader of Nazi Germany?",
+      "answers": [
+        "Joseph Goebbels",
+        "Adolf Hitler",
+        "Hermann G\u00f6ring",
+        "Heinrich Himmler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which civilization built the Great Wall?",
+      "answers": [
+        "Romans",
+        "Persians",
+        "Chinese",
+        "Mongols"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which war ended with the Fall of Saigon?",
+      "answers": [
+        "Cold War",
+        "Korean War",
+        "Cambodian War",
+        "Vietnam War"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which explorer reached the Americas in 1492?",
+      "answers": [
+        "Magellan",
+        "Amerigo Vespucci",
+        "Vasco da Gama",
+        "Christopher Columbus"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Who became South Africa's first president after apartheid?",
+      "answers": [
+        "Nelson Mandela",
+        "Thabo Mbeki",
+        "F.W. de Klerk",
+        "Desmond Tutu"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which ancient civilization worshiped Zeus and Athena?",
+      "answers": [
+        "Romans",
+        "Norse",
+        "Egyptians",
+        "Ancient Greeks"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which period followed the Middle Ages?",
+      "answers": [
+        "Antiquity",
+        "Modern Era",
+        "Renaissance",
+        "Industrial Age"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which global conflict was called the Cold War?",
+      "answers": [
+        "US vs USSR",
+        "Korean War",
+        "WWII",
+        "WWI"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who was crowned first Holy Roman Emperor?",
+      "answers": [
+        "Henry IV",
+        "Charlemagne",
+        "Frederick Barbarossa",
+        "Otto I"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which civilization built Machu Picchu?",
+      "answers": [
+        "Aztec",
+        "Maya",
+        "Inca",
+        "Olmec"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which war occurred between North and South Korea?",
+      "answers": [
+        "Korean War",
+        "Vietnam War",
+        "Cold War",
+        "Pacific War"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Who painted the ceiling of the Sistine Chapel?",
+      "answers": [
+        "Raphael",
+        "Michelangelo",
+        "Leonardo da Vinci",
+        "Donatello"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which ancient civilization built the pyramids of Giza?",
+      "answers": [
+        "Greeks",
+        "Ancient Egyptians",
+        "Mayans",
+        "Romans"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which war occurred between North and South Korea?",
+      "answers": [
+        "Pacific War",
+        "Cold War",
+        "Vietnam War",
+        "Korean War"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which civilization built the Great Wall?",
+      "answers": [
+        "Mongols",
+        "Persians",
+        "Chinese",
+        "Romans"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which year did humans first land on the Moon?",
+      "answers": [
+        "1969",
+        "1959",
+        "1965",
+        "1972"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which global conflict was called the Cold War?",
+      "answers": [
+        "WWI",
+        "Korean War",
+        "WWII",
+        "US vs USSR"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which civilization built the Great Wall?",
+      "answers": [
+        "Persians",
+        "Mongols",
+        "Romans",
+        "Chinese"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "Which year did humans first land on the Moon?",
+      "answers": [
+        "1959",
+        "1969",
+        "1972",
+        "1965"
       ],
       "correct": 1
     },
@@ -985,102 +2667,32 @@
       "correct": 3
     },
     {
-      "question": "Which event started World War I?",
+      "question": "Which civilization invented cuneiform writing?",
       "answers": [
-        "Battle of Versailles",
-        "Invasion of Poland",
-        "Assassination of Archduke Franz Ferdinand",
-        "Treaty of Trianon"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who was the British Prime Minister during most of World War II?",
-      "answers": [
-        "Margaret Thatcher",
-        "Winston Churchill",
-        "Neville Chamberlain",
-        "Clement Attlee"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which civilization developed cuneiform writing?",
-      "answers": [
-        "Sumerians",
         "Egyptians",
         "Babylonians",
-        "Phoenicians"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which country gifted the Statue of Liberty to the United States?",
-      "answers": [
-        "Italy",
-        "United Kingdom",
-        "France",
-        "Germany"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Who was the first woman to win a Nobel Prize?",
-      "answers": [
-        "Ada Lovelace",
-        "Jane Goodall",
-        "Rosalind Franklin",
-        "Marie Curie"
+        "Phoenicians",
+        "Sumerians"
       ],
       "correct": 3
     },
     {
-      "question": "Which ancient city was destroyed by the eruption of Mount Vesuvius in 79 AD?",
+      "question": "Which event triggered World War I?",
       "answers": [
-        "Carthage",
-        "Rome",
-        "Pompeii",
-        "Athens"
+        "Battle of Verdun",
+        "Invasion of Poland",
+        "Assassination of Archduke Franz Ferdinand",
+        "Treaty of Versailles"
       ],
       "correct": 2
     },
     {
-      "question": "Which treaty formally ended World War I?",
+      "question": "Who was the first Roman emperor?",
       "answers": [
-        "Treaty of Versailles",
-        "Treaty of Paris",
-        "Treaty of Utrecht",
-        "Treaty of Vienna"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Who was the first Emperor of China?",
-      "answers": [
-        "Qin Shi Huang",
-        "Sun Tzu",
-        "Han Wudi",
-        "Kublai Khan"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which civilization built Machu Picchu?",
-      "answers": [
-        "Maya",
-        "Olmec",
-        "Aztec",
-        "Inca"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which year did humans first land on the Moon?",
-      "answers": [
-        "1959",
-        "1972",
-        "1969",
-        "1965"
+        "Nero",
+        "Julius Caesar",
+        "Augustus",
+        "Caligula"
       ],
       "correct": 2
     },
@@ -1095,214 +2707,658 @@
       "correct": 3
     },
     {
-      "question": "Which empire fell in 476 AD?",
+      "question": "Who was leader of Nazi Germany?",
       "answers": [
-        "Byzantine Empire",
-        "Western Roman Empire",
-        "Ottoman Empire",
-        "Holy Roman Empire"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who was the leader of the Soviet Union during World War II?",
-      "answers": [
-        "Leon Trotsky",
-        "Joseph Stalin",
-        "Nikita Khrushchev",
-        "Vladimir Lenin"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which ancient Greek city-state focused on military discipline?",
-      "answers": [
-        "Corinth",
-        "Athens",
-        "Thebes",
-        "Sparta"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which revolution led to the independence of the United States?",
-      "answers": [
-        "Russian Revolution",
-        "French Revolution",
-        "Industrial Revolution",
-        "American Revolution"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who wrote the Declaration of Independence?",
-      "answers": [
-        "Thomas Jefferson",
-        "Benjamin Franklin",
-        "George Washington",
-        "James Madison"
+        "Adolf Hitler",
+        "Heinrich Himmler",
+        "Hermann G\u00f6ring",
+        "Joseph Goebbels"
       ],
       "correct": 0
     },
     {
-      "question": "Which ship famously sank in 1912?",
+      "question": "Which explorer reached the Americas in 1492?",
       "answers": [
-        "Lusitania",
-        "Titanic",
-        "Queen Mary",
-        "Britannic"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which empire was known as the 'Empire on which the sun never sets'?",
-      "answers": [
-        "Roman Empire",
-        "British Empire",
-        "French Empire",
-        "Spanish Empire"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Who was the first woman Prime Minister of the United Kingdom?",
-      "answers": [
-        "Indira Gandhi",
-        "Theresa May",
-        "Angela Merkel",
-        "Margaret Thatcher"
+        "Amerigo Vespucci",
+        "Vasco da Gama",
+        "Magellan",
+        "Christopher Columbus"
       ],
       "correct": 3
     },
     {
-      "question": "Which war was fought between North and South Korea in the 1950s?",
+      "question": "Which event triggered World War I?",
       "answers": [
-        "Cold War",
-        "Pacific War",
-        "Korean War",
-        "Vietnam War"
-      ],
-      "correct": 2
-    },
-    {
-      "question": "Which civilization invented paper?",
-      "answers": [
-        "Roman",
-        "Greek",
-        "Egyptian",
-        "Chinese"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who was the Egyptian queen famous for her alliance with Julius Caesar?",
-      "answers": [
-        "Isis",
-        "Nefertiti",
-        "Hatshepsut",
-        "Cleopatra"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Which year did the Soviet Union collapse?",
-      "answers": [
-        "1995",
-        "1989",
-        "1993",
-        "1991"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who was the leader of Nazi Germany?",
-      "answers": [
-        "Heinrich Himmler",
-        "Adolf Hitler",
-        "Hermann G\u00f6ring",
-        "Joseph Goebbels"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which civilization built the Great Wall?",
-      "answers": [
-        "Romans",
-        "Chinese",
-        "Mongols",
-        "Persians"
-      ],
-      "correct": 1
-    },
-    {
-      "question": "Which war ended with the Fall of Saigon?",
-      "answers": [
-        "Cambodian War",
-        "Vietnam War",
-        "Cold War",
-        "Korean War"
+        "Battle of Verdun",
+        "Assassination of Archduke Franz Ferdinand",
+        "Treaty of Versailles",
+        "Invasion of Poland"
       ],
       "correct": 1
     },
     {
       "question": "Which explorer reached the Americas in 1492?",
       "answers": [
-        "Ferdinand Magellan",
         "Amerigo Vespucci",
         "Vasco da Gama",
-        "Christopher Columbus"
-      ],
-      "correct": 3
-    },
-    {
-      "question": "Who was the first President of South Africa after apartheid?",
-      "answers": [
-        "Nelson Mandela",
-        "Thabo Mbeki",
-        "Desmond Tutu",
-        "F.W. de Klerk"
-      ],
-      "correct": 0
-    },
-    {
-      "question": "Which ancient civilization worshipped gods like Zeus and Athena?",
-      "answers": [
-        "Egyptians",
-        "Norse",
-        "Ancient Greeks",
-        "Romans"
+        "Christopher Columbus",
+        "Magellan"
       ],
       "correct": 2
     },
     {
-      "question": "Which period came after the Middle Ages?",
+      "question": "Which empire was ruled by Genghis Khan?",
       "answers": [
-        "Industrial Age",
-        "Renaissance",
-        "Ancient Era",
-        "Modern Age"
+        "Mongol Empire",
+        "Persian Empire",
+        "Roman Empire",
+        "Ottoman Empire"
       ],
-      "correct": 1
+      "correct": 0
+    }
+  ]
+}
+{
+  "Ref": [
+    {
+      "question": "What happens when an NPC says 'follow me'?",
+      "answers": [
+        "They walk painfully slow",
+        "They sprint",
+        "They teleport",
+        "They disappear"
+      ],
+      "correct": 0
     },
     {
-      "question": "Which conflict was known as the Cold War?",
+      "question": "What usually happens after 'just one more game'?",
       "answers": [
-        "WWII",
-        "Korean War",
-        "WWI",
-        "US vs USSR"
+        "You log off",
+        "You fall asleep",
+        "You win instantly",
+        "It's suddenly very late"
       ],
       "correct": 3
     },
     {
-      "question": "Who was the first Emperor of the Holy Roman Empire?",
+      "question": "What do gamers say before doing something risky?",
       "answers": [
-        "Charlemagne",
-        "Frederick Barbarossa",
-        "Otto I",
-        "Henry IV"
+        "Watch this",
+        "I need a guide",
+        "This is impossible",
+        "Let's be careful"
       ],
       "correct": 0
+    },
+    {
+      "question": "What do gamers expect a red barrel to do?",
+      "answers": [
+        "Heal",
+        "Give XP",
+        "Explode",
+        "Open doors"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the universal response to a hard boss?",
+      "answers": [
+        "Lower volume",
+        "Restart PC",
+        "Blame teammates",
+        "Git gud"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the most common RPG inventory problem?",
+      "answers": [
+        "It's shared",
+        "It's always full",
+        "It's sorted",
+        "It's empty"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What does NPC stand for?",
+      "answers": [
+        "Non-Playable Character",
+        "Network Ping Code",
+        "Next Player Choice",
+        "New Patch Coming"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What usually happens after 'just one more game'?",
+      "answers": [
+        "It's suddenly very late",
+        "You win instantly",
+        "You fall asleep",
+        "You log off"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the universal response to a hard boss?",
+      "answers": [
+        "Git gud",
+        "Restart PC",
+        "Blame teammates",
+        "Lower volume"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What usually happens after 'just one more game'?",
+      "answers": [
+        "You win instantly",
+        "You log off",
+        "It's suddenly very late",
+        "You fall asleep"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What happens if you skip the tutorial?",
+      "answers": [
+        "Nothing changes",
+        "You master the game",
+        "You get lost immediately",
+        "The game adapts"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What makes every gamer panic instantly?",
+      "answers": [
+        "Autosave",
+        "Low health sound",
+        "Menu click",
+        "Level up"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What do gamers say before doing something risky?",
+      "answers": [
+        "Let's be careful",
+        "Watch this",
+        "I need a guide",
+        "This is impossible"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What happens when an NPC says 'follow me'?",
+      "answers": [
+        "They disappear",
+        "They walk painfully slow",
+        "They teleport",
+        "They sprint"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What do gamers expect a red barrel to do?",
+      "answers": [
+        "Explode",
+        "Give XP",
+        "Heal",
+        "Open doors"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the most common RPG inventory problem?",
+      "answers": [
+        "It's always full",
+        "It's sorted",
+        "It's empty",
+        "It's shared"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the classic gamer excuse after losing?",
+      "answers": [
+        "Lag",
+        "Controller broken",
+        "Bad music",
+        "Wrong resolution"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What does NPC stand for?",
+      "answers": [
+        "Non-Playable Character",
+        "New Patch Coming",
+        "Network Ping Code",
+        "Next Player Choice"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What do gamers say before doing something risky?",
+      "answers": [
+        "I need a guide",
+        "Let's be careful",
+        "This is impossible",
+        "Watch this"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What do gamers say before doing something risky?",
+      "answers": [
+        "I need a guide",
+        "Watch this",
+        "This is impossible",
+        "Let's be careful"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What happens if you skip the tutorial?",
+      "answers": [
+        "You master the game",
+        "Nothing changes",
+        "You get lost immediately",
+        "The game adapts"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What happens if you skip the tutorial?",
+      "answers": [
+        "You master the game",
+        "The game adapts",
+        "You get lost immediately",
+        "Nothing changes"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the classic gamer excuse after losing?",
+      "answers": [
+        "Controller broken",
+        "Wrong resolution",
+        "Lag",
+        "Bad music"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What usually happens after 'just one more game'?",
+      "answers": [
+        "You log off",
+        "You fall asleep",
+        "It's suddenly very late",
+        "You win instantly"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What happens if you skip the tutorial?",
+      "answers": [
+        "You master the game",
+        "The game adapts",
+        "You get lost immediately",
+        "Nothing changes"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What do gamers say before doing something risky?",
+      "answers": [
+        "I need a guide",
+        "Watch this",
+        "This is impossible",
+        "Let's be careful"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What happens if you skip the tutorial?",
+      "answers": [
+        "You get lost immediately",
+        "The game adapts",
+        "You master the game",
+        "Nothing changes"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the most common RPG inventory problem?",
+      "answers": [
+        "It's shared",
+        "It's empty",
+        "It's always full",
+        "It's sorted"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the most common RPG inventory problem?",
+      "answers": [
+        "It's sorted",
+        "It's shared",
+        "It's always full",
+        "It's empty"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What makes every gamer panic instantly?",
+      "answers": [
+        "Level up",
+        "Low health sound",
+        "Autosave",
+        "Menu click"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What usually happens after 'just one more game'?",
+      "answers": [
+        "It's suddenly very late",
+        "You log off",
+        "You fall asleep",
+        "You win instantly"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the classic gamer excuse after losing?",
+      "answers": [
+        "Bad music",
+        "Wrong resolution",
+        "Lag",
+        "Controller broken"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What do gamers say before doing something risky?",
+      "answers": [
+        "Watch this",
+        "Let's be careful",
+        "This is impossible",
+        "I need a guide"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the most common RPG inventory problem?",
+      "answers": [
+        "It's always full",
+        "It's shared",
+        "It's sorted",
+        "It's empty"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What usually happens after 'just one more game'?",
+      "answers": [
+        "You log off",
+        "It's suddenly very late",
+        "You win instantly",
+        "You fall asleep"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What makes every gamer panic instantly?",
+      "answers": [
+        "Autosave",
+        "Level up",
+        "Menu click",
+        "Low health sound"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the most common RPG inventory problem?",
+      "answers": [
+        "It's shared",
+        "It's empty",
+        "It's always full",
+        "It's sorted"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What happens when an NPC says 'follow me'?",
+      "answers": [
+        "They walk painfully slow",
+        "They sprint",
+        "They disappear",
+        "They teleport"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the most common RPG inventory problem?",
+      "answers": [
+        "It's sorted",
+        "It's always full",
+        "It's empty",
+        "It's shared"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What happens when an NPC says 'follow me'?",
+      "answers": [
+        "They walk painfully slow",
+        "They disappear",
+        "They teleport",
+        "They sprint"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What does NPC stand for?",
+      "answers": [
+        "New Patch Coming",
+        "Network Ping Code",
+        "Non-Playable Character",
+        "Next Player Choice"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What do gamers say before doing something risky?",
+      "answers": [
+        "This is impossible",
+        "I need a guide",
+        "Watch this",
+        "Let's be careful"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What happens if you skip the tutorial?",
+      "answers": [
+        "You master the game",
+        "Nothing changes",
+        "You get lost immediately",
+        "The game adapts"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What do gamers say before doing something risky?",
+      "answers": [
+        "This is impossible",
+        "Let's be careful",
+        "Watch this",
+        "I need a guide"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What usually happens after 'just one more game'?",
+      "answers": [
+        "You log off",
+        "You fall asleep",
+        "It's suddenly very late",
+        "You win instantly"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What happens if you skip the tutorial?",
+      "answers": [
+        "You master the game",
+        "The game adapts",
+        "You get lost immediately",
+        "Nothing changes"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What makes every gamer panic instantly?",
+      "answers": [
+        "Low health sound",
+        "Menu click",
+        "Level up",
+        "Autosave"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What do gamers say before doing something risky?",
+      "answers": [
+        "Watch this",
+        "Let's be careful",
+        "I need a guide",
+        "This is impossible"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What do gamers expect a red barrel to do?",
+      "answers": [
+        "Heal",
+        "Open doors",
+        "Explode",
+        "Give XP"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the most common RPG inventory problem?",
+      "answers": [
+        "It's sorted",
+        "It's shared",
+        "It's empty",
+        "It's always full"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What is the classic gamer excuse after losing?",
+      "answers": [
+        "Bad music",
+        "Controller broken",
+        "Lag",
+        "Wrong resolution"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What does NPC stand for?",
+      "answers": [
+        "Next Player Choice",
+        "Non-Playable Character",
+        "Network Ping Code",
+        "New Patch Coming"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the classic gamer excuse after losing?",
+      "answers": [
+        "Wrong resolution",
+        "Bad music",
+        "Lag",
+        "Controller broken"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What usually happens after 'just one more game'?",
+      "answers": [
+        "It's suddenly very late",
+        "You log off",
+        "You win instantly",
+        "You fall asleep"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the classic gamer excuse after losing?",
+      "answers": [
+        "Controller broken",
+        "Bad music",
+        "Wrong resolution",
+        "Lag"
+      ],
+      "correct": 3
+    },
+    {
+      "question": "What happens if you skip the tutorial?",
+      "answers": [
+        "Nothing changes",
+        "You get lost immediately",
+        "The game adapts",
+        "You master the game"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What does NPC stand for?",
+      "answers": [
+        "Next Player Choice",
+        "New Patch Coming",
+        "Non-Playable Character",
+        "Network Ping Code"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What usually happens after 'just one more game'?",
+      "answers": [
+        "You win instantly",
+        "You log off",
+        "It's suddenly very late",
+        "You fall asleep"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the classic gamer excuse after losing?",
+      "answers": [
+        "Lag",
+        "Wrong resolution",
+        "Controller broken",
+        "Bad music"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What do gamers say before doing something risky?",
+      "answers": [
+        "This is impossible",
+        "Watch this",
+        "I need a guide",
+        "Let's be careful"
+      ],
+      "correct": 1
     }
   ]
 }
