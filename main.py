@@ -210,14 +210,12 @@ async def scheduler():
     while True:
         now = datetime.datetime.now(UTC)
 
-        # ⚔️ ARENA
         if now.hour == 23 and now.minute == 45:
             key = now.strftime("%Y-%m-%d")
             if getattr(bot, "arena_sent", None) != key:
                 await channel.send("⚔️ **Arena in 15 minutes! (00:00 UTC)**")
                 bot.arena_sent = key
 
-        # 🐻 BEAR TRAP
         if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
             for h, m in BEAR_TRAP_TIMES:
                 event_time = now.replace(hour=h, minute=m, second=0)
@@ -228,7 +226,6 @@ async def scheduler():
                 if delta == 0:
                     await channel.send("🚨 **BEAR TRAP IS LIVE!**")
 
-        # 📅 CUSTOM EVENTS
         for e in EVENTS:
             dt = datetime.datetime.fromisoformat(e["datetime"])
             delta = int((dt - now).total_seconds() / 60)
