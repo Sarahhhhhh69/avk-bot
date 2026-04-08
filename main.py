@@ -30,11 +30,12 @@ BEAR_TRAP_INTERVAL_DAYS = 2
 BEAR_TRAP_START_DATE = datetime.date.today()
 
 REACTIONS = ["🇦", "🇧", "🇨", "🇩"]
+TRIVIA_QUESTION_COUNT = 5
 
-# ===================== TRIVIA CATEGORIES (DROPDOWN) =====================
+# ===================== TRIVIA CATEGORIES =====================
 
 TRIVIA_CATEGORIES = [
-    app_commands.Choice(name="Fun / Memes", value="Fun/Memes"),
+    app_commands.Choice(name="Ref", value="Ref"),
     app_commands.Choice(name="Cinema", value="Cinema"),
     app_commands.Choice(name="Music", value="Music"),
     app_commands.Choice(name="Sciences", value="Sciences"),
@@ -122,14 +123,23 @@ async def trivia(
             ephemeral=True
         )
 
+    if not TRIVIA_DB.get(category):
+        return await interaction.response.send_message(
+            "❌ This category has no questions yet.",
+            ephemeral=True
+        )
+
     await interaction.response.send_message(
-        f"🧠 **Trivia Tournament — {category}**\n20 questions incoming…",
+        f"🧠 **Trivia Tournament — {category}**\n{TRIVIA_QUESTION_COUNT} questions incoming…",
         ephemeral=True
     )
 
-    questions = random.sample(TRIVIA_DB[category], 20)
-    scores = {}
+    questions = random.sample(
+        TRIVIA_DB[category],
+        min(TRIVIA_QUESTION_COUNT, len(TRIVIA_DB[category]))
+    )
 
+    scores = {}
     channel = interaction.channel
 
     for q_index, q in enumerate(questions, start=1):
@@ -137,7 +147,7 @@ async def trivia(
         correct_order = []
 
         msg = await channel.send(
-            f"🧠 **Question {q_index}/20**\n\n"
+            f"🧠 **Question {q_index}/{TRIVIA_QUESTION_COUNT}**\n\n"
             f"{q['question']}\n\n"
             "🇦 🇧 🇨 🇩  (10s)"
         )
@@ -173,7 +183,6 @@ async def trivia(
             if chosen == q["correct"]:
                 correct_order.append(user.id)
 
-        # Scoring
         for idx, uid in enumerate(correct_order):
             scores.setdefault(uid, 0)
             if idx == 0:
@@ -188,8 +197,6 @@ async def trivia(
         correct_letter = REACTIONS[q["correct"]]
         await channel.send(f"✅ **Correct answer:** {correct_letter}")
         await asyncio.sleep(2)
-
-    # ===================== FINAL LEADERBOARD =====================
 
     leaderboard = sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
