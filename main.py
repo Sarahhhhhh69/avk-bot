@@ -146,11 +146,17 @@ async def trivia(
         answered = {}
         correct_order = []
 
-        msg = await channel.send(
-            f"🧠 **Question {q_index}/{TRIVIA_QUESTION_COUNT}**\n\n"
-            f"{q['question']}\n\n"
-            "🇦 🇧 🇨 🇩  (10s)"
-        )
+answers_text = "\n".join(
+    f"{REACTIONS[i]} {answer}"
+    for i, answer in enumerate(q["answers"])
+)
+
+msg = await channel.send(
+    f"🧠 **Question {q_index}/{TRIVIA_QUESTION_COUNT}**\n\n"
+    f"{q['question']}\n\n"
+    f"{answers_text}\n\n"
+    "⏱️ 10 seconds to answer"
+)
 
         for r in REACTIONS:
             await msg.add_reaction(r)
