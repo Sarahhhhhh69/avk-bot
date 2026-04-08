@@ -31,6 +31,17 @@ BEAR_TRAP_START_DATE = datetime.date.today()
 
 REACTIONS = ["🇦", "🇧", "🇨", "🇩"]
 
+# ===================== TRIVIA CATEGORIES (DROPDOWN) =====================
+
+TRIVIA_CATEGORIES = [
+    app_commands.Choice(name="AVK", value="AVK"),
+    app_commands.Choice(name="Cinema", value="Cinema"),
+    app_commands.Choice(name="Music", value="Music"),
+    app_commands.Choice(name="Sciences", value="Sciences"),
+    app_commands.Choice(name="Geography", value="Geography"),
+    app_commands.Choice(name="History", value="History"),
+]
+
 # ===================== BOT =====================
 
 intents = discord.Intents(
@@ -68,9 +79,14 @@ async def ping(interaction: discord.Interaction):
 @bot.tree.command(name="event")
 async def create_event(interaction: discord.Interaction, name: str, date: str, time: str):
     try:
-        dt = datetime.datetime.strptime(f"{date} {time}", "%Y-%m-%d %H:%M").replace(tzinfo=UTC)
+        dt = datetime.datetime.strptime(
+            f"{date} {time}", "%Y-%m-%d %H:%M"
+        ).replace(tzinfo=UTC)
     except ValueError:
-        return await interaction.response.send_message("❌ Format: YYYY-MM-DD HH:MM UTC")
+        return await interaction.response.send_message(
+            "❌ Format: YYYY-MM-DD HH:MM UTC",
+            ephemeral=True
+        )
 
     EVENTS.append({
         "name": name,
@@ -78,20 +94,37 @@ async def create_event(interaction: discord.Interaction, name: str, date: str, t
         "reminded": {"1h": False, "30m": False, "5m": False, "start": False}
     })
     save_json(EVENTS_FILE, EVENTS)
-    await interaction.response.send_message(f"✅ Event **{name}** created.")
+
+    await interaction.response.send_message(
+        f"✅ Event **{name}** created.",
+        ephemeral=True
+    )
 
 # ===================== TRIVIA TOURNAMENT =====================
 
-@bot.tree.command(name="trivia")
-async def trivia(interaction: discord.Interaction, category: str):
+@bot.tree.command(name="trivia", description="Start a Trivia Tournament")
+@app_commands.choices(category=TRIVIA_CATEGORIES)
+async def trivia(
+    interaction: discord.Interaction,
+    category: app_commands.Choice[str]
+):
+    category = category.value
+
     if interaction.channel_id != GAMES_CHANNEL_ID:
-        return
+        return await interaction.response.send_message(
+            "❌ This command can only be used in the games channel.",
+            ephemeral=True
+        )
 
     if category not in TRIVIA_DB:
-        return await interaction.response.send_message("❌ Category not found.")
+        return await interaction.response.send_message(
+            "❌ Category not found.",
+            ephemeral=True
+        )
 
     await interaction.response.send_message(
-        f"🧠 **Trivia Tournament — {category}**\n20 questions incoming…", ephemeral=True
+        f"🧠 **Trivia Tournament — {category}**\n20 questions incoming…",
+        ephemeral=True
     )
 
     questions = random.sample(TRIVIA_DB[category], 20)
@@ -119,8 +152,9 @@ async def trivia(interaction: discord.Interaction, category: str):
                 and not user.bot
             )
 
-        start = datetime.datetime.utcnow()
-        while (datetime.datetime.utcnow() - start).seconds < 10:
+        start = datetime.datetime.now(UTC)
+
+        while (datetime.datetime.now(UTC) - start).seconds < 10:
             try:
                 reaction, user = await bot.wait_for(
                     "reaction_add",
@@ -193,6 +227,7 @@ async def scheduler():
             for h, m in BEAR_TRAP_TIMES:
                 event = now.replace(hour=h, minute=m, second=0)
                 delta = int((event - now).total_seconds() / 60)
+
                 if delta in (60, 30, 5):
                     await channel.send(f"🐻 **Bear Trap in {delta} minutes**")
                 if delta == 0:
