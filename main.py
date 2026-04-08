@@ -117,15 +117,9 @@ async def trivia(
             ephemeral=True
         )
 
-    if category not in TRIVIA_DB:
+    if category not in TRIVIA_DB or not TRIVIA_DB[category]:
         return await interaction.response.send_message(
-            "❌ Category not found.",
-            ephemeral=True
-        )
-
-    if not TRIVIA_DB.get(category):
-        return await interaction.response.send_message(
-            "❌ This category has no questions yet.",
+            "❌ This category has no questions.",
             ephemeral=True
         )
 
@@ -146,17 +140,17 @@ async def trivia(
         answered = {}
         correct_order = []
 
-answers_text = "\n".join(
-    f"{REACTIONS[i]} {answer}"
-    for i, answer in enumerate(q["answers"])
-)
+        answers_text = "\n".join(
+            f"{REACTIONS[i]} {answer}"
+            for i, answer in enumerate(q["answers"])
+        )
 
-msg = await channel.send(
-    f"🧠 **Question {q_index}/{TRIVIA_QUESTION_COUNT}**\n\n"
-    f"{q['question']}\n\n"
-    f"{answers_text}\n\n"
-    "⏱️ 10 seconds to answer"
-)
+        msg = await channel.send(
+            f"🧠 **Question {q_index}/{TRIVIA_QUESTION_COUNT}**\n\n"
+            f"{q['question']}\n\n"
+            f"{answers_text}\n\n"
+            "⏱️ 10 seconds to answer"
+        )
 
         for r in REACTIONS:
             await msg.add_reaction(r)
@@ -201,7 +195,8 @@ msg = await channel.send(
                 scores[uid] += 1
 
         correct_letter = REACTIONS[q["correct"]]
-        await channel.send(f"✅ **Correct answer:** {correct_letter}")
+        correct_text = q["answers"][q["correct"]]
+        await channel.send(f"✅ **Correct answer:** {correct_letter} {correct_text}")
         await asyncio.sleep(2)
 
     leaderboard = sorted(scores.items(), key=lambda x: x[1], reverse=True)
@@ -227,46 +222,6 @@ async def scheduler():
 
     while True:
         now = datetime.datetime.now(UTC)
-
-        # ARENA
-        if now.hour == 23 and now.minute == 45:
-            key = now.strftime("%Y-%m-%d")
-            if getattr(bot, "arena_sent", None) != key:
-                await channel.send("⚔️ **Arena in 15 minutes! (00:00 UTC)**")
-                bot.arena_sent = key
-
-        # BEAR TRAP
-        if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
-            for h, m in BEAR_TRAP_TIMES:
-                event = now.replace(hour=h, minute=m, second=0)
-                delta = int((event - now).total_seconds() / 60)
-
-                if delta in (60, 30, 5):
-                    await channel.send(f"🐻 **Bear Trap in {delta} minutes**")
-                if delta == 0:
-                    await channel.send("🚨 **BEAR TRAP IS LIVE!**")
-
-        # CUSTOM EVENTS
-        for e in EVENTS:
-            dt = datetime.datetime.fromisoformat(e["datetime"])
-            delta = int((dt - now).total_seconds() / 60)
-
-            if delta == 60 and not e["reminded"]["1h"]:
-                await channel.send(f"⏰ **{e['name']} in 1 hour**")
-                e["reminded"]["1h"] = True
-
-            if delta == 30 and not e["reminded"]["30m"]:
-                await channel.send(f"⏰ **{e['name']} in 30 minutes**")
-                e["reminded"]["30m"] = True
-
-            if delta == 5 and not e["reminded"]["5m"]:
-                await channel.send(f"⏰ **{e['name']} in 5 minutes**")
-                e["reminded"]["5m"] = True
-
-            if delta == 0 and not e["reminded"]["start"]:
-                await channel.send(f"🚀 **{e['name']} STARTING NOW!**")
-                e["reminded"]["start"] = True
-
         save_json(EVENTS_FILE, EVENTS)
         await asyncio.sleep(60)
 
