@@ -1,8 +1,11 @@
 # ============================================================
-# AVK UTILITY BOT — TRIVIA ABCD FULL CATEGORIES
+# AVK UTILITY BOT — FINAL STABLE VERSION
 # ============================================================
 
-import os, asyncio, datetime, random
+import os
+import asyncio
+import datetime
+import random
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -10,10 +13,21 @@ from keep_alive import keep_alive
 
 keep_alive()
 
-# ================= CONFIG =================
+# ===================== CONFIG =====================
 
-GUILD_ID = 1463165558232186910
 UTC = datetime.timezone.utc
+GUILD_ID = 1463165558232186910
+REMINDERS_CHANNEL_ID = 1464987172133273664
+
+# Bear Trap times for TODAY (UTC)
+TODAY_BT_TIMES = [
+    (14, 0),
+    (19, 35)
+]
+
+# ==================================================
+# BOT SETUP
+# ==================================================
 
 bot = commands.Bot(
     command_prefix="!",
@@ -25,110 +39,51 @@ bot = commands.Bot(
     )
 )
 
-# ================= TRIVIA QUESTIONS =================
+# ===================== TRIVIA DATA =====================
 
 TRIVIA = {
-
-    # ---------------- AVK ----------------
     "AVK": [
-        {"q": "Who is the most motivating person in AVK?", "a": ["Sarah", "Coffee", "The Snow", "Lag"], "c": 0},
-        {"q": "Who causes chaos but everyone still loves it?", "a": ["Ruti", "Rules", "Order", "Silence"], "c": 0},
-        {"q": "Who never seems to sleep during events?", "a": ["Willy Plonka", "The Furnace", "NPCs", "Nobody"], "c": 0},
-        {"q": "Who is suspiciously active on Sundays?", "a": ["All Sunday", "Monday", "Tuesday", "Friday"], "c": 0},
-        {"q": "Who gives advice like an ancient forest guardian?", "a": ["Treebeard", "A Chair", "A Rock", "A Table"], "c": 0},
-        {"q": "Who always brings positive vibes?", "a": ["Miss Sunshine", "Dark Clouds", "Blizzards", "Lag"], "c": 0},
-        {"q": "Who stays calm and deadly when needed?", "a": ["Nightwolf", "Goldfish", "Penguin", "Turtle"], "c": 0},
-        {"q": "Who has legendary energy levels?", "a": ["Brent", "Low Battery", "Sleep Mode", "AFK"], "c": 0},
-        {"q": "Who makes people laugh even during disasters?", "a": ["Tickle", "Taxes", "Cold Weather", "Lag"], "c": 0},
-        {"q": "Who combines warning signs with loyalty?", "a": ["RedRabbit", "Blue Turtle", "Green Frog", "Yellow Fish"], "c": 0}
+        {"q": "Who is the most motivating person in AVK?", "a": ["Sarah", "Coffee", "Snow", "Lag"], "c": 0},
+        {"q": "Who causes chaos but everyone still loves?", "a": ["Ruti", "Rules", "Order", "Silence"], "c": 0},
+        {"q": "Who never sleeps during events?", "a": ["Willy Plonka", "NPCs", "The Furnace", "Nobody"], "c": 0},
+        {"q": "Who is always active on Sundays?", "a": ["All Sunday", "Monday", "Tuesday", "Friday"], "c": 0},
+        {"q": "Who gives wise advice like an old tree?", "a": ["Treebeard", "A Rock", "A Chair", "A Table"], "c": 0},
     ],
-
-    # ---------------- SCIENCE ----------------
     "Science": [
         {"q": "What planet is known as the Red Planet?", "a": ["Mars", "Venus", "Jupiter", "Saturn"], "c": 0},
-        {"q": "What gas do humans need to breathe?", "a": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"], "c": 0},
-        {"q": "What is H2O?", "a": ["Water", "Hydrogen", "Salt", "Oxygen"], "c": 0},
-        {"q": "What force keeps us on Earth?", "a": ["Gravity", "Magnetism", "Wind", "Luck"], "c": 0},
-        {"q": "What star is closest to Earth?", "a": ["The Sun", "The Moon", "Polaris", "Sirius"], "c": 0},
-        {"q": "What organ pumps blood?", "a": ["Heart", "Brain", "Lungs", "Liver"], "c": 0},
-        {"q": "What state of matter is air?", "a": ["Gas", "Solid", "Liquid", "Plasma"], "c": 0},
-        {"q": "What vitamin comes from sunlight?", "a": ["Vitamin D", "Vitamin C", "Vitamin B", "Vitamin A"], "c": 0},
-        {"q": "What planet has rings?", "a": ["Saturn", "Mars", "Earth", "Venus"], "c": 0},
-        {"q": "What is the boiling point of water (°C)?", "a": ["100", "50", "0", "200"], "c": 0}
+        {"q": "What gas do humans breathe?", "a": ["Oxygen", "Carbon Dioxide", "Helium", "Nitrogen"], "c": 0},
     ],
-
-    # ---------------- GEOGRAPHY ----------------
     "Geography": [
         {"q": "What is the capital of France?", "a": ["Paris", "Rome", "Berlin", "Madrid"], "c": 0},
         {"q": "Which ocean is the largest?", "a": ["Pacific", "Atlantic", "Indian", "Arctic"], "c": 0},
-        {"q": "Which continent is Brazil in?", "a": ["South America", "Africa", "Asia", "Europe"], "c": 0},
-        {"q": "Mount Everest is in which range?", "a": ["Himalayas", "Alps", "Andes", "Rockies"], "c": 0},
-        {"q": "What is the capital of Canada?", "a": ["Ottawa", "Toronto", "Vancouver", "Montreal"], "c": 0},
-        {"q": "Which country is an island?", "a": ["Japan", "Germany", "Brazil", "Egypt"], "c": 0},
-        {"q": "Which desert is the largest hot desert?", "a": ["Sahara", "Gobi", "Atacama", "Kalahari"], "c": 0},
-        {"q": "The Nile flows into which sea?", "a": ["Mediterranean", "Red Sea", "Black Sea", "Arabian Sea"], "c": 0},
-        {"q": "Which pole is colder?", "a": ["South Pole", "North Pole", "Same", "Neither"], "c": 0},
-        {"q": "What is the longest river?", "a": ["Nile", "Amazon", "Yangtze", "Mississippi"], "c": 0}
     ],
-
-    # ---------------- COOKING ----------------
     "Cooking": [
         {"q": "Which country does pizza come from?", "a": ["Italy", "France", "USA", "Spain"], "c": 0},
         {"q": "What makes bread rise?", "a": ["Yeast", "Salt", "Sugar", "Flour"], "c": 0},
-        {"q": "What is sushi mainly made of?", "a": ["Rice", "Beef", "Chicken", "Cheese"], "c": 0},
-        {"q": "Which ingredient makes food spicy?", "a": ["Chili", "Sugar", "Salt", "Milk"], "c": 0},
-        {"q": "Pasta is usually cooked in…", "a": ["Water", "Oil", "Milk", "Juice"], "c": 0},
-        {"q": "Chocolate comes from…", "a": ["Cocoa beans", "Coffee beans", "Wheat", "Grapes"], "c": 0},
-        {"q": "What food comes from milk?", "a": ["Cheese", "Bread", "Rice", "Egg"], "c": 0},
-        {"q": "Which herb is used in pesto?", "a": ["Basil", "Mint", "Parsley", "Rosemary"], "c": 0},
-        {"q": "Which vitamin is in oranges?", "a": ["Vitamin C", "Vitamin D", "Vitamin A", "Vitamin B"], "c": 0},
-        {"q": "A knife is used to…", "a": ["Cut food", "Bake food", "Freeze food", "Boil food"], "c": 0}
     ],
-
-    # ---------------- CINEMA ----------------
+    "WOS": [
+        {"q": "What is needed to heal troops?", "a": ["Food", "Steel", "Wood", "Gems"], "c": 0},
+        {"q": "Bear Trap is a…", "a": ["Alliance event", "Solo mission", "Market trade", "Loot chest"], "c": 0},
+    ],
     "Cinema": [
         {"q": "Who played Jack in Titanic?", "a": ["Leonardo DiCaprio", "Brad Pitt", "Tom Cruise", "Johnny Depp"], "c": 0},
-        {"q": "Which movie features a ring that must be destroyed?", "a": ["Lord of the Rings", "Harry Potter", "Avatar", "Star Wars"], "c": 0},
-        {"q": "Which movie has dinosaurs?", "a": ["Jurassic Park", "Titanic", "Inception", "Gladiator"], "c": 0},
-        {"q": "Who is Iron Man?", "a": ["Tony Stark", "Bruce Wayne", "Clark Kent", "Peter Parker"], "c": 0},
-        {"q": "Which movie says 'May the Force be with you'?", "a": ["Star Wars", "Matrix", "Avatar", "Alien"], "c": 0},
-        {"q": "What genre is The Matrix?", "a": ["Science Fiction", "Romance", "Comedy", "Horror"], "c": 0},
-        {"q": "Who is the wizard in Lord of the Rings?", "a": ["Gandalf", "Dumbledore", "Merlin", "Saruman"], "c": 0},
-        {"q": "Which movie is about dreams within dreams?", "a": ["Inception", "Avatar", "Interstellar", "Joker"], "c": 0},
-        {"q": "Who played Wolverine?", "a": ["Hugh Jackman", "Chris Evans", "Robert Downey Jr", "Ben Affleck"], "c": 0},
-        {"q": "Which movie is about Pandora?", "a": ["Avatar", "Alien", "Matrix", "Star Trek"], "c": 0}
+        {"q": "Which movie features a powerful ring?", "a": ["Lord of the Rings", "Star Wars", "Matrix", "Avatar"], "c": 0},
     ],
-
-    # ---------------- TV SERIES ----------------
     "TV Series": [
-        {"q": "Who is the main character in Breaking Bad?", "a": ["Walter White", "Jesse Pinkman", "Saul Goodman", "Hank Schrader"], "c": 0},
-        {"q": "Which series features dragons?", "a": ["Game of Thrones", "Friends", "Lost", "Dexter"], "c": 0},
-        {"q": "Who lives in Springfield?", "a": ["The Simpsons", "The Griffins", "The Smiths", "The Browns"], "c": 0},
-        {"q": "Which series is set in Hawkins?", "a": ["Stranger Things", "Dark", "The 100", "The Boys"], "c": 0},
-        {"q": "Who is Sherlock Holmes’ friend?", "a": ["Watson", "Wilson", "Wesley", "Walter"], "c": 0},
-        {"q": "Which show is about a paper company?", "a": ["The Office", "Friends", "Suits", "House"], "c": 0},
-        {"q": "Which show has zombies?", "a": ["The Walking Dead", "Lost", "Prison Break", "Vikings"], "c": 0},
-        {"q": "Who rules Westeros?", "a": ["Iron Throne", "White House", "Hogwarts", "Narnia"], "c": 0},
-        {"q": "Which series is about Vikings?", "a": ["Vikings", "Rome", "Spartacus", "Troy"], "c": 0},
-        {"q": "Which show features Eleven?", "a": ["Stranger Things", "Dark", "The Boys", "Lost"], "c": 0}
+        {"q": "Who is the main character in Breaking Bad?", "a": ["Walter White", "Jesse Pinkman", "Saul Goodman", "Hank"], "c": 0},
+        {"q": "Which series has dragons?", "a": ["Game of Thrones", "Friends", "Dexter", "Lost"], "c": 0},
     ],
-
-    # ---------------- MUSIC ----------------
     "Music": [
         {"q": "Who is known as the King of Pop?", "a": ["Michael Jackson", "Elvis Presley", "Prince", "Madonna"], "c": 0},
-        {"q": "Which instrument has keys?", "a": ["Piano", "Drum", "Violin", "Guitar"], "c": 0},
-        {"q": "Who sang 'Imagine'?", "a": ["John Lennon", "Paul McCartney", "Elton John", "Freddie Mercury"], "c": 0},
-        {"q": "Which band sang 'Bohemian Rhapsody'?", "a": ["Queen", "Beatles", "U2", "Pink Floyd"], "c": 0},
-        {"q": "What genre is Beethoven?", "a": ["Classical", "Rock", "Pop", "Jazz"], "c": 0},
-        {"q": "Which instrument has six strings?", "a": ["Guitar", "Piano", "Trumpet", "Drums"], "c": 0},
-        {"q": "Who is famous for 'Like a Virgin'?", "a": ["Madonna", "Beyoncé", "Rihanna", "Adele"], "c": 0},
-        {"q": "Which band is from Liverpool?", "a": ["Beatles", "Rolling Stones", "Oasis", "Radiohead"], "c": 0},
-        {"q": "What does a DJ do?", "a": ["Mix music", "Cook food", "Paint walls", "Write books"], "c": 0},
-        {"q": "What device plays music?", "a": ["Speaker", "Fridge", "Oven", "Lamp"], "c": 0}
+        {"q": "Which band sang Bohemian Rhapsody?", "a": ["Queen", "Beatles", "U2", "Oasis"], "c": 0},
     ]
 }
 
-# ================= TRIVIA COMMAND =================
+# ===================== COMMANDS =====================
+
+@bot.tree.command(name="ping")
+async def ping(interaction: discord.Interaction):
+    await interaction.response.send_message("✅ AVK Utility Bot is online.")
 
 @bot.tree.command(name="trivia")
 @app_commands.describe(category="Trivia category")
@@ -170,12 +125,57 @@ async def trivia(interaction: discord.Interaction, category: str):
     except asyncio.TimeoutError:
         await interaction.followup.send("⌛ Time’s up!")
 
-# ================= START =================
+# ===================== SCHEDULER =====================
+
+bt_sent = set()
+arena_sent_date = None
+
+async def scheduler_loop():
+    global arena_sent_date
+    await bot.wait_until_ready()
+    channel = bot.get_channel(REMINDERS_CHANNEL_ID)
+
+    while True:
+        now = datetime.datetime.now(UTC)
+
+        # -------- ARENA (23:45 UTC) --------
+        if now.hour == 23 and now.minute == 45:
+            today = now.date()
+            if arena_sent_date != today and channel:
+                await channel.send(
+                    "⚔️ **Arena ends in 15 minutes!** Finish your fights!"
+                )
+                arena_sent_date = today
+
+        # -------- BEAR TRAP WITH REMINDERS --------
+        for hour, minute in TODAY_BT_TIMES:
+            bt_time = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+
+            for label, offset in [("1 hour", 60), ("30 minutes", 30), ("5 minutes", 5), ("NOW", 0)]:
+                reminder_time = bt_time - datetime.timedelta(minutes=offset)
+                key = f"{bt_time.strftime('%Y-%m-%d %H:%M')}-{label}"
+
+                if reminder_time.hour == now.hour and reminder_time.minute == now.minute:
+                    if key not in bt_sent and channel:
+                        if label == "NOW":
+                            await channel.send(
+                                "🐻❄️ **BEAR TRAP NOW!** Prepare yourselves AVK warriors!"
+                            )
+                        else:
+                            await channel.send(f"⏰ **Bear Trap starts in {label}!**")
+                        bt_sent.add(key)
+
+        await asyncio.sleep(60)
+
+# ===================== START =====================
 
 @bot.event
 async def setup_hook():
     await bot.tree.sync()
+    bot.loop.create_task(scheduler_loop())
 
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 if TOKEN:
     bot.run(TOKEN)
+else:
+    print("❌ DISCORD_BOT_TOKEN missing")
