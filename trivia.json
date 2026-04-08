@@ -600,9 +600,7 @@
       ],
       "correct": 1
     }
-  ]
-}
-{
+  ],
   "Cinema": [
     {
       "question": "Who directed the movie 'Inception'?",
@@ -1204,9 +1202,7 @@
       ],
       "correct": 0
     }
-  ]
-}
-{
+  ],
   "Geography": [
     {
       "question": "What is the capital of Canada?",
@@ -1688,9 +1684,7 @@
       ],
       "correct": 3
     }
-  ]
-}
-{
+  ],
   "Sciences": [
     {
       "question": "What planet is known as the Red Planet?",
@@ -2152,9 +2146,7 @@
       ],
       "correct": 3
     }
-  ]
-}
-{
+  ],
   "History": [
     {
       "question": "In which year did World War II end?",
@@ -2756,9 +2748,7 @@
       ],
       "correct": 0
     }
-  ]
-}
-{
+  ],
   "Ref": [
     {
       "question": "What happens when an NPC says 'follow me'?",
