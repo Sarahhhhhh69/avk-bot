@@ -30,6 +30,11 @@ BEAR_TRAP_START_DATE = datetime.date.today()
 REACTIONS = ["🇦", "🇧", "🇨", "🇩"]
 TRIVIA_QUESTION_COUNT = 5
 
+# ===================== GLOBAL STATE =====================
+
+# Anti-duplicate reminders (process-safe)
+SENT_REMINDERS = set()
+
 # ===================== TRIVIA CATEGORIES =====================
 
 TRIVIA_CATEGORIES = [
@@ -94,6 +99,7 @@ async def create_event(interaction: discord.Interaction, name: str, date: str, t
     })
 
     save_json(EVENTS_FILE, EVENTS)
+
     await interaction.response.send_message(
         f"✅ Event **{name}** created.",
         ephemeral=True
@@ -135,15 +141,14 @@ async def trivia(interaction: discord.Interaction, category: app_commands.Choice
         correct_order = []
 
         answers_text = "\n".join(
-            f"{REACTIONS[i]} {answer}"
-            for i, answer in enumerate(q["answers"])
+            f"{REACTIONS[i]} {a}"
+            for i, a in enumerate(q["answers"])
         )
 
         msg = await channel.send(
             f"🧠 **Question {q_index}/{TRIVIA_QUESTION_COUNT}**\n\n"
             f"{q['question']}\n\n"
-            f"{answers_text}\n\n"
-            "⏱️ 10 seconds"
+            f"{answers_text}\n\n⏱️ 10 seconds"
         )
 
         for r in REACTIONS:
@@ -207,14 +212,13 @@ async def scheduler():
         now = datetime.datetime.now(UTC)
 
         # ⚔️ ARENA
-        if now.hour == 23 and now.minute == 45:
-            key = f"arena_{now.date()}"
-            if not hasattr(bot, key):
-                try:
-                    await channel.send("⚔️ **Arena in 15 minutes! (00:00 UTC)**")
-                    setattr(bot, key, True)
-                except discord.Forbidden:
-                    pass
+        arena_key = f"arena_{now.date()}"
+        if now.hour == 23 and now.minute == 45 and arena_key not in SENT_REMINDERS:
+            try:
+                await channel.send("⚔️ **Arena in 15 minutes! (00:00 UTC)**")
+                SENT_REMINDERS.add(arena_key)
+            except discord.Forbidden:
+                pass
 
         # 🐻 BEAR TRAPS
         if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
@@ -223,21 +227,44 @@ async def scheduler():
                 delta = int((event_time - now).total_seconds() / 60)
                 base = f"{now.date()}_{trap['name']}"
 
+                def send_once(suffix, message):
+                    key = f"{base}_{suffix}"
+                    if key not in SENT_REMINDERS:
+                        SENT_REMINDERS.add(key)
+                        return channel.send(message)
+
                 try:
-                    if 59 <= delta <= 60 and not hasattr(bot, base + "_60"):
-                        await channel.send(f"🐻 **{trap['name']}** is getting hungry… **60 minutes left!**")
-                        setattr(bot, base + "_60", True)
-                    elif 29 <= delta <= 30 and not hasattr(bot, base + "_30"):
-                        await channel.send(f"🐻 **{trap['name']}** is almost ready… **30 minutes!**")
-                        setattr(bot, base + "_30", True)
-                    elif 4 <= delta <= 5 and not hasattr(bot, base + "_5"):
-                        await channel.send(f"🐻 **{trap['name']}** is waking up… **5 minutes remaining!**")
-                        setattr(bot, base + "_5", True)
-                    elif -1 <= delta <= 0 and not hasattr(bot, base + "_live"):
-                        await channel.send(f"🚨🐻 **{trap['name']} IS LIVE — FIGHT!**")
-                        setattr(bot, base + "_live", True)
+                    if 59 <= delta <= 60:
+                        await send_once("60", f"🐻 **{trap['name']}** is getting hungry… **60 minutes left!**")
+                    elif 29 <= delta <= 30:
+                        await send_once("30", f"🐻 **{trap['name']}** is almost ready… **30 minutes!**")
+                    elif 4 <= delta <= 5:
+                        await send_once("5", f"🐻 **{trap['name']}** is waking up… **5 minutes remaining!**")
+                    elif -1 <= delta <= 0:
+                        await send_once("LIVE", f"🚨🐻 **{trap['name']} IS LIVE — FIGHT!**")
                 except discord.Forbidden:
                     pass
+
+        # 📅 CUSTOM EVENTS
+        for e in EVENTS:
+            dt = datetime.datetime.fromisoformat(e["datetime"])
+            delta = int((dt - now).total_seconds() / 60)
+
+            try:
+                if delta == 60 and not e["reminded"]["1h"]:
+                    await channel.send(f"⏰ **{e['name']} in 1 hour**")
+                    e["reminded"]["1h"] = True
+                elif delta == 30 and not e["reminded"]["30m"]:
+                    await channel.send(f"⏰ **{e['name']} in 30 minutes**")
+                    e["reminded"]["30m"] = True
+                elif delta == 5 and not e["reminded"]["5m"]:
+                    await channel.send(f"⏰ **{e['name']} in 5 minutes**")
+                    e["reminded"]["5m"] = True
+                elif delta == 0 and not e["reminded"]["start"]:
+                    await channel.send(f"🚀 **{e['name']} STARTING NOW!**")
+                    e["reminded"]["start"] = True
+            except discord.Forbidden:
+                pass
 
         save_json(EVENTS_FILE, EVENTS)
         await asyncio.sleep(60)
