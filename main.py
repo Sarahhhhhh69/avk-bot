@@ -94,7 +94,6 @@ async def create_event(interaction: discord.Interaction, name: str, date: str, t
     })
 
     save_json(EVENTS_FILE, EVENTS)
-
     await interaction.response.send_message(
         f"✅ Event **{name}** created.",
         ephemeral=True
@@ -135,15 +134,16 @@ async def trivia(interaction: discord.Interaction, category: app_commands.Choice
         answered = {}
         correct_order = []
 
-        answers = "\n".join(
-            f"{REACTIONS[i]} {a}"
-            for i, a in enumerate(q["answers"])
+        answers_text = "\n".join(
+            f"{REACTIONS[i]} {answer}"
+            for i, answer in enumerate(q["answers"])
         )
 
         msg = await channel.send(
             f"🧠 **Question {q_index}/{TRIVIA_QUESTION_COUNT}**\n\n"
             f"{q['question']}\n\n"
-            f"{answers}\n\n⏱️ 10 seconds"
+            f"{answers_text}\n\n"
+            "⏱️ 10 seconds"
         )
 
         for r in REACTIONS:
@@ -161,9 +161,7 @@ async def trivia(interaction: discord.Interaction, category: app_commands.Choice
         while (datetime.datetime.now(UTC) - start).seconds < 10:
             try:
                 reaction, user = await bot.wait_for(
-                    "reaction_add",
-                    timeout=10,
-                    check=check
+                    "reaction_add", timeout=10, check=check
                 )
             except asyncio.TimeoutError:
                 break
@@ -185,11 +183,11 @@ async def trivia(interaction: discord.Interaction, category: app_commands.Choice
         )
         await asyncio.sleep(2)
 
-    results = sorted(scores.items(), key=lambda x: x[1], reverse=True)
-    result = "🏆 **TRIVIA FINAL LEADERBOARD** 🏆\n\n"
+    leaderboard = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     medals = ["🥇", "🥈", "🥉"]
 
-    for i, (uid, pts) in enumerate(results[:3]):
+    result = "🏆 **TRIVIA FINAL LEADERBOARD** 🏆\n\n"
+    for i, (uid, pts) in enumerate(leaderboard[:3]):
         result += f"{medals[i]} <@{uid}> — {pts} pts\n"
 
     await channel.send(result)
@@ -209,12 +207,14 @@ async def scheduler():
         now = datetime.datetime.now(UTC)
 
         # ⚔️ ARENA
-        if now.hour == 23 and now.minute == 45 and not hasattr(bot, f"arena_{now.date()}"):
-            try:
-                await channel.send("⚔️ **Arena in 15 minutes! (00:00 UTC)**")
-                setattr(bot, f"arena_{now.date()}", True)
-            except discord.Forbidden:
-                pass
+        if now.hour == 23 and now.minute == 45:
+            key = f"arena_{now.date()}"
+            if not hasattr(bot, key):
+                try:
+                    await channel.send("⚔️ **Arena in 15 minutes! (00:00 UTC)**")
+                    setattr(bot, key, True)
+                except discord.Forbidden:
+                    pass
 
         # 🐻 BEAR TRAPS
         if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
