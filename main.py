@@ -217,20 +217,63 @@ async def scheduler():
                 await channel.send("⚔️ **Arena in 15 minutes! (00:00 UTC)**")
                 bot.arena_sent = key
 
-        # 🐻 BEAR TRAP (tolerance windows)
-        if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
-            for h, m in BEAR_TRAP_TIMES:
-                event_time = now.replace(hour=h, minute=m, second=0)
-                delta = int((event_time - now).total_seconds() / 60)
+# 🐻 BEAR TRAP (14:00 & 19:00 UTC, no duplicates, fun messages)
 
-                if 59 <= delta <= 60:
-                    await channel.send("🐻 **Bear Trap in 60 minutes**")
-                elif 29 <= delta <= 30:
-                    await channel.send("🐻 **Bear Trap in 30 minutes**")
-                elif 4 <= delta <= 5:
-                    await channel.send("🐻 **Bear Trap in 5 minutes**")
-                elif -1 <= delta <= 0:
-                    await channel.send("🚨 **BEAR TRAP IS LIVE!**")
+BEAR_TRAPS = [
+    {"name": "Bear Trap 2", "hour": 14, "minute": 0},
+    {"name": "Bear Trap 1", "hour": 19, "minute": 0},
+]
+
+if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
+    for trap in BEAR_TRAPS:
+        event_time = now.replace(
+            hour=trap["hour"],
+            minute=trap["minute"],
+            second=0
+        )
+        delta = int((event_time - now).total_seconds() / 60)
+
+        key_base = f"{now.date()}_{trap['name']}"
+
+        try:
+            # 60 minutes
+            if 59 <= delta <= 60:
+                key = f"{key_base}_60"
+                if getattr(bot, key, None) != True:
+                    await channel.send(
+                        f"🐻 **{trap['name']}** is getting hungry… **60 minutes left!**"
+                    )
+                    setattr(bot, key, True)
+
+            # 30 minutes
+            elif 29 <= delta <= 30:
+                key = f"{key_base}_30"
+                if getattr(bot, key, None) != True:
+                    await channel.send(
+                        f"🐻 **{trap['name']}** is almost ready… **30 minutes!**"
+                    )
+                    setattr(bot, key, True)
+
+            # 5 minutes
+            elif 4 <= delta <= 5:
+                key = f"{key_base}_5"
+                if getattr(bot, key, None) != True:
+                    await channel.send(
+                        f"🐻 **{trap['name']}** is waking up… **5 minutes remaining!**"
+                    )
+                    setattr(bot, key, True)
+
+            # LIVE
+            elif -1 <= delta <= 0:
+                key = f"{key_base}_live"
+                if getattr(bot, key, None) != True:
+                    await channel.send(
+                        f"🚨🐻 **{trap['name']} IS LIVE — FIGHT!**"
+                    )
+                    setattr(bot, key, True)
+
+        except discord.Forbidden:
+            print("⚠️ Missing permissions for Bear Trap reminder")
 
         # 📅 CUSTOM EVENTS
         for e in EVENTS:
