@@ -215,7 +215,10 @@ async def scheduler():
         arena_key = f"arena_{now.date()}"
         if now.hour == 23 and now.minute == 45 and arena_key not in SENT_REMINDERS:
             try:
-                await channel.send("⚔️ **Arena in 15 minutes! (00:00 UTC)**")
+await channel.send(
+    "⚔️ **Don’t forget Arena!**\n"
+    "⏳ Last **15 minutes** before it ends at **00:00 UTC**."
+)
                 SENT_REMINDERS.add(arena_key)
             except discord.Forbidden:
                 pass
