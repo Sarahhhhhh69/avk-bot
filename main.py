@@ -255,7 +255,7 @@ async def scheduler():
                     elif delta <= 0:
                         await send_once(
                             "LIVE",
-                            f"🚨🐻 **{trap['name']} IS LIVE — FIGHT!**"
+                            f"🚨🐻 **{trap['name']} IS LIVE — FIGHT (don't send Gina or I'll burn you)!**"
                         )
                 except discord.Forbidden:
                     pass
