@@ -32,7 +32,7 @@ TRIVIA_QUESTION_COUNT = 5
 
 # ===================== GLOBAL STATE =====================
 
-# Anti-duplicate reminders (process-safe)
+# Anti-duplicate reminders (single process)
 SENT_REMINDERS = set()
 
 # ===================== TRIVIA CATEGORIES =====================
@@ -140,7 +140,7 @@ async def trivia(interaction: discord.Interaction, category: app_commands.Choice
         answered = {}
         correct_order = []
 
-        answers_text = "\n".join(
+        answers = "\n".join(
             f"{REACTIONS[i]} {a}"
             for i, a in enumerate(q["answers"])
         )
@@ -148,7 +148,7 @@ async def trivia(interaction: discord.Interaction, category: app_commands.Choice
         msg = await channel.send(
             f"🧠 **Question {q_index}/{TRIVIA_QUESTION_COUNT}**\n\n"
             f"{q['question']}\n\n"
-            f"{answers_text}\n\n⏱️ 10 seconds"
+            f"{answers}\n\n⏱️ 10 seconds"
         )
 
         for r in REACTIONS:
@@ -211,19 +211,19 @@ async def scheduler():
     while True:
         now = datetime.datetime.now(UTC)
 
-        # ⚔️ ARENA
+        # ⚔️ ARENA — ends at 00:00 UTC
         arena_key = f"arena_{now.date()}"
         if now.hour == 23 and now.minute == 45 and arena_key not in SENT_REMINDERS:
             try:
-await channel.send(
-    "⚔️ **Don’t forget Arena!**\n"
-    "⏳ Last **15 minutes** before it ends at **00:00 UTC**."
-)
+                await channel.send(
+                    "⚔️ **Don't forget Arena!**\n"
+                    "⏳ Last **15 minutes** before it ends at **00:00 UTC**."
+                )
                 SENT_REMINDERS.add(arena_key)
             except discord.Forbidden:
                 pass
 
-        # 🐻 BEAR TRAPS
+        # 🐻 BEAR TRAPS — every 2 days
         if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
             for trap in BEAR_TRAPS:
                 event_time = now.replace(hour=trap["hour"], minute=0, second=0)
@@ -238,13 +238,25 @@ await channel.send(
 
                 try:
                     if 59 <= delta <= 60:
-                        await send_once("60", f"🐻 **{trap['name']}** is getting hungry… **60 minutes left!**")
+                        await send_once(
+                            "60",
+                            f"🐻 **{trap['name']}** is getting hungry… **60 minutes left!**"
+                        )
                     elif 29 <= delta <= 30:
-                        await send_once("30", f"🐻 **{trap['name']}** is almost ready… **30 minutes!**")
+                        await send_once(
+                            "30",
+                            f"🐻 **{trap['name']}** is almost ready… **30 minutes!**"
+                        )
                     elif 4 <= delta <= 5:
-                        await send_once("5", f"🐻 **{trap['name']}** is waking up… **5 minutes remaining!**")
+                        await send_once(
+                            "5",
+                            f"🐻 **{trap['name']}** is waking up… **5 minutes remaining!**"
+                        )
                     elif delta <= 0:
-                        await send_once("LIVE", f"🚨🐻 **{trap['name']} IS LIVE — FIGHT!**")
+                        await send_once(
+                            "LIVE",
+                            f"🚨🐻 **{trap['name']} IS LIVE — FIGHT!**"
+                        )
                 except discord.Forbidden:
                     pass
 
