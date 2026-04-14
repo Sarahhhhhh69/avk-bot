@@ -243,7 +243,7 @@ await channel.send(
                         await send_once("30", f"🐻 **{trap['name']}** is almost ready… **30 minutes!**")
                     elif 4 <= delta <= 5:
                         await send_once("5", f"🐻 **{trap['name']}** is waking up… **5 minutes remaining!**")
-                    elif -1 <= delta <= 0:
+                    elif delta <= 0:
                         await send_once("LIVE", f"🚨🐻 **{trap['name']} IS LIVE — FIGHT!**")
                 except discord.Forbidden:
                     pass
