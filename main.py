@@ -80,12 +80,7 @@ async def ping(interaction: discord.Interaction):
 # ===================== EVENT CREATION =====================
 
 @bot.tree.command(name="event")
-async def create_event(
-    interaction: discord.Interaction,
-    name: str,
-    date: str,
-    time: str
-):
+async def create_event(interaction: discord.Interaction, name: str, date: str, time: str):
     try:
         dt = datetime.datetime.strptime(
             f"{date} {time}", "%Y-%m-%d %H:%M"
@@ -99,12 +94,7 @@ async def create_event(
     EVENTS.append({
         "name": name,
         "datetime": dt.isoformat(),
-        "reminded": {
-            "1h": False,
-            "30m": False,
-            "5m": False,
-            "start": False
-        }
+        "reminded": {"1h": False, "30m": False, "5m": False, "start": False}
     })
 
     save_json(EVENTS_FILE, EVENTS)
@@ -117,10 +107,7 @@ async def create_event(
 
 @bot.tree.command(name="trivia")
 @app_commands.choices(category=TRIVIA_CATEGORIES)
-async def trivia(
-    interaction: discord.Interaction,
-    category: app_commands.Choice[str]
-):
+async def trivia(interaction: discord.Interaction, category: app_commands.Choice[str]):
     await interaction.response.defer(ephemeral=True)
     category = category.value
 
@@ -151,15 +138,14 @@ async def trivia(
         correct_order = []
 
         answers_text = "\n".join(
-            f"{REACTIONS[i]} {ans}"
-            for i, ans in enumerate(q["answers"])
+            f"{REACTIONS[i]} {a}"
+            for i, a in enumerate(q["answers"])
         )
 
         msg = await channel.send(
             f"🧠 **Question {q_index}/{TRIVIA_QUESTION_COUNT}**\n\n"
             f"{q['question']}\n\n"
-            f"{answers_text}\n\n"
-            "⏱️ 10 seconds"
+            f"{answers_text}\n\n⏱️ 10 seconds"
         )
 
         for r in REACTIONS:
@@ -177,9 +163,7 @@ async def trivia(
         while (datetime.datetime.now(UTC) - start).seconds < 10:
             try:
                 reaction, user = await bot.wait_for(
-                    "reaction_add",
-                    timeout=10,
-                    check=check
+                    "reaction_add", timeout=10, check=check
                 )
             except asyncio.TimeoutError:
                 break
@@ -197,16 +181,14 @@ async def trivia(
             scores[uid] += [5, 3, 2, 1][min(i, 3)]
 
         await channel.send(
-            f"✅ **Correct answer:** "
-            f"{REACTIONS[q['correct']]} {q['answers'][q['correct']]}"
+            f"✅ **Correct answer:** {REACTIONS[q['correct']]} {q['answers'][q['correct']]}"
         )
         await asyncio.sleep(2)
 
     leaderboard = sorted(scores.items(), key=lambda x: x[1], reverse=True)
-
-    result = "🏆 **TRIVIA FINAL LEADERBOARD** 🏆\n\n"
     medals = ["🥇", "🥈", "🥉"]
 
+    result = "🏆 **TRIVIA FINAL LEADERBOARD** 🏆\n\n"
     for i, (uid, pts) in enumerate(leaderboard[:3]):
         result += f"{medals[i]} <@{uid}> — {pts} pts\n"
 
@@ -223,7 +205,7 @@ async def scheduler():
         {"name": "Bear Trap 1", "hour": 19},
     ]
 
-    async def send_once(key, message):
+    async def send_once(key: str, message: str):
         if key not in SENT_REMINDERS:
             SENT_REMINDERS.add(key)
             await channel.send(message)
@@ -231,7 +213,7 @@ async def scheduler():
     while True:
         now = datetime.datetime.now(UTC)
 
-        # ⚔️ ARENA
+        # ⚔️ ARENA (ends at 00:00 UTC)
         arena_key = f"arena_{now.date()}"
         if now.hour == 23 and now.minute == 45:
             await send_once(
@@ -240,7 +222,7 @@ async def scheduler():
                 "⏳ Last **15 minutes** before it ends at **00:00 UTC**."
             )
 
-        # 🐻 BEAR TRAPS
+        # 🐻 BEAR TRAPS (every 2 days)
         if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
             for trap in BEAR_TRAPS:
                 event_time = now.replace(hour=trap["hour"], minute=0, second=0)
