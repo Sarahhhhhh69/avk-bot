@@ -24,7 +24,7 @@ TRIVIA_FILE = "trivia.json"
 
 UTC = datetime.timezone.utc
 
-BEAR_TRAP_TIMES = [(14, 0), (19, 35)]
+BEAR_TRAP_TIMES = [(14, 0), (19, 00)]
 BEAR_TRAP_INTERVAL_DAYS = 2
 BEAR_TRAP_START_DATE = datetime.date.today()
 
