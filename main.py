@@ -24,7 +24,6 @@ TRIVIA_FILE = "trivia.json"
 
 UTC = datetime.timezone.utc
 
-BEAR_TRAP_TIMES = [(14, 0), (19, 00)]
 BEAR_TRAP_INTERVAL_DAYS = 2
 BEAR_TRAP_START_DATE = datetime.date.today()
 
@@ -207,94 +206,80 @@ async def scheduler():
     await bot.wait_until_ready()
     channel = bot.get_channel(EVENT_REMINDERS_CHANNEL_ID)
 
+    BEAR_TRAPS = [
+        {"name": "Bear Trap 2", "hour": 14, "minute": 0},
+        {"name": "Bear Trap 1", "hour": 19, "minute": 0},
+    ]
+
     while True:
         now = datetime.datetime.now(UTC)
 
         # ⚔️ ARENA
         if now.hour == 23 and now.minute == 45:
-            key = now.strftime("%Y-%m-%d")
-            if getattr(bot, "arena_sent", None) != key:
-                await channel.send("⚔️ **Arena in 15 minutes! (00:00 UTC)**")
-                bot.arena_sent = key
-
-# 🐻 BEAR TRAP (14:00 & 19:00 UTC, no duplicates, fun messages)
-
-BEAR_TRAPS = [
-    {"name": "Bear Trap 2", "hour": 14, "minute": 0},
-    {"name": "Bear Trap 1", "hour": 19, "minute": 0},
-]
-
-if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
-    for trap in BEAR_TRAPS:
-        event_time = now.replace(
-            hour=trap["hour"],
-            minute=trap["minute"],
-            second=0
-        )
-        delta = int((event_time - now).total_seconds() / 60)
-
-        key_base = f"{now.date()}_{trap['name']}"
-
-        try:
-            # 60 minutes
-            if 59 <= delta <= 60:
-                key = f"{key_base}_60"
-                if getattr(bot, key, None) != True:
-                    await channel.send(
-                        f"🐻 **{trap['name']}** is getting hungry… **60 minutes left!**"
-                    )
+            key = now.strftime("%Y-%m-%d_arena")
+            if not hasattr(bot, key):
+                try:
+                    await channel.send("⚔️ **Arena in 15 minutes! (00:00 UTC)**")
                     setattr(bot, key, True)
+                except discord.Forbidden:
+                    print("⚠️ Missing permissions for Arena reminder")
 
-            # 30 minutes
-            elif 29 <= delta <= 30:
-                key = f"{key_base}_30"
-                if getattr(bot, key, None) != True:
-                    await channel.send(
-                        f"🐻 **{trap['name']}** is almost ready… **30 minutes!**"
-                    )
-                    setattr(bot, key, True)
+        # 🐻 BEAR TRAP
+        if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
+            for trap in BEAR_TRAPS:
+                event_time = now.replace(
+                    hour=trap["hour"],
+                    minute=trap["minute"],
+                    second=0
+                )
+                delta = int((event_time - now).total_seconds() / 60)
 
-            # 5 minutes
-            elif 4 <= delta <= 5:
-                key = f"{key_base}_5"
-                if getattr(bot, key, None) != True:
-                    await channel.send(
-                        f"🐻 **{trap['name']}** is waking up… **5 minutes remaining!**"
-                    )
-                    setattr(bot, key, True)
+                base = f"{now.date()}_{trap['name']}"
 
-            # LIVE
-            elif -1 <= delta <= 0:
-                key = f"{key_base}_live"
-                if getattr(bot, key, None) != True:
-                    await channel.send(
-                        f"🚨🐻 **{trap['name']} IS LIVE — FIGHT!**"
-                    )
-                    setattr(bot, key, True)
+                try:
+                    if 59 <= delta <= 60 and not hasattr(bot, f"{base}_60"):
+                        await channel.send(f"🐻 **{trap['name']}** is getting hungry… **60 minutes left!**")
+                        setattr(bot, f"{base}_60", True)
 
-        except discord.Forbidden:
-            print("⚠️ Missing permissions for Bear Trap reminder")
+                    elif 29 <= delta <= 30 and not hasattr(bot, f"{base}_30"):
+                        await channel.send(f"🐻 **{trap['name']}** is almost ready… **30 minutes!**")
+                        setattr(bot, f"{base}_30", True)
 
-        # 📅 CUSTOM EVENTS
+                    elif 4 <= delta <= 5 and not hasattr(bot, f"{base}_5"):
+                        await channel.send(f"🐻 **{trap['name']}** is waking up… **5 minutes remaining!**")
+                        setattr(bot, f"{base}_5", True)
+
+                    elif -1 <= delta <= 0 and not hasattr(bot, f"{base}_live"):
+                        await channel.send(f"🚨🐻 **{trap['name']} IS LIVE — FIGHT!**")
+                        setattr(bot, f"{base}_live", True)
+
+                except discord.Forbidden:
+                    print("⚠️ Missing permissions for Bear Trap reminder")
+
+        # 📅 EVENTS
         for e in EVENTS:
             dt = datetime.datetime.fromisoformat(e["datetime"])
             delta = int((dt - now).total_seconds() / 60)
 
-            if delta == 60 and not e["reminded"]["1h"]:
-                await channel.send(f"⏰ **{e['name']} in 1 hour**")
-                e["reminded"]["1h"] = True
+            try:
+                if delta == 60 and not e["reminded"]["1h"]:
+                    await channel.send(f"⏰ **{e['name']} in 1 hour**")
+                    e["reminded"]["1h"] = True
 
-            if delta == 30 and not e["reminded"]["30m"]:
-                await channel.send(f"⏰ **{e['name']} in 30 minutes**")
-                e["reminded"]["30m"] = True
+                if delta == 30 and not e["reminded"]["30m"]:
+                    await channel.send(f"⏰ **{e['name']} in 30 minutes**")
+                    e["reminded"]["30m"] = True
 
-            if delta == 5 and not e["reminded"]["5m"]:
-                await channel.send(f"⏰ **{e['name']} in 5 minutes**")
-                e["reminded"]["5m"] = True
+                if delta == 5 and not e["reminded"]["5m"]:
+                    await channel.send(f"⏰ **{e['name']} in 5 minutes**")
+                    e["reminded"]["5m"] = True
 
-            if delta == 0 and not e["reminded"]["start"]:
-                await channel.send(f"🚀 **{e['name']} STARTING NOW!**")
-                e["reminded"]["start"] = True
+                if delta == 0 and not e["reminded"]["start"]:
+                    await channel.send(f"🚀 **{e['name']} STARTING NOW!**")
+                    e["reminded"]["start"] = True
+
+            except discord.Forbidden:
+                print("⚠️ Missing permissions for Event reminder")
 
         save_json(EVENTS_FILE, EVENTS)
         await asyncio.sleep(60)
