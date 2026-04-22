@@ -34,17 +34,6 @@ TRIVIA_QUESTION_COUNT = 5
 
 SENT_REMINDERS = set()
 
-# ===================== TRIVIA CATEGORIES =====================
-
-TRIVIA_CATEGORIES = [
-    app_commands.Choice(name="Ref", value="Ref"),
-    app_commands.Choice(name="Cinema", value="Cinema"),
-    app_commands.Choice(name="Music", value="Music"),
-    app_commands.Choice(name="Sciences", value="Sciences"),
-    app_commands.Choice(name="Geography", value="Geography"),
-    app_commands.Choice(name="History", value="History"),
-]
-
 # ===================== BOT =====================
 
 intents = discord.Intents(
@@ -82,9 +71,7 @@ async def ping(interaction: discord.Interaction):
 @bot.tree.command(name="event")
 async def create_event(interaction: discord.Interaction, name: str, date: str, time: str):
     try:
-        dt = datetime.datetime.strptime(
-            f"{date} {time}", "%Y-%m-%d %H:%M"
-        ).replace(tzinfo=UTC)
+        dt = datetime.datetime.strptime(f"{date} {time}", "%Y-%m-%d %H:%M").replace(tzinfo=UTC)
     except ValueError:
         return await interaction.response.send_message(
             "❌ Format: YYYY-MM-DD HH:MM UTC",
@@ -98,15 +85,11 @@ async def create_event(interaction: discord.Interaction, name: str, date: str, t
     })
 
     save_json(EVENTS_FILE, EVENTS)
-    await interaction.response.send_message(
-        f"✅ Event **{name}** created.",
-        ephemeral=True
-    )
+    await interaction.response.send_message(f"✅ Event **{name}** created.", ephemeral=True)
 
 # ===================== TRIVIA =====================
 
 @bot.tree.command(name="trivia")
-@app_commands.choices(category=TRIVIA_CATEGORIES)
 async def trivia(interaction: discord.Interaction, category: app_commands.Choice[str]):
 
     await interaction.response.defer(ephemeral=True)
@@ -120,62 +103,6 @@ async def trivia(interaction: discord.Interaction, category: app_commands.Choice
 
     await interaction.followup.send(f"🧠 **Trivia Tournament — {category}** starting now!")
 
-    questions = random.sample(
-        TRIVIA_DB[category],
-        min(TRIVIA_QUESTION_COUNT, len(TRIVIA_DB[category]))
-    )
-
-    scores = {}
-    channel = interaction.channel
-
-    for i, q in enumerate(questions, start=1):
-        answered = {}
-        correct_order = []
-
-        answers = "\n".join(f"{REACTIONS[idx]} {a}" for idx, a in enumerate(q["answers"]))
-        msg = await channel.send(
-            f"🧠 **Question {i}/{TRIVIA_QUESTION_COUNT}**\n\n"
-            f"{q['question']}\n\n{answers}\n\n⏱️ 10 seconds"
-        )
-
-        for r in REACTIONS:
-            await msg.add_reaction(r)
-
-        def check(reaction, user):
-            return reaction.message.id == msg.id and str(reaction.emoji) in REACTIONS and not user.bot
-
-        start = datetime.datetime.now(UTC)
-
-        while (datetime.datetime.now(UTC) - start).seconds < 10:
-            try:
-                reaction, user = await bot.wait_for("reaction_add", timeout=10, check=check)
-            except asyncio.TimeoutError:
-                break
-
-            if user.id in answered:
-                continue
-
-            choice = REACTIONS.index(str(reaction.emoji))
-            answered[user.id] = choice
-            if choice == q["correct"]:
-                correct_order.append(user.id)
-
-        for rank, uid in enumerate(correct_order):
-            scores.setdefault(uid, 0)
-            scores[uid] += [5, 3, 2, 1][min(rank, 3)]
-
-        await channel.send(f"✅ **Correct answer:** {REACTIONS[q['correct']]} {q['answers'][q['correct']]}")
-        await asyncio.sleep(2)
-
-    leaderboard = sorted(scores.items(), key=lambda x: x[1], reverse=True)
-    medals = ["🥇", "🥈", "🥉"]
-
-    result = "🏆 **TRIVIA FINAL LEADERBOARD** 🏆\n\n"
-    for i, (uid, pts) in enumerate(leaderboard[:3]):
-        result += f"{medals[i]} <@{uid}> — {pts} pts\n"
-
-    await channel.send(result)
-
 # ===================== SCHEDULER =====================
 
 async def scheduler():
@@ -183,8 +110,8 @@ async def scheduler():
     channel = bot.get_channel(EVENT_REMINDERS_CHANNEL_ID)
 
     BEAR_TRAPS = [
-        {"name": "Bear Trap 2", "hour": 14},
-        {"name": "Bear Trap 1", "hour": 19},
+        {"name": "Bear Trap 2", "hour": 13, "minute": 35},
+        {"name": "Bear Trap 1", "hour": 18, "minute": 35},
     ]
 
     while True:
@@ -194,50 +121,65 @@ async def scheduler():
         arena_key = f"arena_{now.date()}"
         if now.hour == 23 and now.minute == 45 and arena_key not in SENT_REMINDERS:
             SENT_REMINDERS.add(arena_key)
-            try:
-                await channel.send(
-                    "⚔️ **Don't forget Arena!**\n"
-                    "⏳ Last **15 minutes** before it ends at **00:00 UTC**."
-                )
-            except discord.Forbidden:
-                pass
+            await channel.send(
+                "@everyone\n⚔️ **Don't forget Arena!**\n"
+                "⏳ Last **15 minutes** before it ends at **00:00 UTC**."
+            )
 
         # 🐻 BEAR TRAPS (every 2 days)
         if (now.date() - BEAR_TRAP_START_DATE).days % BEAR_TRAP_INTERVAL_DAYS == 0:
             for trap in BEAR_TRAPS:
-                event_time = now.replace(hour=trap["hour"], minute=0, second=0)
+                event_time = now.replace(
+                    hour=trap["hour"],
+                    minute=trap["minute"],
+                    second=0
+                )
                 delta = int((event_time - now).total_seconds() / 60)
                 base = f"{now.date()}_{trap['name']}"
 
-                def send_if_new(suffix, message):
+                def send(suffix, msg):
                     key = f"{base}_{suffix}"
                     if key not in SENT_REMINDERS:
                         SENT_REMINDERS.add(key)
-                        return True, message
-                    return False, None
+                        return msg
+                    return None
 
-                try:
-                    if 59 <= delta <= 60:
-                        ok, msg = send_if_new("60", f"🐻 **{trap['name']}** is getting hungry… **60 minutes left!**")
-                        if ok:
-                            await channel.send(msg)
+                if 59 <= delta <= 60:
+                    msg = send("60", f"🐻 **{trap['name']}** — 60 minutes left!")
+                    if msg: await channel.send(msg)
 
-                    elif 29 <= delta <= 30:
-                        ok, msg = send_if_new("30", f"🐻 **{trap['name']}** is almost ready… **30 minutes!**")
-                        if ok:
-                            await channel.send(msg)
+                elif 29 <= delta <= 30:
+                    msg = send("30", f"🐻 **{trap['name']}** — 30 minutes left!")
+                    if msg: await channel.send(msg)
 
-                    elif 4 <= delta <= 5:
-                        ok, msg = send_if_new("5", f"🐻 **{trap['name']}** is waking up… **5 minutes remaining!**")
-                        if ok:
-                            await channel.send(msg)
+                elif 4 <= delta <= 5:
+                    msg = send("5", f"🐻 **{trap['name']}** — 5 minutes remaining!")
+                    if msg: await channel.send(msg)
 
-                    elif delta <= 0:
-                        ok, msg = send_if_new("LIVE", f"🚨🐻 **{trap['name']} IS LIVE — FIGHT!**")
-                        if ok:
-                            await channel.send(msg)
-                except discord.Forbidden:
-                    pass
+                elif delta <= 0:
+                    msg = send("LIVE", f"@everyone\n🚨🐻 **{trap['name']} IS LIVE — FIGHT!**")
+                    if msg: await channel.send(msg)
+
+        # 📅 CUSTOM EVENTS
+        for e in EVENTS:
+            dt = datetime.datetime.fromisoformat(e["datetime"])
+            delta = int((dt - now).total_seconds() / 60)
+
+            if delta == 60 and not e["reminded"]["1h"]:
+                await channel.send(f"⏰ **{e['name']} in 1 hour**")
+                e["reminded"]["1h"] = True
+
+            elif delta == 30 and not e["reminded"]["30m"]:
+                await channel.send(f"⏰ **{e['name']} in 30 minutes**")
+                e["reminded"]["30m"] = True
+
+            elif delta == 5 and not e["reminded"]["5m"]:
+                await channel.send(f"⏰ **{e['name']} in 5 minutes**")
+                e["reminded"]["5m"] = True
+
+            elif delta <= 0 and not e["reminded"]["start"]:
+                await channel.send(f"@everyone\n🚀 **{e['name']} STARTING NOW!**")
+                e["reminded"]["start"] = True
 
         save_json(EVENTS_FILE, EVENTS)
         await asyncio.sleep(60)
