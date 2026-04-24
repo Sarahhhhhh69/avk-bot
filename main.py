@@ -110,8 +110,8 @@ async def scheduler():
     channel = bot.get_channel(EVENT_REMINDERS_CHANNEL_ID)
 
     BEAR_TRAPS = [
-        {"name": "Bear Trap 2", "hour": 13, "minute": 35},
-        {"name": "Bear Trap 1", "hour": 18, "minute": 35},
+        {"name": "Bear Trap 2", "hour": 13, "minute": 30},
+        {"name": "Bear Trap 1", "hour": 18, "minute": 10},
     ]
 
     while True:
