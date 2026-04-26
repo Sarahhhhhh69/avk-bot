@@ -111,7 +111,7 @@ async def scheduler():
 
     BEAR_TRAPS = [
         {"name": "Bear Trap 2", "hour": 13, "minute": 30},
-        {"name": "Bear Trap 1", "hour": 18, "minute": 10},
+        {"name": "Bear Trap 1", "hour": 18, "minute": 00},
     ]
 
     while True:
